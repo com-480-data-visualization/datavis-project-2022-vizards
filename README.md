@@ -48,7 +48,8 @@ The interest of the web users across time can be tracked with Google Trends. For
 - How does the taste of music (mainstream genre) change over time?
 - How does the trend of music relate to the development of film industry?
 - How the important social events in 21st century (e.g. #MeToo) influence the music industry?
-- How does the lyrics evolve over years?
+- How does the lyrics evolve over years? $
+- How the different music genres are linked together ? 
 
 We would like to achieve dynamic and connective visualisation for different songs, artists and events. 
 
@@ -70,4 +71,9 @@ Here is a list of preliminary questions we would like to answer in EDA:
 
 
 ### Related work
-
+-  [Textual analysis of popular country music](https://www.johnwmillr.com/trucks-and-beer/)
+-  [Neural Machine Translation: Explaining The Meaning Behind Lyrics](https://github.com/tsandefer/dsi_capstone_3)
+-  [What makes some blink-182 songs more popular than others?](http://jdaytn.com/posts/download-blink-182-data/)
+-  [Sentiment analysis on hip-hop lyrics](https://github.com/Hugo-Nattagh/2017-Hip-Hop)
+-  [Does Country Music Drink More Than Other Genres?](https://towardsdatascience.com/does-country-music-drink-more-than-other-genres-a21db901940b)
+-  [49 Years of Lyrics: Why So Angry?](https://towardsdatascience.com/49-years-of-lyrics-why-so-angry-1adf0a3fa2b4)
