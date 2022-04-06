@@ -33,9 +33,13 @@ The dataset from Kaggle has high quality since it origins from Billboard megazin
 #### Genius
 
 #### Wikipedia
+We used Wikipedia and its pages dedicated to the last 3 decades from 2000s to select 15 of the most major events that had a big impact on the world. The most striking keywords related to each event have been included. The data concocted in this way can be found in `events.JSON`. 
 
 #### Spotify API
+The Spotify API supplies JSON metadata about sounds, albums, artists and users. The Web API gives also the possibility to include 30s audio previews which may be useful in our project. 
 
+#### Google Trends
+The interest of the web users across time can be tracked with Google Trends. For this reason, for each event, we downloaded monthly trends statistics in USA from 2004 until today.  
 
 
 ### Problematic
