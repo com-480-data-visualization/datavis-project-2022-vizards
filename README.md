@@ -77,3 +77,5 @@ Here is a list of preliminary questions we would like to answer in EDA:
 -  [Sentiment analysis on hip-hop lyrics](https://github.com/Hugo-Nattagh/2017-Hip-Hop)
 -  [Does Country Music Drink More Than Other Genres?](https://towardsdatascience.com/does-country-music-drink-more-than-other-genres-a21db901940b)
 -  [49 Years of Lyrics: Why So Angry?](https://towardsdatascience.com/49-years-of-lyrics-why-so-angry-1adf0a3fa2b4)
+
+Forementioned pages examine specific lyrics in both semantic and sentiment aspect. They will serve as stepping stones for a broader analysis trying to make a link between the music industry and the socio-economic events. 
