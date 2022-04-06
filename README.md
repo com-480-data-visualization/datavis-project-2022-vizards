@@ -31,6 +31,7 @@ Metadata:
 The dataset from Kaggle has high quality since it origins from Billboard megazine. However, to analyse the music from 2000 to 2022, we find that the data from 06.11.2021 to 31.12.2021 are missing, and so we add the missing entries by using the Python API billboard.py to retreive the music charts from Billboard.com.
 
 #### Genius
+Genius API has been used to get the lyrics associated to each sound of the prior dataset. 
 
 #### Wikipedia
 We used Wikipedia and its pages dedicated to the last 3 decades from 2000s to select 15 of the most major events that had a big impact on the world. The most striking keywords related to each event have been included. The data concocted in this way can be found in `events.JSON`. 
