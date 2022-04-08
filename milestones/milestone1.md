@@ -29,7 +29,7 @@ In the end, we want to create an interactive website that gives an overview of t
 
 Please find our EDA in the following links to the notebooks and some interesting findings. 
 
-1. [Billboard dataset (notebook)](/eda/billboard.ipynb)
+1. [Billboard dataset (Notebook 1)](/eda/billboard.ipynb)
 - from 2000 to 2021, there were 9316 distinct songs on the charts 
 - the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
 - the dataset contains 4238 distinct artists 
@@ -38,7 +38,7 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 <img src="img/1.png" alt="drawing" width="400"/>
 
 
-2. [Lyrics dataset (notebook)](/eda/lyrics.ipynb)
+2. [Lyrics dataset (Notebook 2)](/eda/lyrics.ipynb)
 - Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
 - Song title length
     - longest: "My City Of Ruins (Benefiting Artists For Peace And Justice Haiti Relief) [Live From The Kennedy Center Honors]" by Eddie Vedder
@@ -48,14 +48,14 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 
 <img src="img/2.png" alt="drawing" width="400"/>
 
-3. [Genre dataset](/eda/artist_genres.json)
+3. [Genre dataset (Notebook 3)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
 - We look at the relationship between different genres:
   - Each artist is involved in many genres/subgenres. 
   - By connecting these on a graph, we can obtain a solid view of the relationship between different genres. 
 - We’ll later aggregate the data so that only the most striking genres appear in the visualisation.
 
 
-4. [Trends dataset](/data/trends.csv)
+4. [Trends dataset (Notebook 3)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
 - Paul Walker and Donald Trump are the most popular queries. United States has more data entries than any location (even Global). 
 - Kaggle Dataset will be useful to detect major trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
 
