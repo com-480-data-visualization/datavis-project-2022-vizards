@@ -54,6 +54,7 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
   - By connecting these on a graph, we can obtain a solid view of the relationship between different genres. 
 - We’ll later aggregate the data so that only the most striking genres appear in the visualisation.
 
+<img src="img/circular_genres.png" alt="drawing" width="400"/>
 
 4. [Trends dataset (Notebook 3)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
 - Paul Walker and Donald Trump are the most popular queries. United States has more data entries than any location (even Global). 
