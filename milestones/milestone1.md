@@ -35,7 +35,7 @@ Please find our EDA in the following links to the notebooks and some interesting
 - the dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
 
-<img src="1.png" alt="drawing" width="400"/>
+<img src="img/1.png" alt="drawing" width="400"/>
 
 
 2. [Lyrics dataset (notebook)](/eda/lyrics.ipynb)
@@ -46,7 +46,7 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 - most common word is "I" (132068 occurrences) 
 - songs are more negative (7823 songs) than positive (5542 songs)
 
-<img src="2.png" alt="drawing" width="400"/>
+<img src="img/2.png" alt="drawing" width="400"/>
 
 3. [Genre dataset](/eda/artist_genres.json)
 - relationship between different genres
