@@ -60,7 +60,7 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 - Paul Walker and Donald Trump are the most popular queries. United States has more data entries than any location (even Global). 
 - Kaggle Dataset will be useful to detect major trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
 
-
+<img src="img/3.png" alt="drawing" width="400"/>
 
 ## Related work
 
