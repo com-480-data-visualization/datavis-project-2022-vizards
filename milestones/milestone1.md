@@ -35,9 +35,9 @@ Please find our EDA in the following links to the notebooks and some interesting
 - The dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
 
-<img src="img/title_word_cloud.png" alt="drawing" width="400"/>
-
 *WordCloud for song titles*
+
+<img src="img/title_word_cloud.png" alt="drawing" width="400"/>
 
 2. [Lyrics dataset (lyrics.ipynb)](/eda/lyrics.ipynb)
 - Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
@@ -56,17 +56,21 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
   - By connecting these on a graph, we can obtain a solid view of the relationship between different genres. 
 - We’ll later aggregate the data so that only the most striking genres appear in the visualization.
 
+*Connection between Genres*
+
 <img src="img/circular_genres.png" alt="drawing" width="400"/>
 
-*Connection between Genres*
+
 
 4. [Trends dataset (events_and_genres.ipynb)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
 - Paul Walker and Donald Trump are the most popular queries. The United States has more data entries than any location (even Global). 
 - Kaggle Dataset will be helpful to detect significant trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
 
+*Popularity of keywords related to Twitter*
+
 <img src="img/trends.png" alt="drawing" width="400"/>
 
-*Popularity of keywords related to Twitter*
+
 
 
 ## Related work
