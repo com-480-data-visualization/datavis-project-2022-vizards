@@ -5,11 +5,11 @@ Last update: 08.04.2022
 ## Dataset 
 For our project, we used multiple datasets or created them independently. They will be explained in the following.
 
-- [Billboard "The Hot 100" Songs](/data/billboard.csv): This dataset is from [kaggle](https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs) and is a collection of "The Hot 100" charts released since its inception in 1958 until 06.11.2021. The dataset is preprocessed and ready to use (Usability score on kaggle 10/10). We will use the data from 2000 on; for this, we removed the data before that year. We added the missing weeks until 01.01.2022 since we need those weeks for later analysis.
+- [Billboard "The Hot 100" Songs](/data/billboard.csv): This dataset is from [kaggle](https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs) and is a collection of "The Hot 100" charts released since its inception in 1958 until 06.11.2021. The dataset is preprocessed and ready to use (Usability score on kaggle 10/10). We will use the data from 2000 on; we removed the data before that year. We added the missing weeks until 01.01.2022 since we need those weeks for later analysis.
 
 -  [Lyrics](/data/lyrics.csv): We did not find a comprehensive lyrics dataset that contains most of the lyrics of the Billboard dataset. We used the [Genius API](https://docs.genius.com/) to create the dataset on our own. If the API does not find the songs, we ignore them for now. We will add them manually during the project using sources such as [LyricFind](https://www.lyricfind.com/). 
 
-- [Genres](/eda/artist_genres.json) : Genres related to each artist have been scraped using the [MusicBrainz API](https://beta.musicbrainz.org/). 
+- [Genres](/data/artist_genres.json) : Genres related to each artist have been scraped using the [MusicBrainz API](https://beta.musicbrainz.org/). 
 
 - [Google Trends Dataset](/data/trends.csv): This dataset has been found on [kaggle](https://www.kaggle.com/datasets/dhruvildave/google-trends-dataset). It includes Google Trends data from 2001 until 2020 and groups them by region, category, year and rank. [pytrends](https://pypi.org/project/pytrends/) could also be useful in this project for more specific purposes. 
 
@@ -29,38 +29,45 @@ In the end, we want to create an interactive website that gives an overview of t
 
 Please find our EDA in the following links to the notebooks and some interesting findings. 
 
-1. [Billboard dataset (Notebook 1)](/eda/billboard.ipynb)
-- from 2000 to 2021, there were 9316 distinct songs on the charts 
-- the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
-- the dataset contains 4238 distinct artists 
+1. [Billboard dataset (billboard.ipynb)](/eda/billboard.ipynb)
+- From 2000 to 2021, there were 9316 distinct songs on the charts 
+- The most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
+- The dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
 
-<img src="img/1.png" alt="drawing" width="400"/>
+<img src="img/title_word_cloud.png" alt="drawing" width="400"/>
 
+*WordCloud for song titles*
 
-2. [Lyrics dataset (Notebook 2)](/eda/lyrics.ipynb)
+2. [Lyrics dataset (lyrics.ipynb)](/eda/lyrics.ipynb)
 - Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
 - Song title length
     - longest: "My City Of Ruins (Benefiting Artists For Peace And Justice Haiti Relief) [Live From The Kennedy Center Honors]" by Eddie Vedder
     - shortest: "8" by Billie Eilish
-- most common word is "I" (132068 occurrences) 
-- songs are more negative (7823 songs) than positive (5542 songs)
+- Most common word is "I" (132068 occurrences) 
+- Songs are more negative (7823 songs) than positive (5542 songs)
 
-<img src="img/2.png" alt="drawing" width="400"/>
+<img src="img/sentiment.png" alt="drawing" width="400"/>
 
-3. [Genre dataset (Notebook 3)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
+
+3. [Genre dataset (events_and_genres.ipynb)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
 - We look at the relationship between different genres:
   - Each artist is involved in many genres/subgenres. 
   - By connecting these on a graph, we can obtain a solid view of the relationship between different genres. 
-- We’ll later aggregate the data so that only the most striking genres appear in the visualisation.
+- We’ll later aggregate the data so that only the most striking genres appear in the visualization.
 
 <img src="img/circular_genres.png" alt="drawing" width="400"/>
 
-4. [Trends dataset (Notebook 3)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
-- Paul Walker and Donald Trump are the most popular queries. United States has more data entries than any location (even Global). 
-- Kaggle Dataset will be useful to detect major trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
+*Connection between Genres*
 
-<img src="img/3.png" alt="drawing" width="400"/>
+4. [Trends dataset (events_and_genres.ipynb)](https://github.com/com-480-data-visualization/datavis-project-2022-vizards/blob/main/eda/events_and_genres.ipynb)
+- Paul Walker and Donald Trump are the most popular queries. The United States has more data entries than any location (even Global). 
+- Kaggle Dataset will be helpful to detect significant trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
+
+<img src="img/trends.png" alt="drawing" width="400"/>
+
+*Popularity of keywords related to Twitter*
+
 
 ## Related work
 
@@ -68,12 +75,8 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 
 For the `billboard.csv` section, since it is downloaded from Kaggle, some basic analysis on rankings of the top artists and top songs can be found on Kaggle. However, since essentially we only want to get the song and artist name and do our further analysis on lyrics, analysis solely on rankings will not be our primal interest.
 
-With regards to the `lyrics.csv` section scraped from genius API, it is constructed by us and so we do not expect a lot of similar work to be found. Moreover, we restrict the scale of our exploration to the 21st century (2000-2022) and focus on top 100 songs on billboard, which makes the dataset more likely to be unique. [Billboard Top 25](https://github.com/christianmoya/BillboardTop25_NLP) analysis found on github built up several basic models on a dataset scraped from genious and Billboard.
+Regarding the `lyrics.csv` section scraped from genius API, it is constructed by us, so we do not expect a lot of similar work to be found. Moreover, we restrict the scale of our exploration to the 21st century (2000-2021) and focus on the top 100 songs on Billboard, which makes the dataset more likely to be unique. [Billboard Top 25](https://github.com/christianmoya/BillboardTop25_NLP) analysis found on GitHub built up several basic models on a dataset scraped from Genius and Billboard.
 
-
-**Originality of Approach**
-
-The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.
 
 **Inspiration**
 
@@ -85,5 +88,6 @@ We got great inspiration for visualization and implementation from the following
 
 - [Step by Step to Visualize Music Genres with Spotify API](https://towardsdatascience.com/step-by-step-to-visualize-music-genres-with-spotify-api-ce6c273fb827): Music genres are visualized using the [Spotify API](https://developer.spotify.com/documentation/web-api/). For us, it is an excellent resource for visualizations.
 
+**Originality of Approach**
 
-
+The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.

@@ -1,8 +1,11 @@
-pandas
-matplotlib
 langdetect
+matplotlib
+musicbrainzngs
+networkx
 nltk
+pandas
+PIL
+pytrends
+seaborn
 textblob
 wordcloud
-PIL
-seaborn
