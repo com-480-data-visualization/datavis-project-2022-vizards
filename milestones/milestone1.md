@@ -32,7 +32,6 @@ Please find our EDA in the following links to the notebooks and some interesting
 - the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
 - the dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
-
 ![worldcloud](1.png)
 
 2. [Lyrics dataset (notebook)](/eda/lyrics.ipynb)
