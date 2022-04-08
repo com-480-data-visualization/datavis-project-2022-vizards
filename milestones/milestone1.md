@@ -34,7 +34,9 @@ Please find our EDA in the following links to the notebooks and some interesting
 - the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
 - the dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
-![worldcloud](1.png)
+
+<img src="1.png" alt="drawing" width="400"/>
+
 
 2. [Lyrics dataset (notebook)](/eda/lyrics.ipynb)
 - Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
@@ -43,7 +45,8 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
     - shortest: "8" by Billie Eilish
 - most common word is "I" (132068 occurrences) 
 - songs are more negative (7823 songs) than positive (5542 songs)
-![worldcloud](2.png)
+
+<img src="2.png" alt="drawing" width="400"/>
 
 3. [Genre dataset](/eda/artist_genres.json)
 - relationship between different genres
