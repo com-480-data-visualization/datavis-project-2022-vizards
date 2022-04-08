@@ -1,0 +1,8 @@
+pandas
+matplotlib
+langdetect
+nltk
+textblob
+wordcloud
+PIL
+seaborn

@@ -3,11 +3,11 @@
 Last update: 08.04.2022
 
 ## Dataset 
-For our project we used multiple datasets or created them on our own. They will be explained in the following.
+For our project, we used multiple datasets or created them independently. They will be explained in the following.
 
-- Billboard "The Hot 100" Songs: This dataset is from [kaggle](https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs) and is a collection of "The Hot 100" charts released since its inception in 1958 until 06.11.2021. The dataset is already preprocessed and ready to use (Usability score on kaggle 10/10). We added the missing weeks until 01.01.2022, since we need those weeks for later analysis. We will use the data from the year 2000 on, for this we removed the data before that year.
+- [Billboard "The Hot 100" Songs](/data/billboard.csv): This dataset is from [kaggle](https://www.kaggle.com/datasets/dhruvildave/billboard-the-hot-100-songs) and is a collection of "The Hot 100" charts released since its inception in 1958 until 06.11.2021. The dataset is preprocessed and ready to use (Usability score on kaggle 10/10). We will use the data from 2000 on; for this, we removed the data before that year. We added the missing weeks until 01.01.2022 since we need those weeks for later analysis.
 
--  Lyrics: We did not found a comprehensive lyrics dataset which contains the most of the lyrics of the Billboard dataset. We used the [Genius API](https://docs.genius.com/) to create the dataset on our own. If there the lyrics is not find by the API, we are ignoring it for now. We will add them manually during the project by using sources such as [LyricFind](https://www.lyricfind.com/). 
+-  [Lyrics](/data/lyrics.csv): We did not find a comprehensive lyrics dataset that contains most of the lyrics of the Billboard dataset. We used the [Genius API](https://docs.genius.com/) to create the dataset on our own. If the API does not find the songs, we ignore them for now. We will add them manually during the project using sources such as [LyricFind](https://www.lyricfind.com/). 
 
 - Genre: TODO
 
@@ -23,21 +23,21 @@ In the end, we want to create an interactive website that gives an overview of t
 
 ## Exploratory Data Analysis
 
-Please find our EDA in the following the link to the notebooks and some intersting findings. 
+Please find our EDA in the following links to the notebooks and some interesting findings. 
 
-1. [Billboard dataset]()
-- from 2000 - 2021 there were 9316 distinct songs in the charts 
+1. [Billboard dataset](/eda/billboard.ipynb)
+- from 2000 to 2021, there were 9316 distinct songs on the charts 
 - the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
 - the dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
 
-2. [Lyrics dataset]()
-- Most frequent lyrics language after english (7840 titles) is spanish (144 titles)
+2. [Lyrics dataset](/eda/lyrics.ipynb)
+- Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
 - Song title length
     - longest: "My City Of Ruins (Benefiting Artists For Peace And Justice Haiti Relief) [Live From The Kennedy Center Honors]" by Eddie Vedder
     - shortest: "8" by Billie Eilish
 - most common word is "I" (132068 occurrences) 
-- songs are more negative (7823 songs) then positive (5542 songs)
+- songs are more negative (7823 songs) than positive (5542 songs)
 
 3. [Genre dataset]()
 
@@ -46,12 +46,12 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 
 ## Related work
 
-We got great inspiration, for visualization and implementation from following projects.
+We got great inspiration for visualization and implementation from the following projects.
 
--  [Textual analysis of popular country music](https://www.johnwmillr.com/trucks-and-beer/): A project to analyze country music in depth and find more not so obvious correlation between the artist and lyrics. For example which artist mentions trucks most often in there songs. Also it is a nice resource about story telling with data.
+-  [Textual analysis of popular country music](https://www.johnwmillr.com/trucks-and-beer/): A project to analyze country music in-depth and find more not so apparent correlations between the artist and lyrics. For example, which artist mentions trucks most often in their songs. Also, it is an excellent resource for storytelling with data.
 
--  [49 Years of Lyrics: Why So Angry?](https://towardsdatascience.com/49-years-of-lyrics-why-so-angry-1adf0a3fa2b4): Here the lyrics from 1970 - 2018 are exemined in a sentimental analysis. It gives us useful hints about text processing and sentiment analysis.
+-  [49 Years of Lyrics: Why So Angry?](https://towardsdatascience.com/49-years-of-lyrics-why-so-angry-1adf0a3fa2b4): Here, the lyrics from 1970 - 2018 are examined in sentimental analysis. It gives us valuable hints about text processing and sentiment analysis.
 
-- [Step by Step to Visualize Music Genres with Spotify API](https://towardsdatascience.com/step-by-step-to-visualize-music-genres-with-spotify-api-ce6c273fb827): Music genres are visualized using the [Spotify API](https://developer.spotify.com/documentation/web-api/). For us it is a nice resource for the visualizations and for the usage of the Spotify API-
+- [Step by Step to Visualize Music Genres with Spotify API](https://towardsdatascience.com/step-by-step-to-visualize-music-genres-with-spotify-api-ce6c273fb827): Music genres are visualized using the [Spotify API](https://developer.spotify.com/documentation/web-api/). For us, it is an excellent resource for visualizations.
 
 The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.
