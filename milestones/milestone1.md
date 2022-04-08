@@ -52,6 +52,17 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 
 ## Related work
 
+**Work that has been done**
+
+For the `billboard.csv` section, since it is downloaded from Kaggle, some basic analysis on rankings of the top artists and top songs can be found on Kaggle. However, since essentially we only want to get the song and artist name and do our further analysis on lyrics, analysis solely on rankings will not be our primal interest.
+
+With regards to the `lyrics.csv` section scraped from genius API, it is constructed by us and so we do not expect a lot of similar work to be found. Moreover, we restrict the scale of our exploration to the 21st century (2000-2022) and focus on top 100 songs on billboard, which makes the dataset more likely to be unique. [Billboard Top 25](https://github.com/christianmoya/BillboardTop25_NLP) analysis found on github built up several basic models on a dataset scraped from genious and Billboard.
+
+
+**Originality of Approach**
+The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.
+
+**Inspriration**
 We got great inspiration for visualization and implementation from the following projects.
 
 -  [Textual analysis of popular country music](https://www.johnwmillr.com/trucks-and-beer/): A project to analyze country music in-depth and find more not so apparent correlations between the artist and lyrics. For example, which artist mentions trucks most often in their songs. Also, it is an excellent resource for storytelling with data.
@@ -60,4 +71,5 @@ We got great inspiration for visualization and implementation from the following
 
 - [Step by Step to Visualize Music Genres with Spotify API](https://towardsdatascience.com/step-by-step-to-visualize-music-genres-with-spotify-api-ce6c273fb827): Music genres are visualized using the [Spotify API](https://developer.spotify.com/documentation/web-api/). For us, it is an excellent resource for visualizations.
 
-The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.
+
+
