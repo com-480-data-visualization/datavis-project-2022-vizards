@@ -49,10 +49,16 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 <img src="img/2.png" alt="drawing" width="400"/>
 
 3. [Genre dataset](/eda/artist_genres.json)
-- relationship between different genres
+- We look at the relationship between different genres:
+  - Each artist is involved in many genres/subgenres. 
+  - By connecting these on a graph, we can obtain a solid view of the relationship between different genres. 
+- We’ll later aggregate the data so that only the most striking genres appear in the visualisation.
+
 
 4. [Trends dataset](/data/trends.csv)
-- evolution of trends
+- Paul Walker and Donald Trump are the most popular queries. United States has more data entries than any location (even Global). 
+- Kaggle Dataset will be useful to detect major trends but we’ll probably use pytrends to explore the search popularity of specific keywords on a deeper level. 
+
 
 
 ## Related work
