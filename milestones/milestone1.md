@@ -60,9 +60,11 @@ With regards to the `lyrics.csv` section scraped from genius API, it is construc
 
 
 **Originality of Approach**
+
 The original thing about our project is that we want to identify trends without focusing on one artist or genre and also put this analysis in a socio-social context if one exists.
 
-**Inspriration**
+**Inspiration**
+
 We got great inspiration for visualization and implementation from the following projects.
 
 -  [Textual analysis of popular country music](https://www.johnwmillr.com/trucks-and-beer/): A project to analyze country music in-depth and find more not so apparent correlations between the artist and lyrics. For example, which artist mentions trucks most often in their songs. Also, it is an excellent resource for storytelling with data.
