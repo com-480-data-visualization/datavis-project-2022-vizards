@@ -27,19 +27,22 @@ In the end, we want to create an interactive website that gives an overview of t
 
 Please find our EDA in the following links to the notebooks and some interesting findings. 
 
-1. [Billboard dataset](/eda/billboard.ipynb)
+1. [Billboard dataset (notebook)](/eda/billboard.ipynb)
 - from 2000 to 2021, there were 9316 distinct songs on the charts 
 - the most popular song during the period is Blinding Lights, performed by The Weeknd, which stayed on Billboard for 90 weeks. 
 - the dataset contains 4238 distinct artists 
 the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake (104 songs) and Kanye West (51 songs)
 
-2. [Lyrics dataset](/eda/lyrics.ipynb)
+![worldcloud](1.png)
+
+2. [Lyrics dataset (notebook)](/eda/lyrics.ipynb)
 - Most frequent lyrics language after English (7840 titles) is Spanish (144 titles)
 - Song title length
     - longest: "My City Of Ruins (Benefiting Artists For Peace And Justice Haiti Relief) [Live From The Kennedy Center Honors]" by Eddie Vedder
     - shortest: "8" by Billie Eilish
 - most common word is "I" (132068 occurrences) 
 - songs are more negative (7823 songs) than positive (5542 songs)
+![worldcloud](2.png)
 
 3. [Genre dataset](/eda/artist_genres.json)
 - relationship between different genres
