@@ -9,9 +9,11 @@ For our project, we used multiple datasets or created them independently. They w
 
 -  [Lyrics](/data/lyrics.csv): We did not find a comprehensive lyrics dataset that contains most of the lyrics of the Billboard dataset. We used the [Genius API](https://docs.genius.com/) to create the dataset on our own. If the API does not find the songs, we ignore them for now. We will add them manually during the project using sources such as [LyricFind](https://www.lyricfind.com/). 
 
-- Genre: TODO
+- [Genres](/eda/artist_genres.json) : Genres related to each artist have been scraped using the [MusicBrainz API](https://beta.musicbrainz.org/). 
 
-- Google Trends: TODO
+- [Google Trends Dataset](/data/trends.csv): This dataset has been found on [kaggle](https://www.kaggle.com/datasets/dhruvildave/google-trends-dataset). It includes Google Trends data from 2001 until 2020 and groups them by region, category, year and rank. 
+
+
 
 ## Problematic
 
@@ -39,9 +41,11 @@ the 3 most popular artists in this timeframe are Taylor Swift (136 songs), Drake
 - most common word is "I" (132068 occurrences) 
 - songs are more negative (7823 songs) than positive (5542 songs)
 
-3. [Genre dataset]()
+3. [Genre dataset](/eda/artist_genres.json)
+- relationship between different genres
 
-4. [Trends dataset]()
+4. [Trends dataset](/data/trends.csv)
+- evolution of trends
 
 
 ## Related work
