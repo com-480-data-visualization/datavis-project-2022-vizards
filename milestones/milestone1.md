@@ -11,7 +11,9 @@ For our project, we used multiple datasets or created them independently. They w
 
 - [Genres](/eda/artist_genres.json) : Genres related to each artist have been scraped using the [MusicBrainz API](https://beta.musicbrainz.org/). 
 
-- [Google Trends Dataset](/data/trends.csv): This dataset has been found on [kaggle](https://www.kaggle.com/datasets/dhruvildave/google-trends-dataset). It includes Google Trends data from 2001 until 2020 and groups them by region, category, year and rank. 
+- [Google Trends Dataset](/data/trends.csv): This dataset has been found on [kaggle](https://www.kaggle.com/datasets/dhruvildave/google-trends-dataset). It includes Google Trends data from 2001 until 2020 and groups them by region, category, year and rank. Also [pytrends](https://pypi.org/project/pytrends/) could be useful in this project for more specific purposes. 
+
+
 
 
 
