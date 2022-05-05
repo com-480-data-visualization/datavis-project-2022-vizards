@@ -25,7 +25,7 @@
             .append("g")
             .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
-        d3.csv("baby_top10.csv").then(function (data) {
+        d3.csv("data/baby_top10.csv").then(function (data) {
             var max = d3.max(data, function (d) { return d.rank })
             // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
 

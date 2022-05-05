@@ -49,7 +49,7 @@
     
 
         function updateData(n) {
-            d3.csv("/data/word_count.csv").then(function (data) {
+            d3.csv("data/word_count.csv").then(function (data) {
                 data = data.filter(function (a) {
                     return a.year == n
                 })
