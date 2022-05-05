@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://naver.github.io/billboard.js/release/latest/dist/billboard.css" rel="stylesheet">
+    <script src="https://naver.github.io/billboard.js/release/latest/dist/billboard.pkgd.js"></script>
+</head>
+
+<body>
+    <div id="radarChart"></div>
+    <script>
+        var chart = bb.generate({
+            data: {
+                columns: [["x", "danceability", "energy", "speechiness", "acousticness"],
+                ["Kanye West", "0.649578947368421", "0.6939473684210526", "0.19194736842105262", "0.16519194736842105"],
+                ["Taylor Swift", "0.600467741935484", "0.6524999999999999", "0.06272096774193547", "0.1522176935483871"],
+                ["Blink-182", "0.5026666666666667", "0.879", "0.05653333333333333", "0.0038846666666666665"]],
+                x: "x",
+                    type: "radar" 
+            },
+            radar: {
+                axis: {
+                    max: 1
+                },
+                level: {
+                    depth: 4
+                },
+                direction: {
+                    clockwise: true
+                }
+            },
+            bindto: "#radarChart"
+        });
+    </script>
+</body>
+
+</html>
