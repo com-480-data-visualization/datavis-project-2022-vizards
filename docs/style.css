@@ -32,7 +32,7 @@ body {
     overflow-y: scroll;
   }
 h1 {
-    color: #ff8069;
+    color: #3482dc;
     font-size: 2em;
     font-weight: 700;
     text-align: center;
@@ -41,7 +41,7 @@ h1 {
 
 h3 {
     background-color: #ffffff;
-    color: #ec823b;
+    color: #5a3dced0;
     font-size: 1.5em;
     font-weight: 700;
     text-align: left;
@@ -61,7 +61,7 @@ h3 {
 
 h4 {
     background-color: #ffffff;
-    color: #ddb144;
+    color: #bb71cf;
     font-size: 1.2em;
     font-weight: 700;
     text-align: left;
