@@ -50,6 +50,7 @@ We used Highcharts for the animated graph. A score has been assigned to each sub
 
 
 **[Top 100 Collaborative Artists Network](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/charts/collaboration_network.html)**
+
 <img src="img/m2_network.png" alt="drawing" width="400"/>
 
 The Top 100 most collaborative artists are extracted and shown on a network graph with all the collaborations between them. 
