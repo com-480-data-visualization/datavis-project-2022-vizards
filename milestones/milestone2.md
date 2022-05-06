@@ -46,7 +46,11 @@ For the 10 highly ranked artists on Billboard, we generate a line chart to see h
 
 Music subgenres can be grouped into more significant genre categories. The goal here was to visualize the most popular genres and how much each subgenre contributes to its corresponding category. 
 
+<<<<<<< HEAD
 We used Highcharts for the animated graph. A score has been assigned to each subgenre according to its number of occurrences and its rank on Billboard linearly: the higher the subgenre occurrence rank, the higher the score. 
+=======
+We used Highcharts for the animated graph. A score has been assigned to each subgenre according to its number of occurrences and its rank on Billboard in a linear fashion : the higher the subgenre occurrence rank, the higher the score. 
+>>>>>>> 581e3dbc6d37a99cbb5ef7b3881955551dd249ae
 
 
 **[Top 100 Collaborative Artists Network](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/charts/collaboration_network.html)**
@@ -87,6 +91,7 @@ With this visualization, we compare the artists' songs against each other. The b
 
 ## Tools and Lectures
 We made use of the following tools:
+<<<<<<< HEAD
 - [D3.js](https://d3js.org/):
     - D3.js was used for the line chart for Sentiment and Subjectivity, the lollipop chart for the Most Common Words, and the heatmap of how often a word occurred in the top 10.
     - Use D3.js official template on observablehq.com for creating a collapsible tree for genre, artists and their work.
@@ -106,3 +111,11 @@ Those Lectures and Exercises were helpful to solve our problems:
 
 ## MVP
 Our website is something of an MVP. We want to create a simple, not overloaded website to present our results. Of course, all visualizations will be unified. 
+=======
+- [d3.js]()
+- [billboard.js]()
+- [Highcharts](https://www.highcharts.com/)
+
+## MVP
+Our website is something of a MVP. We want to create a simple not overloaded website to present our results. Of course all visualizations will be unified. 
+>>>>>>> 581e3dbc6d37a99cbb5ef7b3881955551dd249ae
