@@ -58,18 +58,22 @@ The Top 100 most collaborative artists are extracted and shown on a network grap
 ## Qualitative Analysis
 
 **[Sentiment and Subjectivity](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/lyrics/sent_subj.html)**
+
 <img src="img/m2_sentvssubj.jpg" alt="drawing" width="400"/>
 We want to show how the music changed over years. A line chart which is showing the sentiment and subjectivity change is a intuitive way to show it. For the final version we want to explore the changes and link them to social events, which could have caused the change. The user should have the possibility to explore them interactively. 
 
 **[Most common words](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/lyrics/word_count.html)**
+
 <img src="img/m2_wordoccurence.jpg" alt="drawing" width="400"/>
 It is insightful to see how the most common words changed through the time. The lollipop is a simple way to display the ranking of the words, by adding the year slider it is possible to see the change over time and see interesting changes. For example HipHop become mainstream around 2016 by this time also the use of the "N word" increased. Based on this visualization we a parallel coordinates chart to show linkage between the words. 
 
 **[How often a word occurred in the top 10 songs](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/lyrics/heatmap.html)**
+
 <img src="img/m2_heatmap.jpg" alt="drawing" width="400"/>
 After we get insights over the most common words its also interesting, so see how the usage changes in the top 10 over the years. The heatmap show the mean of the usage of the selected word in all songs, which ranked the displayed rank. For example for rank 1 it's the mean of all chart hits in this year. Plus we display the song with most occurrences. We will add more words and a dropdown to select.
 
 **[Song Insights](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/lyrics/radar.html)**
+
 <img src="img/m2_radar.jpg" alt="drawing" width="400"/>
 
 With this visualization we find to compare the song of the artists against each other. The benefit here is that the user can compare multiple artists and see directly how they songs compare to each other. Right now we have only three artists and for the final version we want to give the user the possibility to decide the artists. Also we want to create such a visualization for the change over the years. *Go to the website and checkout if Kanye or Taylor are more danceable.*
