@@ -46,7 +46,7 @@ For the 10 highly ranked artists on Billboard, we generate a linechart to see ho
 
 Music subgenres can be grouped into larger genre categories. The goal here was to visualize which are the most popular genres and how much each subgenre contributes to its corresponding category. 
 
-We used Highcharts for the animated graph. A score has been assigned to each subgenre according to its number of occurrences and its rank in the Billboard in a linear fashion : the higher the subgenre occurrence rank, the higher the score. 
+We used Highcharts for the animated graph. A score has been assigned to each subgenre according to its number of occurrences and its rank on Billboard in a linear fashion : the higher the subgenre occurrence rank, the higher the score. 
 
 
 **[Top 100 Collaborative Artists Network](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/charts/collaboration_network.html)**
