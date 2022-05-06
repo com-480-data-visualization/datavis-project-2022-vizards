@@ -82,6 +82,7 @@ With this visualization we find to compare the song of the artists against each 
 We made use of the following tools:
 - [d3.js]()
 - [billboard.js]()
+- [Highcharts](https://www.highcharts.com/)
 
 ## MVP
 Our website is something of a MVP. We want to create a simple not overloaded website to present our results. Of course all visualizations will be unified. 
