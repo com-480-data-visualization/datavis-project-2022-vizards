@@ -1,6 +1,6 @@
 # Milestone 2
 
-Last Update: 05.05.2022
+Last Update: 06.05.2022
 
 Check out our cool and partially interactive visualizations [here](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/).
 
@@ -39,3 +39,17 @@ Don't know how to pick a good name for your song? This wordCloud animation might
 <img src="img/m2_linechart.png" alt="drawing" width="400"/>
 
 For the 10 highly ranked artists on Billboard, we generate a linechart to see how their popularity was changed over year. As we can see, although Taylor Swift is the musician with most work recognised over time, Drake on the other hand reached the highest ever number of songs on Billboard in 2018. 
+
+**[Genres Popularity Bubble Chart](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/charts/genres_bubbles.html)**
+
+<img src="img/m2_bubbles.PNG" alt="drawing" width="400"/>
+
+Subgenres can be grouped into larger genre categories. The goal was to visualize which are the most popular genres and how much each subgenre contributes to its given category. 
+
+We used Highcharts for the animated graph. A score has been assigned to each subgenre according to its number of occurrences and its rank in the Billboard in a linear fashion : higher is the subgenre occurrence rank, higher is the given score. 
+
+
+**[Top 100 Collaborative Artists Network](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/charts/collaboration_network.html)**
+<img src="img/m2_network.png" alt="drawing" width="400"/>
+
+The Top 100 most collaborative artists are extracted and shown on a network graph with all the collaborations between them. 
