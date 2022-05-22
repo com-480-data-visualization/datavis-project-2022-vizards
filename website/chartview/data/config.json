@@ -15,11 +15,11 @@
       },
       "detail": {
         "size": 1024,
-        "url": "data/pic_data/1024/"
+        "url": "data"
       },
       "big": {
         "size": 4096,
-        "url": "data/pic_data/4096/"
+        "url": "data"
       }
     }
   },
