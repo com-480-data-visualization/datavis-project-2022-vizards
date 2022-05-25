@@ -1,0 +1,32 @@
+---
+title: "VisNetwork"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r cars}
+require(visNetwork)
+# minimal example
+nodes <- jsonlite::fromJSON("nodes.json")
+edges <- jsonlite::fromJSON("edges.json")
+
+
+visNetwork(nodes, edges, height = "700px", width = "100%") %>%
+  visOptions(selectedBy = "group", 
+             highlightNearest = FALSE, 
+             nodesIdSelection = FALSE) %>%
+  visPhysics(solver = "forceAtlas2Based", 
+            forceAtlas2Based = list(gravitationalConstant = -500))  %>%
+  visLegend(width = 0.1, position = "right", main = "Genre")
+
+```
+
+
+```{r pressure, echo=FALSE}
+visSave(v, "../docs/charts/collaboration_network2.html", selfcontained = TRUE, background = "white")
+```
+
