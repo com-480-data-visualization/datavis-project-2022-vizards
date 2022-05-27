@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="120" height="120" src="docs/imgs/logo.svg">
+  <img width="120" height="120" src="docs/src/imgs/logo.svg">
 </p>
 
 # 22 years of music and society
