@@ -8,7 +8,7 @@
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <h1>Top 100 Collaborative Artists Network</h1>
+  <h1>Top 50 Most Collaborative Artists Network</h1>
 
     <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
@@ -26,9 +26,24 @@
 
   <style>
        #mynetwork {
-    width: 600px;
-    height: 400px;
+    width: 508px;
+    height: 508px;
     border: 1px solid lightgray;
+}
+
+#wrapper {
+    display: flex;
+}
+#div1 {
+    display: inline-block;
+    width:120px;
+    height:120px;
+}
+#div2 {
+    flex: 1;
+    display: inline-block;
+    width:160px;
+    height:160px;
 }
   </style>
 
@@ -41,9 +56,15 @@
 
     <title> Vizards | Artists Collaboration Network </title> 
 
-<div id="mynetwork"></div>
+<div id="wrapper">
+  <div id="mynetwork">
+  <script type="text/javascript" src="js/collabs.js"></script>  
+  </div>
+  <div id="sec">
+  <img src="genres.png" alt="Genres" style="width:114px;height:508px;">
+  </div>
+</div>
 
-    <script type="text/javascript" src="js/collabs.js"></script>
 
   <script>
     if (window.parent && window.parent.parent){

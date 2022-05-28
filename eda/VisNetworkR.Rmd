@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r cars}
 require(visNetwork)
-# minimal example
+
 nodes <- jsonlite::fromJSON("nodes.json")
 edges <- jsonlite::fromJSON("edges.json")
 
@@ -29,6 +29,6 @@ v
 
 
 ```{r pressure, echo=FALSE}
-visSave(v, "../docs/charts/collaboration_network2.html", selfcontained = TRUE, background = "white")
+visSave(v, "../docs/old/charts/collaboration_network2.html", selfcontained = FALSE, background = "white")
 ```
 
