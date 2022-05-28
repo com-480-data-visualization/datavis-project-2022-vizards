@@ -1452,3 +1452,25 @@ section {
     left: 367px;
     font-weight: 500;
 }
+
+.label {
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .hiphop {background-color: #6ba6f4;} 
+  .pop {background-color: #fff800; color:black;} 
+  .reggae {background-color: #7BE141;} 
+  .electro {background-color: #e96cf3} 
+  .rock {background-color: #ab84e1} 
+  .rnb {background-color: #fb4b4f} 
+
+  .myDiv{
+    display: grid;
+    justify-content: center;
+
+  }
