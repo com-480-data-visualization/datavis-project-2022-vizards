@@ -7,13 +7,34 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.css">
 
-  <h1>Top 100 Most Collaborative Artists Network</h1>
+  <style>
+    h2 {
+      display: block;
+      font-size: 1.5em;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+  }
 
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  body {
+    background-color: #fff;
+    font-family: 'PT Serif', Georgia, Times, serif;
+    color: #2a2a2a;
+    margin: 0;
+    padding: 0;
+}
+</style>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.css">
+
+  <h2>Top 100 Most Collaborative Artists Network</h2>
+
 
   <style id="compiled-css" type="text/css">
               #mynetwork {
@@ -21,50 +42,40 @@
             height: 500px;
             border: 1px solid lightgray;
         }
-    /* EOS */
+
+    .label {
+      color: white;
+      padding: 8px;
+      margin-top: 5px;
+      margin-left: 2px;
+      display: inline-block;
+    }
+    .hiphop {background-color: #6ba6f4;} 
+    .pop {background-color: #fff800; color:black;} 
+    .reggae {background-color: #7be141;} 
+    .electro {background-color: #e96cf3} 
+    .rock {background-color: #ab84e1} 
+    .rnb {background-color: #fb4b4f} 
   </style>
-
-  <style>
-       #mynetwork {
-    width: 508px;
-    height: 508px;
-    border: 1px solid lightgray;
-}
-
-#wrapper {
-    display: flex;
-}
-#div1 {
-    display: inline-block;
-    width:120px;
-    height:120px;
-}
-#div2 {
-    flex: 1;
-    display: inline-block;
-    width:160px;
-    height:160px;
-}
-  </style>
-
-  <script id="insert"></script>
-
- 
 
 </head>
+
+
+
 <body>
 
-    <title> Vizards | Artists Collaboration Network </title> 
-
-<div id="wrapper">
-  <div id="mynetwork">
-  <script type="text/javascript" src="js/collabs.js"></script>  
-  </div>
-  <div id="sec">
-  <img src="genres.png" alt="Genres" style="width:114px;height:508px;">
-  </div>
+<title> Vizards | Artists Collaboration Network </title> 
+  
+<div id="mynetwork">
+<script type="text/javascript" src="js/collabs.js"></script>  
 </div>
-
+  
+<span class="label hiphop">Hip-Hop/Rap</span>
+<span class="label pop">Pop</span>
+<span class="label rock">Rock</span>
+<span class="label rnb">R&B</span>
+<span class="label reggae">Reggae</span>
+<span class="label electro">Electronic/Dance</span>
 
   <script>
     if (window.parent && window.parent.parent){
@@ -76,7 +87,6 @@
 
     window.name = "result"
   </script>
-
 
 </body>
 </html>
