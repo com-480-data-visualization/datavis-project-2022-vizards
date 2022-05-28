@@ -1,25 +1,25 @@
 {
   "project": {
-    "name": "Van Gogh",
+    "name": "Billboard",
     "quality": 1
  },
   "loader": {
-    "info": "https://vikusviewer.fh-potsdam.de/data/vangogh/info.md",
+    "info": "data/info.md",
     "timeline": "data/df_timeline_ours1.csv",
-    "items": "data/df_data_proper_name.csv",
-    "tsne": "data/tsne_full.csv",
+    "items": "data/df_1015rows_reduced_cols.csv",
+    "tsne": "data/tsne.csv",
     "textures": {
       "medium": {
         "size": 256,
-        "url": "data/pic_data/sprites/spritesheet.json"
+        "url": "data/new_pic_data/sprites/spritesheet.json"
       },
       "detail": {
         "size": 1024,
-        "url": "data"
+        "url": "data/new_pic_data/1024"
       },
       "big": {
         "size": 4096,
-        "url": "data"
+        "url": "data/new_pic_data/4096"
       }
     }
   },
