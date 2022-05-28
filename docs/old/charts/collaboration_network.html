@@ -16,6 +16,8 @@
     h2 {
       display: block;
       font-size: 1.5em;
+      margin:auto;
+      text-align: center;
       margin-block-start: 0.83em;
       margin-block-end: 0.83em;
       margin-inline-start: 0px;
@@ -38,25 +40,37 @@
 
   <style id="compiled-css" type="text/css">
               #mynetwork {
-            width: 500px;
-            height: 500px;
+            width: 800px;
+            height: 450px;
             border: 1px solid lightgray;
+            margin: auto;
         }
+  </style>
 
-    .label {
+<style>
+      .label {
       color: white;
       padding: 8px;
-      margin-top: 5px;
-      margin-left: 2px;
       display: inline-block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      vertical-align: middle;
     }
     .hiphop {background-color: #6ba6f4;} 
     .pop {background-color: #fff800; color:black;} 
-    .reggae {background-color: #7be141;} 
+    .reggae {background-color: #7BE141;} 
     .electro {background-color: #e96cf3} 
     .rock {background-color: #ab84e1} 
     .rnb {background-color: #fb4b4f} 
-  </style>
+
+    .myDiv{
+      display: grid;
+      justify-content: center;
+
+    }
+</style>
+  
 
 </head>
 
@@ -69,13 +83,34 @@
 <div id="mynetwork">
 <script type="text/javascript" src="js/collabs.js"></script>  
 </div>
+
+<div class="myDiv"> 
   
+  <table style="width: 100%; margin: auto;">
+    <td style="width:100%;margin:auto;">
 <span class="label hiphop">Hip-Hop/Rap</span>
 <span class="label pop">Pop</span>
 <span class="label rock">Rock</span>
 <span class="label rnb">R&B</span>
 <span class="label reggae">Reggae</span>
 <span class="label electro">Electronic/Dance</span>
+    </td>
+</table>
+
+</div>
+
+<br> 
+
+<style > 
+p{ 
+  margin:auto;
+  text-align: center;
+  width: 800px;
+}
+</style> 
+
+<p>
+  Unsurprisingly, the hip-hop/rap world dominates the music scene by its number of collaborations. On top 3 of the most collaborative artists, we find in order Lil Wayne, Drake and Nicki Minaj. </p>
 
   <script>
     if (window.parent && window.parent.parent){
