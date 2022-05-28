@@ -38,7 +38,7 @@
             return radiusScale(d.radius)
             })
         .on('click', function(d){
-            console.log(d)
+            // console.log(d)
             })
 
         defs.selectAll(".bubble-pattern")

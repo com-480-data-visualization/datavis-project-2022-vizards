@@ -1,17 +1,21 @@
-function updateWordChart() {    
+function updateWordChart() {
 
     w = 950;
     var xScale = d3.scaleLinear()
         .domain([0, 5000])
         .range([10, 550]);
+    var xScaleL = d3.scaleLinear()
+        .domain([0, 35000])
+        .range([10, 550]);
     // Parse the Data
-    d3.csv("src/data/word_count.csv").then(function (data) { 
+    d3.csv("src/data/word_count.csv").then(function (data) {
         var year = document.getElementById("wordtable_options").value;
-        data = data.filter(function(d) {
-            d3.selectAll(".chart-data").remove(); 
+        data = data.filter(function (d) {
+            d3.selectAll(".chart-data").remove();
             return d.year == "20" + year
         })
-      
+        console.log(data)
+
         // Add X axis
         data = data.sort((a, b) => d3.descending(+a.Value, +b.Value))
         var x = d3.scaleLinear()
@@ -57,7 +61,12 @@ function updateWordChart() {
             .transition()
             .duration(1000)
             .style("width", function (d) {
-                return xScale(d.Value) + "px";
+                if (year == 'all') {
+                    return xScaleL(d.Value) + "px";
+                } else {
+                    return xScale(d.Value) + "px";
+                }
+                
             });
 
         word.append("div")

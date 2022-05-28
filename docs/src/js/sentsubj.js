@@ -88,9 +88,9 @@ d3.csv("src/data/lyrics_sent_subj.csv").then(function (data) {
         // console.log(event)
 
         var x0 = x.invert(event.x)
-        console.log(event)
+        // console.log(event)
         i = sent_bisect(data, x0, 1)
-        console.log(i);
+        // console.log(i);
         selectedData = data[0]
         focus
             .style("left", (event.layerX) + "px")

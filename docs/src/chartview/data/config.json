@@ -5,8 +5,8 @@
  },
   "loader": {
     "info": "data/info.md",
-    "timeline": "data/df_timeline_ours1.csv",
-    "items": "data/df_1015rows_reduced_cols.csv",
+    "timeline": "data/timeline.csv",
+    "items": "data/data.csv",
     "tsne": "data/tsne.csv",
     "textures": {
       "medium": {
@@ -92,6 +92,12 @@
       {
         "name": "Id",
         "source": "_id",
+        "display": "column",
+        "type": "text"
+      },
+      {
+        "name": "Uri",
+        "source": "_uri",
         "display": "column",
         "type": "text"
       }

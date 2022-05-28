@@ -5,14 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Datavizard Site</title>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
     <link href="src/css/style.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.css">
+    <script src="https://unpkg.com/d3-simple-slider"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/highcharts-more.js"></script>  
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/export-data.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js"></script>
@@ -141,236 +140,388 @@
         <p>by DataVizards</p>
     </header>
 
-    
-    <figure class="highcharts-figure">
-        <div class="max-width-4 mx-auto">
-        <div id="container">
-            <div class="row">
-                <div class="col-md-6">
-                  <div id="container" style="width: 1100px; height: 500px;"></div>
-                  <script type="text/javascript" src="old/charts/js/highcharts.js"></script>
-                  <script src="old/charts/js/top_artist_line.js"></script> 
-                </div>
-              </div>
-        </div>
-        <p class="highcharts-description">
-            The line chart shows the trend of top 10 artists with most songs on Billboard over 23 years.  <br> 
-        </p>
-    </div>
-    </figure>     
-
     <div class="max-width-4 mx-auto">
         <div class="clearfix">
+            <figure class="highcharts-figure">
+                <div class="max-width-4 mx-auto">
+                    <div id="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div id="container" style="width: 1100px; height: 500px;"></div>
+                                <script type="text/javascript" src="old/charts/js/highcharts.js"></script>
+                                <script src="old/charts/js/top_artist_line.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="highcharts-description">
+                        The line chart shows the trend of top 10 artists with most songs on Billboard over 23 years.
+                        <br>
+                    </p>
+                </div>
+            </figure>
+
             <p>As the title is stating we want to time travel through music data for the past 22 years. Before we go
                 into the details of over 9000 songs, let us get a overview of the top songs for the past years. By
                 scrolling through the album covers you will get a feeling how they changed also over time. We shouldn't
                 forget that they are also really important. By clicking on one of the covers you can get detailed
                 information and listen to the song!</p>
             <div style="height: 50vh;">
-                <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer" style="border: none;"></iframe>  
+                <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
+                    style="border: none;"></iframe>
             </div>
             <p><i>PS: The similarity is based on the album covers.</i></p>
             <b>Before you dive deeper. Please note that every section will continue with a horizontal scroll 🥸</b>
 
-        </div>
-    </div>
 
-    <div class="max-width-4 mx-auto">
-        <h2>Genre</h2>
-            <iframe width="100%" height="559" frameborder="0"
-            src="https://observablehq.com/embed/@yirencao/collapsible-tree?cells=chart"></iframe>
-    </div>
 
-    
-    <section>
-        <div class="max-width-4 mx-auto">
-                <h2>Artists Collaboration Network</h2>
-                <div id="mynetwork" style="height:90vh">
-                    <script type="text/javascript" src="src/js/collabs.js" style="width: 800px;
+
+
+
+
+            <h2>Artists Collaboration Network</h2>
+            <div id="mynetwork" style="height:90vh">
+                <script type="text/javascript" src="src/js/collabs.js" style="width: 800px;
                     height: 450px;
                     border: 1px solid lightgray;
-                    margin-bottom: 20px;"></script>  
-                </div>
+                    margin-bottom: 20px;"></script>
+            </div>
 
-                <div class="myDiv"> 
-                    <table style="width: 100%; margin: auto;">
-                      <td style="width:100%;margin:auto;">
+            <div class="myDiv mt2">
+                <table style="width: 100%; margin: auto;">
+                    <td style="width:100%; margin:auto;">
                         <span class="label hiphop">Hip-Hop/Rap</span>
                         <span class="label pop">Pop</span>
                         <!--- <span class="label rock">Rock</span> -->
                         <span class="label rnb">R&B</span>
                         <span class="label reggae">Reggae</span>
                         <span class="label electro">Electronic/Dance</span>
-                      </td>
-                    </table>
-                </div>
+                    </td>
+                </table>
+            </div>
 
-                <p style="margin-top: 20px;"> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number of collaborations. 
-                    On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki Minaj. </p>
+            <p class="mt2"> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number
+                of collaborations.
+                On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki
+                Minaj. </p>
 
-                    <br>
+            <br>
 
         </div>
 
-    </section>
 
 
-    <section style="margin-top: 80px;" class="splide">
-        <div class="max-width-4 mx-auto">
-            <div class="clearfix">
-                <h2>Lyrics</h2>
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing along
-                                under the 🚿. Before we jump into the analysis do you can generate your own lyrics. For
-                                this we are using a markovchain and deep learning model</a>.</p>
-                            <div class="clearfix">
-                                <div class="col col-6">
-                                    <p>To generate the song please select an artist first. The lyrics will be generted in a style like the artist would write it.</p>
-                                    <select id="song_artist">
-                                        <option value="Backstreet Boys">Backstreet Boys</option>
-                                        <option value="Bob Dylan">Bob Dylan</option>
-                                        <option value="Bon Jovi">Bon Jovi</option>
-                                        <option value="Britney Spears">Britney Spears</option>
-                                        <option value="Bruce Springsteen">Bruce Springsteen</option>
-                                        <option value="Chris Brown">Chris Brown</option>
-                                        <option value="Christina Aguilera">Christina Aguilera</option>
-                                        <option value="Donna Summer">Donna Summer</option>
-                                        <option value="Drake">Drake</option>
-                                        <option value="Fabolous">Fabolous</option>
-                                        <option value="Glee">Glee</option>
-                                        <option value="Gordon Lightfoot">Gordon Lightfoot</option>
-                                        <option value="Gucci Mane">Gucci Mane</option>
-                                        <option value="Ice Cube">Ice Cube</option>
-                                        <option value="Indigo Girls">Indigo Girls</option>
-                                        <option value="Insane Clown Posse">Insane Clown Posse</option>
-                                        <option value="Kanye West">Kanye West</option>
-                                        <option value="Lady Gaga">Lady Gaga</option>
-                                        <option value="Lil Wayne">Lil Wayne</option>
-                                        <option value="LL Cool J">LL Cool J</option>
-                                        <option value="Mariah Carey">Mariah Carey</option>
-                                        <option value="Michael Jackson">Michael Jackson</option>
-                                        <option value="Miley Cyrus">Miley Cyrus</option>
-                                        <option value="Ne-Yo">Ne-Yo</option>
-                                        <option value="R. Kelly">R. Kelly</option>
-                                        <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
-                                        <option value="Rihanna">Rihanna</option>
-                                        <option value="Rod Stewart">Rod Stewart</option>
-                                        <option value="Usher">Usher</option>
-                                    </select>
-                                    <br>
-                                    <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate ⚡️</button>
-                                </div>
-                                <div class="col col-6" id="song_text"></div>
-                            </div>
+        <h2>Lyrics</h2>
 
-                        </li>
-                        <li class="splide__slide">
-                            
-                            <div id="sent_subj"></div>
-                        </li>
-                        <li class="splide__slide">
-                            Its is really interesting to see how the use of words change over time.
-                            <div id="option" style="margin-right: 2rem;margin-left: 40px;">
-                                Occurrences for
-                                <select id="heatmap_options" onchange="updateData()">
-                                    <option value="love">Love</option>
-                                    <option value="baby" selected>Baby</option>
-                                </select>
-                                <br>
-                                The song occured x times in:
-                            </div>
-                            <div id="heatmap"></div>
-                            
-                        </li>
-                    </ul>
-                </div>
+        <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
+            along
+            under the 🚿. Before we jump into the analysis do you can generate your own lyrics.
+            For
+            this we are using a markovchain and deep learning model</a>.</p>
+        <div class="clearfix">
+            <div class="col col-6">
+                <p>To generate the song please select an artist first. The lyrics will be
+                    generted
+                    in a style like the artist would write it.</p>
+                <select id="song_artist">
+                    <option value="Backstreet Boys">Backstreet Boys</option>
+                    <option value="Bob Dylan">Bob Dylan</option>
+                    <option value="Bon Jovi">Bon Jovi</option>
+                    <option value="Britney Spears">Britney Spears</option>
+                    <option value="Bruce Springsteen">Bruce Springsteen</option>
+                    <option value="Chris Brown">Chris Brown</option>
+                    <option value="Christina Aguilera">Christina Aguilera</option>
+                    <option value="Donna Summer">Donna Summer</option>
+                    <option value="Drake">Drake</option>
+                    <option value="Fabolous">Fabolous</option>
+                    <option value="Glee">Glee</option>
+                    <option value="Gordon Lightfoot">Gordon Lightfoot</option>
+                    <option value="Gucci Mane">Gucci Mane</option>
+                    <option value="Ice Cube">Ice Cube</option>
+                    <option value="Indigo Girls">Indigo Girls</option>
+                    <option value="Insane Clown Posse">Insane Clown Posse</option>
+                    <option value="Kanye West">Kanye West</option>
+                    <option value="Lady Gaga">Lady Gaga</option>
+                    <option value="Lil Wayne">Lil Wayne</option>
+                    <option value="LL Cool J">LL Cool J</option>
+                    <option value="Mariah Carey">Mariah Carey</option>
+                    <option value="Michael Jackson">Michael Jackson</option>
+                    <option value="Miley Cyrus">Miley Cyrus</option>
+                    <option value="Ne-Yo">Ne-Yo</option>
+                    <option value="R. Kelly">R. Kelly</option>
+                    <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
+                    <option value="Rihanna">Rihanna</option>
+                    <option value="Rod Stewart">Rod Stewart</option>
+                    <option value="Usher">Usher</option>
+                </select>
+                <br>
+                <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate
+                    ⚡️</button>
+            </div>
+            <div class="col col-6" id="song_text"></div>
+        </div>
+
+
+
+        <div id="sent_subj"></div>
+
+
+        Its is really interesting to see how the use of words change over time.
+        <div id="option" style="margin-right: 2rem;margin-left: 40px;">
+            Occurrences for
+            <select id="heatmap_options" onchange="updateData()">
+                <option value="love">Love</option>
+                <option value="baby" selected>Baby</option>
+            </select>
+            <br>
+            The song occured x times in:
+        </div>
+        <div id="heatmap"></div>
+
+
+        <div id="word_table" class="large-width">
+            <div class="chart-head chart-text" style="position:relative;">
+                <p style="position:absolute; left:0px">WORD</p>
+                <p style="position:absolute; left:360px">RANKING IN YEAR 20
+                    <select id="wordtable_options" onchange="updateWordChart()"
+                        style="border: 0px;background: transparent;">
+                        <option value="all">00 - 21</option>
+                        <option value="00">00</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </select>
+                </p>
             </div>
         </div>
-    </section>
-    <div id="word_table" class="large-width">
-        <div class="chart-head chart-text" style="position:relative;">
-            <p style="position:absolute; left:0px">WORD</p>
-            <p style="position:absolute; left:360px">RANKING IN YEAR 20
-                <select id="wordtable_options" onchange="updateWordChart()" style="border: 0px;background: transparent;">
-                <option value="all">00 - 21</option>
-                <option value="00">00</option>
-                <option value="01">01</option>
-                <option value="02">02</option>
-                <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="07">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">11</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-            </select></p>
-          </div>
+        <div class="block mx-auto">
+            <p>Select your fighter</p>
 
-    
+            <div class="radarChart"></div>
+            <div class="clearfix">
+                <div class="imgcon">
+                    <div class="col col-2">
+                        <img class="radarimg active circle block mx-auto" style="border: 3px solid #001219;" id="kanye"
+                            width="128" height="128" onclick="mark(this, 'kanye')" src="src/imgs/kanye.jpg" />
+                        <p class="center">Kanye West <span style="cursor: pointer;cursor: hand;"><svg
+                                    class="song-sample" id="skanye_power" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="taylor" width="128" height="128"
+                            onclick="mark(this, 'taylor')" src="src/imgs/taylor.jpg" />
+                        <p class="center">Taylor Swift <span style="cursor: pointer;cursor: hand;"><svg
+                                    class="song-sample" id="staylor" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="justin" width="128" height="128"
+                            onclick="mark(this, 'justin')" src="src/imgs/justin.jpg" />
+                        <p class="center">Justin Bieber <span style="cursor: pointer;cursor: hand;"><svg
+                                    class="song-sample" id="s2U" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="pink" width="128" height="128"
+                            onclick="mark(this, 'pink')" src="src/imgs/pink.jpg" />
+                        <p class="center">P!nk <span style="cursor: pointer;cursor: hand;"><svg class="song-sample"
+                                    id="sp!nk" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="drake" width="128" height="128"
+                            onclick="mark(this, 'drake')" src="src/imgs/drake.webp" />
+                        <p class="center">Drake <span style="cursor: pointer;cursor: hand;"><svg class="song-sample"
+                                    id="sdrake" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="oned" width="128" height="128"
+                            onclick="mark(this, 'oned')" src="src/imgs/oned.png" />
+                        <p class="center">One Direction <span style="cursor: pointer;cursor: hand;"><svg
+                                    class="song-sample" id="soned" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg></span></p>
+                    </div>
+                </div>
+            </div>
 
+                </div>
+                    <div>
+                        <div id="yearly"></div>
+                        <p class="center">Please try out the play button :) <button class="button-lyrics"
+                                id="play-button">Play</button></p>
+                        <div id="slider-time"></div>
+                    </div>
+                </div>
+            </div>
 
-    <script src="src/js/sentsubj.js"></script>
-    <script src="src/js/heatmap.js"></script>
-    <script src="src/js/word_table.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var splide = new Splide('.splide', {
-                type: 'loop',
-                keyboard: true,
-                drag: false
-            });
-            splide.mount();
-        });
-        function getLyrics() {
-            var artist = document.getElementById("song_artist").value;
-            var lyricbody = document.getElementById("song_text");
-            lyricbody.innerHTML = "";
-            var postObj = { artist: artist, lyric_length: 25, max_syllables: 16 }
-            postData('https://us-central1-ai-labs-226917.cloudfunctions.net/lyrics-generator-cors', postObj).then(data => {
-                console.log(data);
-                h3 = document.createElement("p");
-                h3.innerHTML = "<h3>Lyrics styled after " + artist + "</h3>";
-                d = document.createElement("p");
-                data.lyrics.forEach(element => {
-                    console.log(element);
-                    d.innerHTML += element + "<br>";
-                });
-                lyricbody.appendChild(h3)
-                lyricbody.appendChild(d);
-            });
-        }
+            <script src="src/js/radarchart.js"></script>
+            <script src="src/js/sentsubj.js"></script>
+            <script src="src/js/heatmap.js"></script>
+            <script src="src/js/word_table.js"></script>
+            <script src="src/js/artistvsartist.js"></script>
+            <script src="src/js/yearly.js"></script>
+            <script>
+                colordir = {
+                    kanye: "#001219",
+                    taylor: "#005f73",
+                    justin: "#e9d8a6",
+                    pink: "#ee9b00",
+                    drake: "#bb3e03",
+                    oned: "#9b2226"
+                }
+                function mark(el, name) {
+                    if (el.classList.contains("active")) {
+                        el.classList.remove("active")
+                        el.style.border = ""
+                    } else {
+                        el.style.border = "3px solid " + colordir[name];
+                        el.classList.add("active");
+                    }
+                    updateRadarArtist()
+                }
 
-        async function postData(url = '', data = {}) {
-            // Default options are marked with *
-            const response = await fetch(url, {
-                method: 'POST',
-                cache: 'no-cache',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                redirect: 'follow',
-                referrerPolicy: 'no-referrer',
-                body: JSON.stringify(data),
-            })
-            return response.json();
-        }
-        getLyrics()
-    </script>
-    <script src="src/js/audio.js"></script>
+                function getLyrics() {
+                    var artist = document.getElementById("song_artist").value;
+                    var lyricbody = document.getElementById("song_text");
+                    lyricbody.innerHTML = "";
+                    var postObj = { artist: artist, lyric_length: 25, max_syllables: 16 }
+                    postData('https://us-central1-ai-labs-226917.cloudfunctions.net/lyrics-generator-cors', postObj).then(data => {
+                        h3 = document.createElement("p");
+                        h3.innerHTML = "<h3>Lyrics styled after " + artist + "</h3>";
+                        d = document.createElement("p");
+                        data.lyrics.forEach(element => {
+                            d.innerHTML += element + "<br>";
+                        });
+                        lyricbody.appendChild(h3)
+                        lyricbody.appendChild(d);
+                    });
+                }
+
+                async function postData(url = '', data = {}) {
+                    // Default options are marked with *
+                    const response = await fetch(url, {
+                        method: 'POST',
+                        cache: 'no-cache',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        redirect: 'follow',
+                        referrerPolicy: 'no-referrer',
+                        body: JSON.stringify(data),
+                    })
+                    return response.json();
+                }
+                getLyrics()
+            </script>
+            <script src="src/js/audio.js"></script>
 </body>
 
 </html>

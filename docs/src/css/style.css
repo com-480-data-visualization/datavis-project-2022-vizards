@@ -1375,7 +1375,7 @@ section {
     stroke-width: 2px;
 }
 
-.tooltip {
+.stooltip {
     position: absolute;
     z-index: 1070;
     display: block;
@@ -1453,24 +1453,64 @@ section {
     font-weight: 500;
 }
 
-.label {
-    color: white;
-    padding: 8px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    vertical-align: middle;
-  }
-  .hiphop {background-color: #001219;} 
-  .pop {background-color: #005f73;} 
-  .reggae {background-color: #ee9b00;} 
-  .electro {background-color: #bb3e03} 
-  .rock {background-color: #ab84e1} 
-  .rnb {background-color: #e9d8a6;color:black} 
+.legend {
+    font-family: 'Raleway', sans-serif;
+    fill: #333333;
+}
 
-  .myDiv{
-    display: grid;
-    justify-content: center;
+.tooltip {
+    fill: #333333;
+}
 
-  }
+.imgcon img:hover {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+
+.radarimg {
+    border: 3px solid #fff;
+}
+
+#play-button:hover {
+    background-color: #696969;
+}
+
+.ticks {
+    font-size: 10px;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+    stroke-linecap: round;
+}
+
+.track {
+    stroke: #000;
+    stroke-opacity: 0.3;
+    stroke-width: 10px;
+}
+
+.track-inset {
+    stroke: #dcdcdc;
+    stroke-width: 8px;
+}
+
+.track-overlay {
+    pointer-events: stroke;
+    stroke-width: 50px;
+    stroke: transparent;
+    cursor: crosshair;
+}
+
+.handle {
+    fill: #fff;
+    stroke: #000;
+    stroke-opacity: 0.5;
+    stroke-width: 1.25px;
+}
+
+.axis text,
+.slider text {
+    font-size: 12px;
+}

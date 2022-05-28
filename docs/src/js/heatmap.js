@@ -56,7 +56,7 @@ const myColor = d3.scaleSequential()
 const tooltip = d3.select("#heatmap")
     .append("div")
     .style("opacity", 0)
-    .attr("class", "tooltip")
+    .attr("class", "stooltip")
     .style("background-color", "white")
     .style("border", "solid")
     .style("border-width", "2px")
@@ -66,7 +66,7 @@ const tooltip = d3.select("#heatmap")
 // Three function that change the tooltip when user hover / move / leave a cell
 const mouseover = function (event, d) {
     tooltip
-        .style("display", "block")
+        // .style("display", "block")
         .style("opacity", 1)
     d3.select(this)
         .style("stroke", "black")
@@ -75,12 +75,13 @@ const mouseover = function (event, d) {
 const mousemove = function (event, d) {
     tooltip
         .html(d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d.mean)
-        .style("left", 3100 + (event.x) / 2 +"px")
-        .style("top", (event.y) / 2 + "px")
+        .style("left", (event.x) + "px")
+        .style("top", 5000 + (event.y) + "px")
 }
 const mouseleave = function (event, d) {
     tooltip
-        .style("display", "none")
+        // .style("display", "none")
+        .style("opacity", 0)
     d3.select(this)
         .style("stroke", "none")
         .style("opacity", 0.8)

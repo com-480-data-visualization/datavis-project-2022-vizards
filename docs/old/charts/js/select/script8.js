@@ -346,7 +346,7 @@ function filterPokemon() {
             $this.addClass('filtered');
         }
     });
-    console.log(versions)
+    // console.log(versions)
 }
 /**
  * Adds the unobtainable class to Pokémon that cannot be caught in the current dex.

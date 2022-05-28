@@ -74,8 +74,7 @@
             </div>
             <div v-for="entry in structure" v-bind:key="entry.name" v-bind:class="entry.display" class="entry"
               v-if="hasData(entry)">
-              <span v-if="entry.source === '_id'" style="display: none;"></span>
-              <div v-else class="label">{{ entry.name }}</div>
+              <span v-if="entry.source != '_id' && entry.source != '_uri'" class="label">{{ entry.name }}</span>
               <div class="content">
                 <span v-if="entry.type === 'keywords'">
                   <span v-for="keyword in item[entry.source]" v-bind:key="keyword" class="keyword">
@@ -94,11 +93,10 @@
                   <span v-html="getContent(entry)"></span>
                 </span>
 
-                <span v-else-if="entry.source === '_id'" style="display: none;">
-                  {{display_chart(item[entry.source], item["_description"])}}
-                  {{getContent(entry)}}
-                </span>
-
+                <span id="songplayer" v-else-if="entry.source === '_uri'">
+                  <iframe style="border-radius:12px" :src='"https://open.spotify.com/embed/track/" + item["_uri"] + "?utm_source=generator&theme=0"' width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                  </span>
+                <span v-else-if="entry.source === '_id'"></span>
                 <span v-else>
                   {{ getContent(entry) }}
                 </span>
@@ -128,57 +126,9 @@
     </div>
   </div>
   <script>
-    let myChart;
-    function showradar(data) {
-      if (myChart) {
-        myChart.destroy()
-      }
-
-      const config = {
-        type: 'radar',
-        data: data,
-        options: {
-          plugins: {
-            legend: {
-              display: false,
-            }
-          },
-          scales: {
-            r: {
-              suggestedMax: 1,
-              ticks: {
-                display: false
-              }
-            }
-          },
-          elements: {
-            line: {
-              borderWidth: 3
-            }
-          }
-        },
-      };
-      myChart = new Chart(
-        document.getElementById('myChart'),
-        config
-      );
-
-    }
-    function display_chart(id, song) {
-      labels = ["danceability", "energy", "speechiness", "acousticness"]
-      Papa.parse("data/" + id + ".csv", {
-        download: true,
-        complete: (results) => {
-          data = {
-            labels: labels,
-            datasets: [{
-              label: '',
-              data: results.data[0]
-            }]
-          }
-          showradar(data)
-        }
-      });
+    function add_song(el, uri) {
+      url ="https://open.spotify.com/embed/track/" +  uri + "?utm_source=generator&theme=0";
+      return url
     }
   </script>
   <script src="js/sidebars.js"></script>
