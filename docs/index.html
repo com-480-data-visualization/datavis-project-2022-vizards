@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
 </head>
 
+
+
+
 <body>
     <header>
         <div class="fit logo-container">
@@ -130,6 +133,28 @@
         <p class="title">How have songs changed in the past 22 years?</p>
         <p>by DataVizards</p>
     </header>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>       
+    <figure class="highcharts-figure">
+        <div class="max-width-4 mx-auto">
+        <div id="container">
+            <div class="row">
+                <div class="col-md-6">
+                  <div id="container" style="width: 1100px; height: 500px;"></div>
+                  <script type="text/javascript" src="old/charts/js/highcharts.js"></script>
+                  <script src="old/charts/js/top_artist_line.js"></script> 
+                </div>
+              </div>
+        </div>
+        <p class="highcharts-description">
+            The line chart shows the trend of top 10 artists with most songs on Billboard over 23 years.  <br> 
+        </p>
+    </div>
+    </figure>     
+
     <div class="max-width-4 mx-auto">
         <div class="clearfix">
             <p>As the title is stating we want to time travel through music data for the past 22 years. Before we go
@@ -145,6 +170,14 @@
 
         </div>
     </div>
+
+    <div class="max-width-4 mx-auto">
+        <h2>Genre</h2>
+            <iframe width="100%" height="559" frameborder="0"
+            src="https://observablehq.com/embed/@yirencao/collapsible-tree?cells=chart"></iframe>
+    </div>
+
+    
 
 
     <section class="splide">
@@ -221,11 +254,43 @@
             </div>
         </div>
     </section>
-   
-   
- 
+    <div id="word_table" class="large-width">
+        <div class="chart-head chart-text" style="position:relative;">
+            <p style="position:absolute; left:0px">WORD</p>
+            <p style="position:absolute; left:360px">RANKING IN YEAR 20
+                <select id="wordtable_options" onchange="updateWordChart()" style="border: 0px;background: transparent;">
+                <option value="all">00 - 21</option>
+                <option value="00">00</option>
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+            </select></p>
+          </div>
+
+    
+
+
     <script src="src/js/sentsubj.js"></script>
     <script src="src/js/heatmap.js"></script>
+    <script src="src/js/word_table.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             var splide = new Splide('.splide', {

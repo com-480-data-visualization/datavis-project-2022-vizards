@@ -1397,3 +1397,58 @@ section {
     font-size: .875rem;
     word-wrap: break-word;
 }
+
+.chart-head {
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+    height: 32px;
+}
+
+.chart-text {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.rank {
+    position: absolute;
+    left: 1px;
+    color: #000;
+    font-size: 13px;
+    top: 3px;
+    font-weight: 600;
+}
+
+.name {
+    position: absolute;
+    font-size: 13px;
+    left: 14px;
+    top: -10px;
+    font-weight: 600;
+}
+
+.word {
+    border-bottom: 1px solid #777;
+    position: relative;
+    height: 20px;
+    overflow: hidden;
+}
+
+.large-width {
+    width: 950px;
+    margin: 0 auto;
+}
+
+.bar {
+    float: left;
+    position: absolute;
+    left: 360px;
+    opacity: .7;
+}
+
+.count {
+    position: absolute;
+    font-size: 12px;
+    top: 3px;
+    left: 367px;
+    font-weight: 500;
+}
