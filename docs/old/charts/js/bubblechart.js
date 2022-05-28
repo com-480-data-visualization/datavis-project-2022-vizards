@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+Highcharts.chart('container2', {
     chart: {
         type: 'packedbubble',
         height: '60%'
@@ -22,7 +22,8 @@ Highcharts.chart('container', {
             zMax: 1000,
             layoutAlgorithm: {
                 splitSeries: true,
-                gravitationalConstant: 0.02
+                gravitationalConstant: 0.02,
+                enableSimulation: false,
             },
             dataLabels: {
                 enabled: true,

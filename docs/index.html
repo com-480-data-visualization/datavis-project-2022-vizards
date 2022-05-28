@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/splide.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>  
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 
 
@@ -135,11 +140,8 @@
         <p class="title">How have songs changed in the past 22 years?</p>
         <p>by DataVizards</p>
     </header>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/series-label.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>       
+
+    
     <figure class="highcharts-figure">
         <div class="max-width-4 mx-auto">
         <div id="container">
@@ -180,14 +182,14 @@
     </div>
 
     
-    <section style="margin-bottom: 60px;">
+    <section>
         <div class="max-width-4 mx-auto">
                 <h2>Artists Collaboration Network</h2>
                 <div id="mynetwork" style="height:90vh">
                     <script type="text/javascript" src="src/js/collabs.js" style="width: 800px;
                     height: 450px;
                     border: 1px solid lightgray;
-                    margin: auto;"></script>  
+                    margin-bottom: 20px;"></script>  
                 </div>
 
                 <div class="myDiv"> 
@@ -195,7 +197,7 @@
                       <td style="width:100%;margin:auto;">
                         <span class="label hiphop">Hip-Hop/Rap</span>
                         <span class="label pop">Pop</span>
-                        <span class="label rock">Rock</span>
+                        <!--- <span class="label rock">Rock</span> -->
                         <span class="label rnb">R&B</span>
                         <span class="label reggae">Reggae</span>
                         <span class="label electro">Electronic/Dance</span>
@@ -203,17 +205,17 @@
                     </table>
                 </div>
 
-                <p> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number of collaborations. 
-                    On top 3 of the most collaborative artists, we find in order Lil Wayne, Drake and Nicki Minaj. </p>
+                <p style="margin-top: 20px;"> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number of collaborations. 
+                    On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki Minaj. </p>
+
+                    <br>
 
         </div>
 
-
-
-
     </section>
 
-    <section class="splide">
+
+    <section style="margin-top: 80px;" class="splide">
         <div class="max-width-4 mx-auto">
             <div class="clearfix">
                 <h2>Lyrics</h2>

@@ -1462,12 +1462,12 @@ section {
     text-align: center;
     vertical-align: middle;
   }
-  .hiphop {background-color: #6ba6f4;} 
-  .pop {background-color: #fff800; color:black;} 
-  .reggae {background-color: #7BE141;} 
-  .electro {background-color: #e96cf3} 
+  .hiphop {background-color: #001219;} 
+  .pop {background-color: #005f73;} 
+  .reggae {background-color: #ee9b00;} 
+  .electro {background-color: #bb3e03} 
   .rock {background-color: #ab84e1} 
-  .rnb {background-color: #fb4b4f} 
+  .rnb {background-color: #e9d8a6;color:black} 
 
   .myDiv{
     display: grid;
