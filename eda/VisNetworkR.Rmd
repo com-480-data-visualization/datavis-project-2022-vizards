@@ -15,13 +15,15 @@ nodes <- jsonlite::fromJSON("nodes.json")
 edges <- jsonlite::fromJSON("edges.json")
 
 
-visNetwork(nodes, edges, height = "700px", width = "100%") %>%
+v <- visNetwork(nodes, edges, height = "700px", width = "100%") %>%
   visOptions(selectedBy = "group", 
              highlightNearest = FALSE, 
              nodesIdSelection = FALSE) %>%
   visPhysics(solver = "forceAtlas2Based", 
             forceAtlas2Based = list(gravitationalConstant = -500))  %>%
-  visLegend(width = 0.1, position = "right", main = "Genre")
+  visLegend(width = 0.1, position = "right", main = "Genre")  %>%
+  visNodes(size=50, font=list(size=30))
+v
 
 ```
 
