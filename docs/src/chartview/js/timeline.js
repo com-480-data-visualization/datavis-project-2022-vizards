@@ -58,7 +58,7 @@ function Timeline() {
       canvas.height() * scale -
       -1 * translate[1] -
       canvas.rangeBandImage() * scale;
-    console.log(timeY)
+
     container
       .attr("class", "timeline " + timelineScale(scale * (fontSize / 2)))
       .style("font-size", function () {

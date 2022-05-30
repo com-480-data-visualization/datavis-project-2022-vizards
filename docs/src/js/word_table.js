@@ -14,7 +14,7 @@ function updateWordChart() {
             d3.selectAll(".chart-data").remove();
             return d.year == "20" + year
         })
-        console.log(data)
+   
 
         // Add X axis
         data = data.sort((a, b) => d3.descending(+a.Value, +b.Value))

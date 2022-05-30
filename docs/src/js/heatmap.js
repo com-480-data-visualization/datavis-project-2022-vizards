@@ -12,10 +12,10 @@ const svg = d3.select("#heatmap")
 file = get_heatpath()
 let max_leg = 0
 d3.csv(file).then(function (data) {
-    var max = d3.max(data, function (d) { return d.rank })
+    var max = d3.max(data, function (d) { return +d.rank })
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
-    max_leg = d3.max(data, function (d) { return d.mean })
-    console.log(max_leg)
+    max_leg = d3.max(data, function (d) { return +d.mean })
+
     const myGroups = Array.from(new Set(data.map(d => d.year)))
     const myVars = Array.from(new Set(data.map(d => d.rank))).reverse()
     // Build X scales and axis:
@@ -149,9 +149,10 @@ function updateData() {
 
     d3.csv(file).then(function (data) {
         // Select the section we want to apply our changes to
-        var max = d3.max(data, function (d) { return d.rank })
-        max_leg = d3.max(data, function (d) { return d.mean })
-
+        var max = d3.max(data, function (d) { return +d.rank })
+        max_leg = d3.max(data, function (d) { return +d.mean })
+        
+       
         var svgg = d3.select("#heatmap").transition();
         const myGroups = Array.from(new Set(data.map(d => d.year)))
         const myVars = Array.from(new Set(data.map(d => d.rank))).reverse()
