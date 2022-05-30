@@ -444,7 +444,7 @@ var nodes = new vis.DataSet([{"id": 957, "label": "Lil Wayne", "group": "hip-hop
         physics: {
           enabled: true,
           barnesHut: {
-            gravitationalConstant: -90000 
+            gravitationalConstant: -65000 
           },
           stabilization: {
             enabled: true 
