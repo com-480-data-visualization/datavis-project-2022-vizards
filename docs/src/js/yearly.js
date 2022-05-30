@@ -1,4 +1,4 @@
-data = [{
+yearly_data = [{
     'year': 2000.0,
     'danceability': 0.6655772058823529,
     'energy': 0.6909044117647059,
@@ -191,19 +191,22 @@ gTime.call(sliderTime);
 
 function update(h) {
     // update position and text of label according to slider scale
-    // console.log(h)
-    var newData = data[h - 2000];
+    var newData = yearly_data[h - 2000];
     // console.log(newData)
     pdata = transformdata(newData)
     drawChart(pdata);
 }
+
 function step() {
     sliderTime.value(sliderTime.value().valueOf() + 1000 * 60 * 60 * 24 * 365)
     var year = d3.timeFormat('%Y')(sliderTime.value())
     if (year >= 2021) {
+        update(year)
         resetTimer()
+    } else {
+        update(year)
     }
-    update(year)
+    
 }
 playButton
     .on("click", function () {
@@ -257,6 +260,8 @@ function resetTimer() {
     moving = false;
     clearInterval(timer);
     playButton.text("Play");
+    sliderTime.value(sliderTime.default());
+    update(d3.timeFormat('%Y')(sliderTime.default()));
 }
 
-drawChart(transformdata(data[0]))
+drawChart(transformdata(yearly_data[0]))
