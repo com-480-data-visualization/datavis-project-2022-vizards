@@ -243,7 +243,7 @@ function drawChart(data) {
         w: width,
         h: height,
         margin: margin,
-        maxValue: 0.5,
+        maxValue: 1,
         levels: 3,
         roundStrokes: true,
         color: ["#34568b"]

@@ -6,7 +6,7 @@ function updateRadarArtist() {
             active_artists.push(elem.id)
         }
     }
-    console.log(active_artists)
+  
     var margin = { top: 100, right: 100, bottom: 100, left: 100 },
         width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
         height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
@@ -97,7 +97,7 @@ function updateRadarArtist() {
         w: width,
         h: height,
         margin: margin,
-        maxValue: 0.5,
+        maxValue: 1,
         levels: 3,
         roundStrokes: true,
         color: color
