@@ -1,5 +1,5 @@
-const margin = { top: 80, right: 25, bottom: 30, left: 40 },
-    width = 1000 - margin.left - margin.right,
+const margin = { top: 80, right: 0, bottom: 30, left: 20 },
+    width = 1024 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
 
 const svg = d3.select("#heatmap")
@@ -10,10 +10,12 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 file = get_heatpath()
+let max_leg = 0
 d3.csv(file).then(function (data) {
     var max = d3.max(data, function (d) { return d.rank })
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
-
+    max_leg = d3.max(data, function (d) { return d.mean })
+    console.log(max_leg)
     const myGroups = Array.from(new Set(data.map(d => d.year)))
     const myVars = Array.from(new Set(data.map(d => d.rank))).reverse()
     // Build X scales and axis:
@@ -43,15 +45,8 @@ d3.csv(file).then(function (data) {
         .domain([0, max])
 
     // create a tooltip
-    const tooltip = d3.select("#heatmap")
-        .append("div")
-        .style("opacity", 0)
-        .attr("class", "stooltip")
-        .style("background-color", "white")
-        .style("border", "solid")
-        .style("border-width", "2px")
-        .style("border-radius", "5px")
-        .style("padding", "5px")
+    const tooltip = d3.select("#legend_heatmap")
+        .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.")
 
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function (event, d) {
@@ -64,14 +59,16 @@ d3.csv(file).then(function (data) {
     }
     const mousemove = function (event, d) {
         tooltip
-            .html(d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d.mean)
-            .style("left", (event.x) + "px")
-            .style("top", 5000 + (event.y) + "px")
+            .html("<b>Details</b><br>" + d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d.mean)
+        // .style("left", (event.x) + "px")
+        // .style("top", 5000 + (event.y) + "px")
     }
     const mouseleave = function (event, d) {
         tooltip
-            // .style("display", "none")
-            .style("opacity", 0)
+            .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.")
+        // .style("display", "none")
+        // .style("opacity", 0)
+
         d3.select(this)
             .style("stroke", "none")
             .style("opacity", 0.8)
@@ -97,6 +94,11 @@ d3.csv(file).then(function (data) {
         .attr("offset", function (d) { return d.offset; })
         .attr("stop-color", function (d) { return d.color; });
 
+    linearGradient
+        .append("text")
+        .attr("class", "legendTitle")
+        .text("Average Global Surface Temperature");
+
 
     // add the squares
     svg.selectAll()
@@ -116,7 +118,23 @@ d3.csv(file).then(function (data) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
 
+
+
+    svg.append("text")
+        .attr("x", 0)
+        .attr("y", -5)
+        .text(0);
+
+    svg.append("text")
+        .attr("x", 280)
+        .attr("y", -5)
+        .attr("id", "last_legend")
+        .text((Math.round(max_leg * 100) / 100).toFixed(2));
+
+
 })
+
+// Add subtitle to graph
 
 svg.append("rect")
     .attr("id", "sinep")
@@ -126,15 +144,13 @@ svg.append("rect")
     .attr("height", 20)
     .style("fill", "url(#linear-gradient)");
 
-// Add subtitle to graph
-
-
 function updateData() {
     file = get_heatpath()
 
     d3.csv(file).then(function (data) {
         // Select the section we want to apply our changes to
         var max = d3.max(data, function (d) { return d.rank })
+        max_leg = d3.max(data, function (d) { return d.mean })
 
         var svgg = d3.select("#heatmap").transition();
         const myGroups = Array.from(new Set(data.map(d => d.year)))
@@ -170,9 +186,9 @@ function updateData() {
         var linearGradient = defs.append("linearGradient")
             .attr("id", "linear-gradient");
 
-
-
         svg.select("rect#sinep").style("fill", "url(#linear-gradient)");
+
+        svg.select("#last_legend").text((Math.round(max_leg * 100) / 100).toFixed(2))
     });
 }
 

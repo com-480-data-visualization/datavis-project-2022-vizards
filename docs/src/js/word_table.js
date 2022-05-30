@@ -1,11 +1,11 @@
 function updateWordChart() {
 
-    w = 950;
+    w = 1024;
     var xScale = d3.scaleLinear()
         .domain([0, 5000])
         .range([10, 550]);
     var xScaleL = d3.scaleLinear()
-        .domain([0, 35000])
+        .domain([0, 32000])
         .range([10, 550]);
     // Parse the Data
     d3.csv("src/data/word_count.csv").then(function (data) {

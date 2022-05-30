@@ -224,7 +224,7 @@
                 For
                 this we are using a markovchain and deep learning model</a>.
             </p>
-            <div class="clearfix" style="height: 50vh;">
+            <div class="clearfix" style="height: 67vh;">
                 <div class="col col-6">
                     <p>To generate the song please select an artist first. The lyrics will be
                         generted
@@ -269,9 +269,9 @@
             </div>
             <div id="sent_subj"></div>
             Its is really interesting to see how the use of words change over time.
-            <div id="option" style="margin-right: 2rem;margin-left: 40px;">
+            <div id="option">
                 Occurrences for
-                <select id="heatmap_options" onchange="updateData()">
+                <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
                     <option value="yeah">yeah</option>
                     <option value="love">love</option>
                     <option value="baby">baby</option>
@@ -283,11 +283,10 @@
                     <option value="nigga">nigga</option>
                     <option value="feel">feel</option>
                 </select>
-                <br>
-                The song occured x times in:
             </div>
             <div id="heatmap"></div>
-            <div id="word_table" class="large-width">
+            <div id="legend_heatmap" class="mb3"></div>
+            <div id="word_table" class="mx-auto">
                 <div class="chart-head chart-text" style="position:relative;">
                     <p style="position:absolute; left:0px">WORD</p>
                     <p style="position:absolute; left:360px">
