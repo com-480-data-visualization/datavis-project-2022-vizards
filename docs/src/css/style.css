@@ -1255,6 +1255,12 @@ header .subtitle {
     fill: #fff;
 }
 
+#waveload {
+    height: 70px;
+    width: 70px;
+    fill: #191843;
+}
+
 #Line_1 {
     -webkit-animation: pulse 1s infinite;
     animation: pulse 1s infinite;
@@ -1514,3 +1520,11 @@ section {
 .slider text {
     font-size: 12px;
 }
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }

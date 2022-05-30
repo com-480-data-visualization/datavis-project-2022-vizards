@@ -1,0 +1,221 @@
+year,rank,mean,song,artist,occ
+2000,1,3.0961538461538463,Independent Women Part I,Destiny's Child,18
+2000,2,1.6923076923076923,Give Me Just One Night (Una Noche),98 Degrees,11
+2000,3,1.4807692307692308,Give Me Just One Night (Una Noche),98 Degrees,11
+2000,4,1.4038461538461537,Try Again,Aaliyah,6
+2000,5,1.8653846153846154,Independent Women Part I,Destiny's Child,18
+2000,6,2.0,Ms. Jackson,OutKast,11
+2000,7,2.0,Independent Women Part I,Destiny's Child,18
+2000,8,1.3461538461538463,Auld Lang Syne,Kenny G,9
+2000,9,1.7692307692307692,Ms. Jackson,OutKast,11
+2000,10,1.25,There You Go,P!nk,6
+2001,1,3.3653846153846154,Independent Women Part I,Destiny's Child,18
+2001,2,2.4615384615384617,Independent Women Part I,Destiny's Child,18
+2001,3,2.0,Independent Women Part I,Destiny's Child,18
+2001,4,1.6730769230769231,Hit 'Em Up Style (Oops!),Blu Cantrell,5
+2001,5,1.4230769230769231,Ms. Jackson,OutKast,11
+2001,6,1.3269230769230769,Ms. Jackson,OutKast,11
+2001,7,2.173076923076923,Independent Women Part I,Destiny's Child,18
+2001,8,1.8653846153846154,Hit 'Em Up Style (Oops!),Blu Cantrell,5
+2001,9,1.4807692307692308,Always On Time,Ja Rule Featuring Ashanti,15
+2001,10,1.8846153846153846,Independent Women Part I,Destiny's Child,18
+2002,1,3.076923076923077,Always On Time,Ja Rule Featuring Ashanti,15
+2002,2,3.4423076923076925,Always On Time,Ja Rule Featuring Ashanti,15
+2002,3,3.2916666666666665,Always On Time,Ja Rule Featuring Ashanti,15
+2002,4,2.306122448979592,Always On Time,Ja Rule Featuring Ashanti,15
+2002,5,2.608695652173913,Always On Time,Ja Rule Featuring Ashanti,15
+2002,6,2.1875,Always On Time,Ja Rule Featuring Ashanti,15
+2002,7,2.142857142857143,Long Time Gone,Dixie Chicks,21
+2002,8,1.346938775510204,Die Another Day,Madonna,5
+2002,9,1.42,Always On Time,Ja Rule Featuring Ashanti,15
+2002,10,1.2,Die Another Day,Madonna,5
+2003,1,3.576923076923077,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,2,1.7307692307692308,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,3,1.653061224489796,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,4,2.0652173913043477,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,5,2.404255319148936,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,6,1.8,Get Low,Lil Jon & The East Side Boyz Featuring Ying Yang Twins,7
+2003,7,1.3958333333333333,Get Low,Lil Jon & The East Side Boyz Featuring Ying Yang Twins,7
+2003,8,1.510204081632653,Get Low,Lil Jon & The East Side Boyz Featuring Ying Yang Twins,7
+2003,9,1.891304347826087,Baby Boy,Beyonce Featuring Sean Paul,9
+2003,10,2.0,Get Low,Lil Jon & The East Side Boyz Featuring Ying Yang Twins,7
+2004,1,0.6538461538461539,My Boo,Usher And Alicia Keys,4
+2004,2,1.2307692307692308,Sunshine,Lil' Flip Featuring Lea,16
+2004,3,2.0,Sunshine,Lil' Flip Featuring Lea,16
+2004,4,2.4038461538461537,"Me, Myself And I",Beyonce,13
+2004,5,2.230769230769231,Sunshine,Lil' Flip Featuring Lea,16
+2004,6,2.1153846153846154,"Me, Myself And I",Beyonce,13
+2004,7,1.9615384615384615,Sunshine,Lil' Flip Featuring Lea,16
+2004,8,1.0,"Me, Myself And I",Beyonce,13
+2004,9,1.25,My Place,Nelly Featuring Jaheim,9
+2004,10,2.4615384615384617,Sunshine,Lil' Flip Featuring Lea,16
+2005,1,1.75,Hollaback Girl,Gwen Stefani,8
+2005,2,2.6538461538461537,Photograph,Nickelback,11
+2005,3,2.7115384615384617,Photograph,Nickelback,11
+2005,4,2.480769230769231,Photograph,Nickelback,11
+2005,5,2.7115384615384617,Photograph,Nickelback,11
+2005,6,2.173076923076923,Photograph,Nickelback,11
+2005,7,1.9615384615384615,Hung Up,Madonna,15
+2005,8,1.75,Grind With Me,Pretty Ricky,9
+2005,9,1.8846153846153846,Grind With Me,Pretty Ricky,9
+2005,10,1.0576923076923077,Grind With Me,Pretty Ricky,9
+2006,1,2.2115384615384617,London Bridge,Fergie,11
+2006,2,2.3653846153846154,London Bridge,Fergie,11
+2006,3,1.7884615384615385,Photograph,Nickelback,11
+2006,4,2.156862745098039,London Bridge,Fergie,11
+2006,5,2.2884615384615383,London Bridge,Fergie,11
+2006,6,1.1730769230769231,London Bridge,Fergie,11
+2006,7,1.6888888888888889,SOS,Rihanna,7
+2006,8,1.3877551020408163,Photograph,Nickelback,11
+2006,9,2.0,Pullin' Me Back,Chingy Featuring Tyrese,19
+2006,10,2.5416666666666665,Say Goodbye,Chris Brown,19
+2007,1,1.0192307692307692,What Goes Around...Comes Around,Justin Timberlake,7
+2007,2,0.6923076923076923,Hey There Delilah,Plain White T's,3
+2007,3,1.1346153846153846,What Goes Around...Comes Around,Justin Timberlake,7
+2007,4,1.2115384615384615,What Goes Around...Comes Around,Justin Timberlake,7
+2007,5,1.7692307692307692,Bed,J. Holiday,7
+2007,6,2.423076923076923,What Time Is It,High School Musical 2 Cast,35
+2007,7,1.7307692307692308,Bed,J. Holiday,7
+2007,8,1.1538461538461537,Bed,J. Holiday,7
+2007,9,1.3461538461538463,What Goes Around...Comes Around,Justin Timberlake,7
+2007,10,1.4423076923076923,What Goes Around...Comes Around,Justin Timberlake,7
+2008,1,0.75,Live Your Life,T.I. Featuring Rihanna,3
+2008,2,1.0,Live Your Life,T.I. Featuring Rihanna,3
+2008,3,6.230769230769231,No Air,Jordin Sparks Duet With Chris Brown,64
+2008,4,2.173076923076923,No Air,Jordin Sparks Duet With Chris Brown,64
+2008,5,4.480769230769231,No Air,Jordin Sparks Duet With Chris Brown,64
+2008,6,6.134615384615385,No Air,Jordin Sparks Duet With Chris Brown,64
+2008,7,6.5,No Air,Jordin Sparks Duet With Chris Brown,64
+2008,8,1.4038461538461537,4 Minutes,Madonna Featuring Justin Timberlake & Timbaland,14
+2008,9,1.2115384615384615,The Time Of My Life,David Cook,19
+2008,10,1.7115384615384615,4 Minutes,Madonna Featuring Justin Timberlake & Timbaland,14
+2009,1,0.3076923076923077,Right Round,Flo Rida,2
+2009,2,1.25,Best I Ever Had,Drake,6
+2009,3,1.7307692307692308,Knock You Down,Keri Hilson Featuring Kanye West & Ne-Yo,7
+2009,4,1.9423076923076923,Knock You Down,Keri Hilson Featuring Kanye West & Ne-Yo,7
+2009,5,0.34615384615384615,You Belong With Me,Taylor Swift,4
+2009,6,0.8846153846153846,Best I Ever Had,Drake,6
+2009,7,1.0,Knock You Down,Keri Hilson Featuring Kanye West & Ne-Yo,7
+2009,8,1.3653846153846154,Knock You Down,Keri Hilson Featuring Kanye West & Ne-Yo,7
+2009,9,0.9423076923076923,Second Chance,Shinedown,5
+2009,10,1.0769230769230769,Jump Then Fall,Taylor Swift,9
+2010,1,1.1538461538461537,Love The Way You Lie,Eminem Featuring Rihanna,4
+2010,2,1.5384615384615385,Love The Way You Lie,Eminem Featuring Rihanna,4
+2010,3,1.1346153846153846,Mine,Taylor Swift,6
+2010,4,1.4038461538461537,The Time (Dirty Bit),The Black Eyed Peas,10
+2010,5,1.1538461538461537,I Like It,Enrique Iglesias Featuring Pitbull,4
+2010,6,1.0192307692307692,Back To December,Taylor Swift,11
+2010,7,1.0192307692307692,Mine,Taylor Swift,6
+2010,8,1.8653846153846154,Bulletproof,La Roux,21
+2010,9,1.2884615384615385,The Time (Dirty Bit),The Black Eyed Peas,10
+2010,10,1.5769230769230769,Bulletproof,La Roux,21
+2011,1,2.3461538461538463,Someone Like You,Adele,14
+2011,2,2.5384615384615383,Someone Like You,Adele,14
+2011,3,1.9038461538461537,Someone Like You,Adele,14
+2011,4,1.9038461538461537,Good Feeling,Flo Rida,9
+2011,5,1.5769230769230769,Someone Like You,Adele,14
+2011,6,1.5192307692307692,Someone Like You,Adele,14
+2011,7,1.7884615384615385,Someone Like You,Adele,14
+2011,8,2.0961538461538463,You And I,Lady Gaga,10
+2011,9,2.0961538461538463,The Time (Dirty Bit),The Black Eyed Peas,10
+2011,10,2.0576923076923075,You And I,Lady Gaga,10
+2012,1,2.0384615384615383,One More Night,Maroon 5,5
+2012,2,2.019230769230769,Payphone,Maroon 5 Featuring Wiz Khalifa,7
+2012,3,2.9038461538461537,Good Feeling,Flo Rida,9
+2012,4,1.4807692307692308,Good Feeling,Flo Rida,9
+2012,5,2.1153846153846154,Good Feeling,Flo Rida,9
+2012,6,1.6730769230769231,Good Feeling,Flo Rida,9
+2012,7,1.6153846153846154,Someone Like You,Adele,14
+2012,8,2.326923076923077,Good Time,Owl City & Carly Rae Jepsen,25
+2012,9,2.980769230769231,Good Time,Owl City & Carly Rae Jepsen,25
+2012,10,2.019230769230769,Good Time,Owl City & Carly Rae Jepsen,25
+2013,1,1.5,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,11
+2013,2,0.7692307692307693,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,11
+2013,3,0.5576923076923077,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,11
+2013,4,0.7115384615384616,Wake Me Up!,Avicii,4
+2013,5,1.4230769230769231,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,11
+2013,6,2.1923076923076925,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,21
+2013,7,1.0384615384615385,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,11
+2013,8,0.9807692307692307,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,21
+2013,9,2.3653846153846154,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,21
+2013,10,3.0,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,21
+2014,1,0.34615384615384615,Blank Space,Taylor Swift,1
+2014,2,0.46153846153846156,Problem,Ariana Grande Featuring Iggy Azalea,2
+2014,3,0.7115384615384616,Habits (Stay High),Tove Lo,7
+2014,4,0.7307692307692307,Habits (Stay High),Tove Lo,7
+2014,5,0.75,Habits (Stay High),Tove Lo,7
+2014,6,0.6346153846153846,Habits (Stay High),Tove Lo,7
+2014,7,0.7115384615384616,Habits (Stay High),Tove Lo,7
+2014,8,1.3461538461538463,Not A Bad Thing,Justin Timberlake,8
+2014,9,1.411764705882353,Not A Bad Thing,Justin Timberlake,8
+2014,10,0.5686274509803921,Story Of My Life,One Direction,4
+2015,1,1.8076923076923077,Hello,Adele,7
+2015,2,0.8846153846153846,The Hills,The Weeknd,6
+2015,3,1.3076923076923077,The Hills,The Weeknd,6
+2015,4,1.6153846153846154,The Hills,The Weeknd,6
+2015,5,1.4615384615384615,The Hills,The Weeknd,6
+2015,6,0.8846153846153846,Style,Taylor Swift,7
+2015,7,1.4807692307692308,Style,Taylor Swift,7
+2015,8,0.8846153846153846,Style,Taylor Swift,7
+2015,9,1.8269230769230769,Time Of Our Lives,Pitbull & Ne-Yo,18
+2015,10,1.4615384615384615,Time Of Our Lives,Pitbull & Ne-Yo,18
+2016,1,4.09433962264151,One Dance,Drake Featuring WizKid & Kyla,13
+2016,2,2.6226415094339623,One Dance,Drake Featuring WizKid & Kyla,13
+2016,3,2.660377358490566,One Dance,Drake Featuring WizKid & Kyla,13
+2016,4,2.2452830188679247,Stressed Out,twenty one pilots,8
+2016,5,2.7735849056603774,Ride,twenty one pilots,13
+2016,6,2.7169811320754715,Ride,twenty one pilots,13
+2016,7,3.1458333333333335,Ride,twenty one pilots,13
+2016,8,1.92,One Dance,Drake Featuring WizKid & Kyla,13
+2016,9,2.2830188679245285,Ride,twenty one pilots,13
+2016,10,2.204081632653061,Ride,twenty one pilots,13
+2017,1,0.4423076923076923,Look What You Made Me Do,Taylor Swift,4
+2017,2,0.38461538461538464,Bodak Yellow (Money Moves),Cardi B,2
+2017,3,0.6538461538461539,Look What You Made Me Do,Taylor Swift,4
+2017,4,0.8846153846153846,Too Good At Goodbyes,Sam Smith,11
+2017,5,0.7884615384615384,Too Good At Goodbyes,Sam Smith,11
+2017,6,0.8269230769230769,Too Good At Goodbyes,Sam Smith,11
+2017,7,1.5192307692307692,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2017,8,1.2692307692307692,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2017,9,1.1153846153846154,Too Good At Goodbyes,Sam Smith,11
+2017,10,1.3461538461538463,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2018,1,0.9807692307692307,Nice For What,Drake,2
+2018,2,0.7884615384615384,Nice For What,Drake,2
+2018,3,0.6730769230769231,No Tears Left To Cry,Ariana Grande,3
+2018,4,0.75,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2018,5,0.8846153846153846,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2018,6,0.5384615384615384,Bad At Love,Halsey,4
+2018,7,1.5,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2018,8,1.8076923076923077,Too Good At Goodbyes,Sam Smith,11
+2018,9,1.4807692307692308,Too Good At Goodbyes,Sam Smith,11
+2018,10,1.8653846153846154,No Limit,G-Eazy Featuring A$AP Rocky & Cardi B,12
+2019,1,0.9807692307692307,Truth Hurts,Lizzo,4
+2019,2,0.8653846153846154,Truth Hurts,Lizzo,4
+2019,3,0.7884615384615384,Truth Hurts,Lizzo,4
+2019,4,1.0384615384615385,Memories,Maroon 5,4
+2019,5,0.7692307692307693,Memories,Maroon 5,4
+2019,6,0.5769230769230769,Truth Hurts,Lizzo,4
+2019,7,0.6153846153846154,Memories,Maroon 5,4
+2019,8,0.75,Jingle Bell Rock,Bobby Helms,10
+2019,9,0.7884615384615384,Jingle Bell Rock,Bobby Helms,10
+2019,10,0.4807692307692308,Truth Hurts,Lizzo,4
+2020,1,1.3653846153846154,Toosie Slide,Drake,6
+2020,2,1.25,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2020,3,2.7884615384615383,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2020,4,2.730769230769231,Jingle Bell Rock,Bobby Helms,10
+2020,5,2.076923076923077,Jingle Bell Rock,Bobby Helms,10
+2020,6,1.5961538461538463,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2020,7,1.7692307692307692,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2020,8,1.2884615384615385,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2020,9,0.9615384615384616,Jingle Bell Rock,Bobby Helms,10
+2020,10,0.9038461538461539,Hate The Other Side,Juice WRLD & Marshmello Featuring Polo G & The Kid LAROI,7
+2021,1,1.0,Mood,24kGoldn Featuring iann dior,4
+2021,2,1.2692307692307692,my.life,"J. Cole, 21 Savage & Morray",5
+2021,3,1.6153846153846154,Jingle Bell Rock,Bobby Helms,10
+2021,4,1.7692307692307692,Jingle Bell Rock,Bobby Helms,10
+2021,5,1.75,Jingle Bell Rock,Bobby Helms,10
+2021,6,1.5384615384615385,Jingle Bell Rock,Bobby Helms,10
+2021,7,1.6470588235294117,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2021,8,2.1153846153846154,Laugh Now Cry Later,Drake Featuring Lil Durk,10
+2021,9,1.5769230769230769,Heat Waves,Glass Animals,8
+2021,10,1.4807692307692308,It's The Most Wonderful Time Of The Year,Andy Williams,9

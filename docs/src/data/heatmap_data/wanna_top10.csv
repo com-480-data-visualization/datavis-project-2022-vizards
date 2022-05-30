@@ -1,0 +1,221 @@
+year,rank,mean,song,artist,occ
+2000,1,2.326923076923077,Be With You,Enrique Iglesias,16
+2000,2,1.3461538461538463,Incomplete,Sisqo,6
+2000,3,1.5961538461538463,Be With You,Enrique Iglesias,16
+2000,4,4.0576923076923075,Bye Bye Bye,'N Sync,17
+2000,5,4.826923076923077,Bye Bye Bye,'N Sync,17
+2000,6,4.173076923076923,Bye Bye Bye,'N Sync,17
+2000,7,2.5384615384615383,Bye Bye Bye,'N Sync,17
+2000,8,2.923076923076923,Gotta Tell You,Samantha Mumba,16
+2000,9,2.4038461538461537,Bye Bye Bye,'N Sync,17
+2000,10,2.173076923076923,Gotta Tell You,Samantha Mumba,16
+2001,1,0.46153846153846156,U Got It Bad,Usher,4
+2001,2,0.9230769230769231,Hit 'Em Up Style (Oops!),Blu Cantrell,5
+2001,3,2.173076923076923,Ride Wit Me,Nelly Featuring City Spud,18
+2001,4,2.6153846153846154,Ride Wit Me,Nelly Featuring City Spud,18
+2001,5,4.25,Ride Wit Me,Nelly Featuring City Spud,18
+2001,6,1.2307692307692308,Love Don't Cost A Thing,Jennifer Lopez,16
+2001,7,0.9038461538461539,Ride Wit Me,Nelly Featuring City Spud,18
+2001,8,1.4230769230769231,Ride Wit Me,Nelly Featuring City Spud,18
+2001,9,0.9423076923076923,Ride Wit Me,Nelly Featuring City Spud,18
+2001,10,1.1346153846153846,Love Don't Cost A Thing,Jennifer Lopez,16
+2002,1,1.8461538461538463,Hot In Herre,Nelly,8
+2002,2,3.5,Gangsta Lovin',Eve Featuring Alicia Keys,26
+2002,3,2.4375,Gangsta Lovin',Eve Featuring Alicia Keys,26
+2002,4,1.7142857142857142,Gangsta Lovin',Eve Featuring Alicia Keys,26
+2002,5,1.6521739130434783,Just A Friend 2002,Mario,17
+2002,6,2.4166666666666665,Gangsta Lovin',Eve Featuring Alicia Keys,26
+2002,7,1.489795918367347,Just A Friend 2002,Mario,17
+2002,8,1.0816326530612246,Don't Let Me Get Me,P!nk,11
+2002,9,0.84,Don't Let Me Get Me,P!nk,11
+2002,10,2.1,Gangsta Lovin',Eve Featuring Alicia Keys,26
+2003,1,0.8076923076923077,Hey Ya!,OutKast,3
+2003,2,1.1346153846153846,Rock Wit U (Awww Baby),Ashanti,18
+2003,3,1.8775510204081634,Rock Wit U (Awww Baby),Ashanti,18
+2003,4,1.7826086956521738,Rock Wit U (Awww Baby),Ashanti,18
+2003,5,1.9574468085106382,Rock Wit U (Awww Baby),Ashanti,18
+2003,6,0.7333333333333333,Miss You,Aaliyah,8
+2003,7,2.5625,Rain On Me,Ashanti,19
+2003,8,1.653061224489796,Rain On Me,Ashanti,19
+2003,9,2.5217391304347827,Rain On Me,Ashanti,19
+2003,10,2.3125,Rain On Me,Ashanti,19
+2004,1,0.9615384615384616,Burn,Usher,3
+2004,2,4.673076923076923,One Call Away,Chingy Featuring J. Weav,23
+2004,3,1.5192307692307692,I Don't Wanna Know,Mario Winans Featuring Enya & P. Diddy,13
+2004,4,2.1538461538461537,One Call Away,Chingy Featuring J. Weav,23
+2004,5,0.8846153846153846,Hotel,Cassidy Featuring R. Kelly,5
+2004,6,1.8076923076923077,One Call Away,Chingy Featuring J. Weav,23
+2004,7,1.6538461538461537,One Call Away,Chingy Featuring J. Weav,23
+2004,8,0.75,My Band,D12,5
+2004,9,1.1538461538461537,I Don't Wanna Know,Mario Winans Featuring Enya & P. Diddy,13
+2004,10,0.9230769230769231,Lovers And Friends,Lil Jon & The East Side Boyz Featuring Usher & Ludacris,5
+2005,1,1.3846153846153846,Inside Your Heaven,Carrie Underwood,12
+2005,2,1.8076923076923077,Inside Your Heaven,Bo Bice,11
+2005,3,1.75,Inside Your Heaven,Carrie Underwood,12
+2005,4,2.1153846153846154,Inside Your Heaven,Carrie Underwood,12
+2005,5,1.5192307692307692,Inside Your Heaven,Bo Bice,11
+2005,6,1.3076923076923077,Lonely No More,Rob Thomas,13
+2005,7,1.5192307692307692,Lonely No More,Rob Thomas,13
+2005,8,1.1923076923076923,Don't Cha,The Pussycat Dolls Featuring Busta Rhymes,7
+2005,9,1.4038461538461537,Lonely No More,Rob Thomas,13
+2005,10,1.5,Lonely No More,Rob Thomas,13
+2006,1,2.730769230769231,London Bridge,Fergie,13
+2006,2,4.711538461538462,London Bridge,Fergie,13
+2006,3,3.7884615384615383,Me & U,Cassie,14
+2006,4,4.509803921568627,Me & U,Cassie,14
+2006,5,2.9038461538461537,London Bridge,Fergie,13
+2006,6,2.8461538461538463,Unfaithful,Rihanna,16
+2006,7,2.688888888888889,Unfaithful,Rihanna,16
+2006,8,2.63265306122449,Unfaithful,Rihanna,16
+2006,9,1.9069767441860466,Unfaithful,Rihanna,16
+2006,10,2.0416666666666665,Me & U,Cassie,14
+2007,1,1.9423076923076923,Don't Matter,Akon,20
+2007,2,3.1538461538461537,Don't Matter,Akon,20
+2007,3,2.2884615384615383,Don't Matter,Akon,20
+2007,4,1.4807692307692308,I Wanna Love You,Akon Featuring Snoop Dogg,10
+2007,5,1.5576923076923077,Don't Matter,Akon,20
+2007,6,1.4615384615384615,Throw Some D's,Rich Boy Featuring Polow Da Don,11
+2007,7,1.6346153846153846,Cyclone,Baby Bash Featuring T-Pain,11
+2007,8,2.5384615384615383,Don't Matter,Akon,20
+2007,9,2.480769230769231,Don't Matter,Akon,20
+2007,10,2.1153846153846154,Cyclone,Baby Bash Featuring T-Pain,11
+2008,1,2.5576923076923075,Lollipop,Lil Wayne Featuring Static Major,14
+2008,2,2.173076923076923,Lollipop,Lil Wayne Featuring Static Major,14
+2008,3,2.576923076923077,Lollipop,Lil Wayne Featuring Static Major,14
+2008,4,2.9423076923076925,Lollipop,Lil Wayne Featuring Static Major,14
+2008,5,2.8653846153846154,Paper Planes,M.I.A.,12
+2008,6,3.769230769230769,Paper Planes,M.I.A.,12
+2008,7,2.480769230769231,Lollipop,Lil Wayne Featuring Static Major,14
+2008,8,1.7115384615384615,Right Now (Na Na Na),Akon,16
+2008,9,2.7884615384615383,When I Grow Up,The Pussycat Dolls,24
+2008,10,1.8269230769230769,Right Now (Na Na Na),Akon,16
+2009,1,0.6153846153846154,Poker Face,Lady Gaga,2
+2009,2,1.0192307692307692,Bad Romance,Lady Gaga,4
+2009,3,1.0961538461538463,Kiss Me Thru The Phone,Soulja Boy Tell 'em Featuring Sammie,10
+2009,4,1.6538461538461537,Kiss Me Thru The Phone,Soulja Boy Tell 'em Featuring Sammie,10
+2009,5,1.2307692307692308,LoveGame,Lady Gaga,11
+2009,6,1.5192307692307692,LoveGame,Lady Gaga,11
+2009,7,1.4807692307692308,LoveGame,Lady Gaga,11
+2009,8,1.2307692307692308,LoveGame,Lady Gaga,11
+2009,9,0.9807692307692307,LoveGame,Lady Gaga,11
+2009,10,1.5,LoveGame,Lady Gaga,11
+2010,1,0.7115384615384616,What's My Name?,Rihanna Featuring Drake,11
+2010,2,1.4038461538461537,What's My Name?,Rihanna Featuring Drake,11
+2010,3,1.2884615384615385,What's My Name?,Rihanna Featuring Drake,11
+2010,4,1.3653846153846154,Billionaire,Travie McCoy Featuring Bruno Mars,5
+2010,5,1.8269230769230769,What's My Name?,Rihanna Featuring Drake,11
+2010,6,1.4423076923076923,Alejandro,Lady Gaga,10
+2010,7,1.5961538461538463,What's My Name?,Rihanna Featuring Drake,11
+2010,8,1.5769230769230769,What's My Name?,Rihanna Featuring Drake,11
+2010,9,0.8461538461538461,Alejandro,Lady Gaga,10
+2010,10,0.75,Young Forever,Jay-Z + Mr. Hudson,7
+2011,1,1.0961538461538463,Party Rock Anthem,LMFAO Featuring Lauren Bennett & GoonRock,4
+2011,2,0.9230769230769231,Party Rock Anthem,LMFAO Featuring Lauren Bennett & GoonRock,4
+2011,3,0.9230769230769231,What's My Name?,Rihanna Featuring Drake,11
+2011,4,1.8269230769230769,What's My Name?,Rihanna Featuring Drake,11
+2011,5,1.3269230769230769,What's My Name?,Rihanna Featuring Drake,11
+2011,6,1.8653846153846154,What's My Name?,Rihanna Featuring Drake,11
+2011,7,1.8461538461538463,Hey Baby (Drop It To The Floor),Pitbull Featuring T-Pain,22
+2011,8,1.0384615384615385,What's My Name?,Rihanna Featuring Drake,11
+2011,9,1.9230769230769231,Hey Baby (Drop It To The Floor),Pitbull Featuring T-Pain,22
+2011,10,1.7307692307692308,Hey Baby (Drop It To The Floor),Pitbull Featuring T-Pain,22
+2012,1,0.25,Locked Out Of Heaven,Bruno Mars,2
+2012,2,0.1346153846153846,Locked Out Of Heaven,Bruno Mars,2
+2012,3,0.36538461538461536,Live While We're Young,One Direction,12
+2012,4,0.19230769230769232,Locked Out Of Heaven,Bruno Mars,2
+2012,5,0.25,Boyfriend,Justin Bieber,2
+2012,6,0.34615384615384615,Party Rock Anthem,LMFAO Featuring Lauren Bennett & GoonRock,4
+2012,7,0.28846153846153844,Beauty And A Beat,Justin Bieber Featuring Nicki Minaj,3
+2012,8,0.17307692307692307,Boyfriend,Justin Bieber,2
+2012,9,0.75,Scream,Usher,7
+2012,10,1.0,Scream,Usher,7
+2013,1,1.2692307692307692,Blurred Lines,Robin Thicke Featuring T.I. + Pharrell,4
+2013,2,0.5,Blurred Lines,Robin Thicke Featuring T.I. + Pharrell,4
+2013,3,0.6538461538461539,Scream & Shout,will.i.am & Britney Spears,7
+2013,4,0.3076923076923077,Scream & Shout,will.i.am & Britney Spears,7
+2013,5,0.7692307692307693,Scream & Shout,will.i.am & Britney Spears,7
+2013,6,0.8846153846153846,Scream & Shout,will.i.am & Britney Spears,7
+2013,7,1.2692307692307692,Scream & Shout,will.i.am & Britney Spears,7
+2013,8,1.6730769230769231,Feel This Moment,Pitbull Featuring Christina Aguilera,12
+2013,9,1.7115384615384615,Feel This Moment,Pitbull Featuring Christina Aguilera,12
+2013,10,1.8461538461538463,Feel This Moment,Pitbull Featuring Christina Aguilera,12
+2014,1,1.25,Happy,Pharrell Williams,6
+2014,2,0.6538461538461539,Happy,Pharrell Williams,6
+2014,3,0.46153846153846156,Uptown Funk!,Mark Ronson Featuring Bruno Mars,2
+2014,4,1.0576923076923077,Happy,Pharrell Williams,6
+2014,5,0.5961538461538461,Happy,Pharrell Williams,6
+2014,6,0.7884615384615384,Happy,Pharrell Williams,6
+2014,7,0.6346153846153846,Break Free,Ariana Grande Featuring Zedd,4
+2014,8,0.9230769230769231,Happy,Pharrell Williams,6
+2014,9,0.47058823529411764,Don't,Ed Sheeran,9
+2014,10,1.0980392156862746,Don't,Ed Sheeran,9
+2015,1,0.8461538461538461,What Do You Mean?,Justin Bieber,14
+2015,2,1.8076923076923077,What Do You Mean?,Justin Bieber,14
+2015,3,2.1346153846153846,What Do You Mean?,Justin Bieber,14
+2015,4,1.8269230769230769,What Do You Mean?,Justin Bieber,14
+2015,5,1.8269230769230769,What Do You Mean?,Justin Bieber,14
+2015,6,1.5192307692307692,What Do You Mean?,Justin Bieber,14
+2015,7,1.0192307692307692,Good For You,Selena Gomez Featuring A$AP Rocky,7
+2015,8,1.1346153846153846,Good For You,Selena Gomez Featuring A$AP Rocky,7
+2015,9,1.25,Good For You,Selena Gomez Featuring A$AP Rocky,7
+2015,10,1.8846153846153846,Somebody,Natalie La Rose Featuring Jeremih,15
+2016,1,0.5471698113207547,Love Yourself,Justin Bieber,4
+2016,2,0.9245283018867925,Love Yourself,Justin Bieber,4
+2016,3,0.7169811320754716,Love Yourself,Justin Bieber,4
+2016,4,0.5283018867924528,I Took A Pill In Ibiza,Mike Posner,12
+2016,5,1.8113207547169812,What Do You Mean?,Justin Bieber,14
+2016,6,0.5283018867924528,I Took A Pill In Ibiza,Mike Posner,12
+2016,7,1.3958333333333333,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2016,8,1.54,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2016,9,1.0,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2016,10,2.8979591836734695,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2017,1,0.36538461538461536,Bodak Yellow (Money Moves),Cardi B,1
+2017,2,0.6538461538461539,Wild Thoughts,DJ Khaled Featuring Rihanna & Bryson Tiller,4
+2017,3,0.3269230769230769,Something Just Like This,The Chainsmokers & Coldplay,6
+2017,4,0.40384615384615385,Wild Thoughts,DJ Khaled Featuring Rihanna & Bryson Tiller,4
+2017,5,0.7115384615384616,Something Just Like This,The Chainsmokers & Coldplay,6
+2017,6,2.019230769230769,Tunnel Vision,Kodak Black,18
+2017,7,1.1730769230769231,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2017,8,2.769230769230769,Tunnel Vision,Kodak Black,18
+2017,9,1.5961538461538463,Don't Wanna Know,Maroon 5 Featuring Kendrick Lamar,14
+2017,10,0.7115384615384616,Fake Love,Drake,10
+2018,1,0.6538461538461539,This Is America,Childish Gambino,4
+2018,2,0.34615384615384615,This Is America,Childish Gambino,4
+2018,3,0.6538461538461539,Happier,Marshmello & Bastille,4
+2018,4,0.6923076923076923,Happier,Marshmello & Bastille,4
+2018,5,0.3269230769230769,Happier,Marshmello & Bastille,4
+2018,6,0.4423076923076923,Happier,Marshmello & Bastille,4
+2018,7,0.4423076923076923,This Is America,Childish Gambino,4
+2018,8,0.7307692307692307,Happier,Marshmello & Bastille,4
+2018,9,0.5769230769230769,I Love It,Kanye West & Lil Pump,3
+2018,10,0.6346153846153846,No Tears Left To Cry,Ariana Grande,3
+2019,1,0.5961538461538461,HIGHEST IN THE ROOM,Travis Scott,2
+2019,2,0.23076923076923078,Happier,Marshmello & Bastille,4
+2019,3,0.17307692307692307,I Don't Care,Ed Sheeran & Justin Bieber,2
+2019,4,0.5384615384615384,Roxanne,Arizona Zervas,11
+2019,5,0.5961538461538461,Roxanne,Arizona Zervas,11
+2019,6,1.0961538461538463,Roxanne,Arizona Zervas,11
+2019,7,1.0576923076923077,Roxanne,Arizona Zervas,11
+2019,8,0.9615384615384616,Thotiana,Blueface,7
+2019,9,0.5192307692307693,Thotiana,Blueface,7
+2019,10,0.5192307692307693,Dancing With A Stranger,Sam Smith & Normani,4
+2020,1,2.0,Mood,24kGoldn Featuring iann dior,6
+2020,2,1.3653846153846154,Don't Start Now,Dua Lipa,7
+2020,3,1.4807692307692308,Don't Start Now,Dua Lipa,7
+2020,4,0.75,Don't Start Now,Dua Lipa,7
+2020,5,1.5,Roxanne,Arizona Zervas,11
+2020,6,2.2884615384615383,Roxanne,Arizona Zervas,11
+2020,7,2.519230769230769,Roxanne,Arizona Zervas,11
+2020,8,1.5192307692307692,Roxanne,Arizona Zervas,11
+2020,9,1.6346153846153846,Roxanne,Arizona Zervas,11
+2020,10,1.75,Feliz Navidad,Jose Feliciano,18
+2021,1,0.5769230769230769,Mood,24kGoldn Featuring iann dior,6
+2021,2,0.9423076923076923,Mood,24kGoldn Featuring iann dior,6
+2021,3,0.6538461538461539,Mood,24kGoldn Featuring iann dior,6
+2021,4,0.6538461538461539,34+35,Ariana Grande,4
+2021,5,0.8653846153846154,Shivers,Ed Sheeran,16
+2021,6,1.5576923076923077,Feliz Navidad,Jose Feliciano,18
+2021,7,1.588235294117647,Shivers,Ed Sheeran,16
+2021,8,1.0384615384615385,Need To Know,Doja Cat,6
+2021,9,2.0384615384615383,Shivers,Ed Sheeran,16
+2021,10,1.2692307692307692,Shivers,Ed Sheeran,16

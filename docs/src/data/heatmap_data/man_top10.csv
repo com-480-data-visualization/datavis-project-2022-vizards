@@ -1,0 +1,221 @@
+year,rank,mean,song,artist,occ
+2000,1,12.384615384615385,Independent Women Part I,Destiny's Child,89
+2000,2,1.0,He Wasn't Man Enough,Toni Braxton,14
+2000,3,3.25,"Jumpin', Jumpin'",Destiny's Child,21
+2000,4,3.673076923076923,"Jumpin', Jumpin'",Destiny's Child,21
+2000,5,4.3076923076923075,Independent Women Part I,Destiny's Child,89
+2000,6,2.6538461538461537,"Jumpin', Jumpin'",Destiny's Child,21
+2000,7,3.3846153846153846,Independent Women Part I,Destiny's Child,89
+2000,8,2.5,Auld Lang Syne,Kenny G,28
+2000,9,0.7692307692307693,Kryptonite,3 Doors Down,8
+2000,10,1.3076923076923077,"Jumpin', Jumpin'",Destiny's Child,21
+2001,1,7.653846153846154,Independent Women Part I,Destiny's Child,89
+2001,2,3.0576923076923075,Independent Women Part I,Destiny's Child,89
+2001,3,2.9038461538461537,Independent Women Part I,Destiny's Child,89
+2001,4,1.6538461538461537,Missing You,Case,10
+2001,5,1.4807692307692308,Missing You,Case,10
+2001,6,1.0961538461538463,Missing You,Case,10
+2001,7,2.4423076923076925,Independent Women Part I,Destiny's Child,89
+2001,8,0.8269230769230769,Missing You,Case,10
+2001,9,0.9230769230769231,What Would You Do?,City High,6
+2001,10,2.423076923076923,Independent Women Part I,Destiny's Child,89
+2002,1,1.7115384615384615,How You Remind Me,Nickelback,5
+2002,2,3.6153846153846154,I Need A Girl (Part One),P. Diddy Featuring Usher & Loon,23
+2002,3,2.7916666666666665,I Need A Girl (Part One),P. Diddy Featuring Usher & Loon,23
+2002,4,2.4081632653061225,I Need A Girl (Part One),P. Diddy Featuring Usher & Loon,23
+2002,5,1.3478260869565217,Air Force Ones,"Nelly Featuring Kyjuan, Ali & Murphy Lee",6
+2002,6,1.375,I Need A Girl (Part One),P. Diddy Featuring Usher & Loon,23
+2002,7,2.061224489795918,A Woman's Worth,Alicia Keys,44
+2002,8,3.306122448979592,A Woman's Worth,Alicia Keys,44
+2002,9,4.34,A Woman's Worth,Alicia Keys,44
+2002,10,1.96,A Woman's Worth,Alicia Keys,44
+2003,1,2.3461538461538463,Shake Ya Tailfeather,"Nelly, P. Diddy & Murphy Lee",10
+2003,2,1.7884615384615385,Shake Ya Tailfeather,"Nelly, P. Diddy & Murphy Lee",10
+2003,3,1.9591836734693877,Shake Ya Tailfeather,"Nelly, P. Diddy & Murphy Lee",10
+2003,4,1.3478260869565217,Shake Ya Tailfeather,"Nelly, P. Diddy & Murphy Lee",10
+2003,5,1.2553191489361701,Shake Ya Tailfeather,"Nelly, P. Diddy & Murphy Lee",10
+2003,6,0.6444444444444445,P.I.M.P.,50 Cent,3
+2003,7,0.7291666666666666,Air Force Ones,"Nelly Featuring Kyjuan, Ali & Murphy Lee",6
+2003,8,1.9591836734693877,Don't Mess With My Man,Nivea Featuring Brian & Brandon Casey,18
+2003,9,1.1521739130434783,Don't Mess With My Man,Nivea Featuring Brian & Brandon Casey,18
+2003,10,0.8958333333333334,21 Questions,50 Cent Featuring Nate Dogg,6
+2004,1,1.5961538461538463,Confessions Part II,Usher,8
+2004,2,2.0961538461538463,Confessions Part II,Usher,8
+2004,3,2.1153846153846154,Confessions Part II,Usher,8
+2004,4,1.5961538461538463,Tipsy,J-Kwon,4
+2004,5,2.0576923076923075,Dip It Low,Christina Milian,10
+2004,6,2.0384615384615383,My Band,D12,20
+2004,7,1.9807692307692308,My Band,D12,20
+2004,8,1.8269230769230769,My Band,D12,20
+2004,9,1.0769230769230769,Dip It Low,Christina Milian,10
+2004,10,2.173076923076923,My Band,D12,20
+2005,1,1.9423076923076923,Run It!,Chris Brown,12
+2005,2,1.2307692307692308,Run It!,Chris Brown,12
+2005,3,1.1346153846153846,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2005,4,1.2692307692307692,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2005,5,1.5961538461538463,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2005,6,1.25,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2005,7,0.5,Let Me Love You,Mario,4
+2005,8,0.8269230769230769,Run It!,Chris Brown,12
+2005,9,0.9230769230769231,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2005,10,1.1153846153846154,Lose Control,Missy Elliott Featuring Ciara & Fat Man Scoop,10
+2006,1,1.6346153846153846,My Love,Justin Timberlake Featuring T.I.,11
+2006,2,2.6923076923076925,Run It!,Chris Brown,12
+2006,3,1.6346153846153846,Run It!,Chris Brown,12
+2006,4,2.1176470588235294,My Love,Justin Timberlake Featuring T.I.,11
+2006,5,1.3846153846153846,My Love,Justin Timberlake Featuring T.I.,11
+2006,6,1.0576923076923077,Ain't No Other Man,Christina Aguilera,19
+2006,7,1.7777777777777777,Ain't No Other Man,Christina Aguilera,19
+2006,8,3.0408163265306123,Ain't No Other Man,Christina Aguilera,19
+2006,9,1.372093023255814,Ain't No Other Man,Christina Aguilera,19
+2006,10,0.875,Hips Don't Lie,Shakira Featuring Wyclef Jean,7
+2007,1,3.1346153846153846,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,2,2.076923076923077,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,3,0.8076923076923077,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,4,1.3653846153846154,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,5,0.9423076923076923,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,6,2.1153846153846154,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,7,1.1923076923076923,I Tried,Bone Thugs-N-Harmony Featuring Akon,10
+2007,8,1.3269230769230769,Crank That (Soulja Boy),Soulja Boy Tell'em,17
+2007,9,1.3846153846153846,I Tried,Bone Thugs-N-Harmony Featuring Akon,10
+2007,10,1.3653846153846154,Let It Go,Keyshia Cole Featuring Missy Elliott & Lil Kim,7
+2008,1,1.9423076923076923,Womanizer,Britney Spears,47
+2008,2,0.6538461538461539,Viva La Vida,Coldplay,3
+2008,3,26.48076923076923,No Air,Jordin Sparks Duet With Chris Brown,333
+2008,4,7.9423076923076925,No Air,Jordin Sparks Duet With Chris Brown,333
+2008,5,21.307692307692307,No Air,Jordin Sparks Duet With Chris Brown,333
+2008,6,29.115384615384617,No Air,Jordin Sparks Duet With Chris Brown,333
+2008,7,29.307692307692307,No Air,Jordin Sparks Duet With Chris Brown,333
+2008,8,2.173076923076923,Can't Believe It,T-Pain Featuring Lil Wayne,14
+2008,9,1.5961538461538463,Womanizer,Britney Spears,47
+2008,10,2.6538461538461537,Womanizer,Britney Spears,47
+2009,1,0.5384615384615384,Crack A Bottle,"Eminem, Dr. Dre & 50 Cent",10
+2009,2,2.3461538461538463,Bad Romance,Lady Gaga,29
+2009,3,1.5192307692307692,Bad Romance,Lady Gaga,29
+2009,4,0.8269230769230769,Heartless,Kanye West,4
+2009,5,1.5769230769230769,Womanizer,Britney Spears,47
+2009,6,0.75,Heartless,Kanye West,4
+2009,7,1.6730769230769231,Womanizer,Britney Spears,47
+2009,8,2.75,Womanizer,Britney Spears,47
+2009,9,2.3653846153846154,Womanizer,Britney Spears,47
+2009,10,0.4807692307692308,Gives You Hell,The All-American Rejects,3
+2010,1,1.1153846153846154,OMG,Usher Featuring will.i.am,7
+2010,2,3.2884615384615383,Bad Romance,Lady Gaga,29
+2010,3,2.730769230769231,Bad Romance,Lady Gaga,29
+2010,4,1.5,Bad Romance,Lady Gaga,29
+2010,5,2.4038461538461537,Bad Romance,Lady Gaga,29
+2010,6,0.8461538461538461,OMG,Usher Featuring will.i.am,7
+2010,7,0.5576923076923077,Mine,Taylor Swift,5
+2010,8,1.0384615384615385,OMG,Usher Featuring will.i.am,7
+2010,9,1.75,Bad Romance,Lady Gaga,29
+2010,10,0.9615384615384616,OMG,Usher Featuring will.i.am,7
+2011,1,0.3076923076923077,Last Friday Night (T.G.I.F.),Katy Perry,3
+2011,2,1.7115384615384615,F**k You! (Forget You),CeeLo Green,15
+2011,3,0.7115384615384616,F**k You! (Forget You),CeeLo Green,15
+2011,4,1.5384615384615385,F**k You! (Forget You),CeeLo Green,15
+2011,5,0.9038461538461539,F**k You! (Forget You),CeeLo Green,15
+2011,6,0.6346153846153846,Sexy And I Know It,LMFAO,2
+2011,7,0.8076923076923077,F**k You! (Forget You),CeeLo Green,15
+2011,8,0.4423076923076923,Just Can't Get Enough,The Black Eyed Peas,2
+2011,9,0.4423076923076923,Dirt Road Anthem,Jason Aldean,5
+2011,10,0.9615384615384616,F**k You! (Forget You),CeeLo Green,15
+2012,1,0.11538461538461539,Sexy And I Know It,LMFAO,2
+2012,2,0.3076923076923077,Boyfriend,Justin Bieber,6
+2012,3,0.38461538461538464,Some Nights,fun.,1
+2012,4,0.28846153846153844,Boyfriend,Justin Bieber,6
+2012,5,0.7115384615384616,Where Have You Been,Rihanna,6
+2012,6,0.5384615384615384,Where Have You Been,Rihanna,6
+2012,7,0.8461538461538461,Where Have You Been,Rihanna,6
+2012,8,0.5961538461538461,Where Have You Been,Rihanna,6
+2012,9,0.6538461538461539,Where Have You Been,Rihanna,6
+2012,10,0.5384615384615384,Where Have You Been,Rihanna,6
+2013,1,3.8076923076923075,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,23
+2013,2,2.6153846153846154,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,23
+2013,3,1.0961538461538463,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,23
+2013,4,0.6730769230769231,Thrift Shop,Macklemore & Ryan Lewis Featuring Wanz,7
+2013,5,2.2115384615384617,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,23
+2013,6,4.865384615384615,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,71
+2013,7,0.9807692307692307,Can't Hold Us,Macklemore & Ryan Lewis Featuring Ray Dalton,23
+2013,8,1.7307692307692308,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,71
+2013,9,3.826923076923077,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,71
+2013,10,3.769230769230769,Cups (Pitch Perfect's When I'm Gone),Anna Kendrick,71
+2014,1,1.0576923076923077,Rude,MAGIC!,4
+2014,2,1.2884615384615385,Rude,MAGIC!,4
+2014,3,0.9807692307692307,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2014,4,0.36538461538461536,Dark Horse,Katy Perry Featuring Juicy J,4
+2014,5,0.6730769230769231,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2014,6,0.6538461538461539,Hot Boy,Bobby Shmurda,4
+2014,7,0.46153846153846156,Hot Boy,Bobby Shmurda,4
+2014,8,1.5,The Man,Aloe Blacc,47
+2014,9,3.0784313725490198,The Man,Aloe Blacc,47
+2014,10,1.2941176470588236,The Man,Aloe Blacc,47
+2015,1,1.1923076923076923,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2015,2,0.5769230769230769,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2015,3,0.9230769230769231,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2015,4,0.8461538461538461,Shut Up And Dance,WALK THE MOON,5
+2015,5,1.0192307692307692,Shut Up And Dance,WALK THE MOON,5
+2015,6,0.7692307692307693,Uptown Funk!,Mark Ronson Featuring Bruno Mars,4
+2015,7,0.7115384615384616,Shut Up And Dance,WALK THE MOON,5
+2015,8,2.0576923076923075,Hey Mama,"David Guetta Featuring Nicki Minaj, Bebe Rexha & Afrojack",17
+2015,9,1.6730769230769231,Hey Mama,"David Guetta Featuring Nicki Minaj, Bebe Rexha & Afrojack",17
+2015,10,1.3846153846153846,Hey Mama,"David Guetta Featuring Nicki Minaj, Bebe Rexha & Afrojack",17
+2016,1,9.924528301886792,Closer,The Chainsmokers Featuring Halsey,20
+2016,2,2.1132075471698113,Closer,The Chainsmokers Featuring Halsey,20
+2016,3,2.339622641509434,Closer,The Chainsmokers Featuring Halsey,20
+2016,4,2.358490566037736,Cheap Thrills,Sia Featuring Sean Paul,20
+2016,5,1.3962264150943395,Cheap Thrills,Sia Featuring Sean Paul,20
+2016,6,3.2452830188679247,Closer,The Chainsmokers Featuring Halsey,20
+2016,7,1.5833333333333333,Cheap Thrills,Sia Featuring Sean Paul,20
+2016,8,2.92,Cheap Thrills,Sia Featuring Sean Paul,20
+2016,9,1.7735849056603774,Cheap Thrills,Sia Featuring Sean Paul,20
+2016,10,0.9183673469387755,Work,Rihanna Featuring Drake,20
+2017,1,1.0769230769230769,I'm The One,"DJ Khaled Featuring Justin Bieber, Quavo, Chance The Rapper & Lil Wayne",6
+2017,2,1.3653846153846154,I'm The One,"DJ Khaled Featuring Justin Bieber, Quavo, Chance The Rapper & Lil Wayne",6
+2017,3,3.2115384615384617,Closer,The Chainsmokers Featuring Halsey,20
+2017,4,2.2884615384615383,Closer,The Chainsmokers Featuring Halsey,20
+2017,5,3.3846153846153846,Closer,The Chainsmokers Featuring Halsey,20
+2017,6,2.8653846153846154,iSpy,KYLE Featuring Lil Yachty,15
+2017,7,1.75,Closer,The Chainsmokers Featuring Halsey,20
+2017,8,1.8653846153846154,iSpy,KYLE Featuring Lil Yachty,15
+2017,9,1.25,Unforgettable,French Montana Featuring Swae Lee,12
+2017,10,2.9423076923076925,Closer,The Chainsmokers Featuring Halsey,20
+2018,1,1.75,This Is America,Childish Gambino,29
+2018,2,2.1153846153846154,This Is America,Childish Gambino,29
+2018,3,0.6730769230769231,Sicko Mode,Travis Scott,5
+2018,4,1.5769230769230769,This Is America,Childish Gambino,29
+2018,5,1.4423076923076923,Look Alive,BlocBoy JB Featuring Drake,9
+2018,6,2.019230769230769,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2018,7,2.4423076923076925,This Is America,Childish Gambino,29
+2018,8,2.4423076923076925,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2018,9,2.3461538461538463,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2018,10,2.019230769230769,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2019,1,0.9615384615384616,Truth Hurts,Lizzo,4
+2019,2,0.23076923076923078,Truth Hurts,Lizzo,4
+2019,3,0.28846153846153844,Sicko Mode,Travis Scott,5
+2019,4,0.6730769230769231,Sicko Mode,Travis Scott,5
+2019,5,0.8653846153846154,Sicko Mode,Travis Scott,5
+2019,6,0.5,Truth Hurts,Lizzo,4
+2019,7,0.8846153846153846,Sicko Mode,Travis Scott,5
+2019,8,0.5384615384615384,ME!,Taylor Swift Featuring Brendon Urie,4
+2019,9,0.8076923076923077,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2019,10,1.2884615384615385,ZEZE,Kodak Black Featuring Travis Scott & Offset,12
+2020,1,0.9038461538461539,Willow,Taylor Swift,13
+2020,2,1.8461538461538463,Therefore I Am,Billie Eilish,9
+2020,3,1.1730769230769231,Popstar,DJ Khaled Featuring Drake,11
+2020,4,0.5192307692307693,Whats Poppin,"Jack Harlow Featuring DaBaby, Tory Lanez & Lil Wayne",6
+2020,5,1.2307692307692308,Intentions,Justin Bieber Featuring Quavo,16
+2020,6,1.0769230769230769,Exile,Taylor Swift Featuring Bon Iver,16
+2020,7,1.0,Intentions,Justin Bieber Featuring Quavo,16
+2020,8,2.423076923076923,Intentions,Justin Bieber Featuring Quavo,16
+2020,9,2.326923076923077,Intentions,Justin Bieber Featuring Quavo,16
+2020,10,2.0,Intentions,Justin Bieber Featuring Quavo,16
+2021,1,0.8076923076923077,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,2,1.6923076923076923,my.life,"J. Cole, 21 Savage & Morray",12
+2021,3,2.25,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,4,2.923076923076923,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,5,2.7115384615384617,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,6,2.1153846153846154,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,7,2.3137254901960786,Way 2 Sexy,Drake Featuring Future & Young Thug,10
+2021,8,2.0,Kiss Me More,Doja Cat Featuring SZA,10
+2021,9,1.2115384615384615,Essence,Wizkid Featuring Justin Bieber & Tems,10
+2021,10,1.1730769230769231,Kiss Me More,Doja Cat Featuring SZA,10
