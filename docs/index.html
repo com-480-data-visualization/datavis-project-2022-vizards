@@ -164,10 +164,38 @@
         </div>
         <p class="subtitle">A walk through our taste</p>
         <p class="title">How have songs changed in the past 22 years?</p>
-        <p>by DataVizards</p>
+        <p>by Vizards</p>
     </header>
     <div class="max-width-4 mx-auto">
         <div class="clearfix">
+            <p>We ❤️ music and we bet you too! If we take a look at our party planner we can see that there are several
+                types of themes. 60's, 80's, 2010's and so on. Time changes and so does music but how exactly? In the
+                following we will take a deeper look into the change of music in the past 22 years, since we want to
+                know how it changed recently. If we speak about <i>music</i> or <i>songs</i> we mean actually everything
+                which is connected to it: artist, lyrics, genre, album cover and so on. In general it seems like that
+                covers changed that they have lesser text and more simple covers now.</p>
+
+            <h2>Big Picture</h2>
+            <p>Before we dive deeper into the details, let us get a big picture. Picture is meant by word here. It is
+                interesting how the song covers changed over the past years. For example in the year 2004 you can find a
+                lot of faces of the artist where in 2014 you will find more logos and symbols on the covers. Use the
+                chart below to discover it on your own. Pro tip: You can click on the covers to get some more insights
+                of the songs and of course you can listen to it. <i>PS: The similarity is based on the album covers.</i>
+            </p>
+            <!-- <p>As the title is stating we want to time travel through music data for the past 22 years. Before we go
+                into the details of over 9000 songs, let us get a overview of the top songs for the past years. By
+                scrolling through the album covers you will get a feeling how they changed also over time. We shouldn't
+                forget that they are also really important. By clicking on one of the covers you can get detailed
+                information and listen to the song!
+            </p> -->
+            <div style="height: 50vh;">
+                <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
+                    style="border: none;"></iframe>
+            </div>
+            <h2>Artists</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, voluptatem nobis, nostrum eum
+                eligendi impedit quia a, accusamus dolorem perspiciatis debitis itaque dolor perferendis quis ab
+                doloremque saepe iste quasi!</p>
             <figure class="highcharts-figure">
                 <div class="max-width-4 mx-auto">
                     <div id="container">
@@ -185,19 +213,9 @@
                     </p>
                 </div>
             </figure>
-            <p>As the title is stating we want to time travel through music data for the past 22 years. Before we go
-                into the details of over 9000 songs, let us get a overview of the top songs for the past years. By
-                scrolling through the album covers you will get a feeling how they changed also over time. We shouldn't
-                forget that they are also really important. By clicking on one of the covers you can get detailed
-                information and listen to the song!
-            </p>
-            <div style="height: 50vh;">
-                <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
-                    style="border: none;"></iframe>
-            </div>
-            <p><i>PS: The similarity is based on the album covers.</i></p>
-            <b>Before you dive deeper. Please note that every section will continue with a horizontal scroll 🥸</b>
-            <h2>Artists Collaboration Network</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At adipisci ducimus repellat inventore
+                molestiae. Totam error temporibus numquam alias esse, doloremque recusandae libero ducimus ipsum
+                voluptatum voluptates officiis eveniet quam.</p>
             <div id="mynetwork" style="height:90vh"></div>
             <div class="myDiv mt2">
                 <table style="width: 100%; margin: auto;">
@@ -216,112 +234,16 @@
                 On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki
                 Minaj.
             </p>
-            <br>
-            <h2>Lyrics</h2>
-            <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
-                along
-                under the 🚿. Before we jump into the analysis do you can generate your own lyrics.
-                For
-                this we are using a markovchain and deep learning model</a>.
-            </p>
-            <div class="clearfix" style="height: 67vh;">
-                <div class="col col-6">
-                    <p>To generate the song please select an artist first. The lyrics will be
-                        generted
-                        in a style like the artist would write it.
-                    </p>
-                    <select id="song_artist">
-                        <option value="Backstreet Boys">Backstreet Boys</option>
-                        <option value="Bob Dylan">Bob Dylan</option>
-                        <option value="Bon Jovi">Bon Jovi</option>
-                        <option value="Britney Spears">Britney Spears</option>
-                        <option value="Bruce Springsteen">Bruce Springsteen</option>
-                        <option value="Chris Brown">Chris Brown</option>
-                        <option value="Christina Aguilera">Christina Aguilera</option>
-                        <option value="Donna Summer">Donna Summer</option>
-                        <option value="Drake">Drake</option>
-                        <option value="Fabolous">Fabolous</option>
-                        <option value="Glee">Glee</option>
-                        <option value="Gordon Lightfoot">Gordon Lightfoot</option>
-                        <option value="Gucci Mane">Gucci Mane</option>
-                        <option value="Ice Cube">Ice Cube</option>
-                        <option value="Indigo Girls">Indigo Girls</option>
-                        <option value="Insane Clown Posse">Insane Clown Posse</option>
-                        <option value="Kanye West">Kanye West</option>
-                        <option value="Lady Gaga">Lady Gaga</option>
-                        <option value="Lil Wayne">Lil Wayne</option>
-                        <option value="LL Cool J">LL Cool J</option>
-                        <option value="Mariah Carey">Mariah Carey</option>
-                        <option value="Michael Jackson">Michael Jackson</option>
-                        <option value="Miley Cyrus">Miley Cyrus</option>
-                        <option value="Ne-Yo">Ne-Yo</option>
-                        <option value="R. Kelly">R. Kelly</option>
-                        <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
-                        <option value="Rihanna">Rihanna</option>
-                        <option value="Rod Stewart">Rod Stewart</option>
-                        <option value="Usher">Usher</option>
-                    </select>
-                    <br>
-                    <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate
-                        ⚡️</button>
-                </div>
-                <div class="col col-6" id="song_text"></div>
+            <h3>Artist vs Artist</h3>
+            <div class="clearfix">
+                <div class="col col-6"> We promised you that our work will find out to which artist you can dance better
+                    regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
+                    right side.</div>
+                <div class="col col-6">ADD EXPLAIN IMG</div>
             </div>
-            <div id="sent_subj"></div>
-            Its is really interesting to see how the use of words change over time.
-            <div id="option">
-                Occurrences for
-                <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
-                    <option value="yeah">yeah</option>
-                    <option value="love">love</option>
-                    <option value="baby">baby</option>
-                    <option value="time">time</option>
-                    <option value="wanna">wanna</option>
-                    <option value="girl">girl</option>
-                    <option value="'cause">'cause</option>
-                    <option value="man">man</option>
-                    <option value="nigga">nigga</option>
-                    <option value="feel">feel</option>
-                </select>
-            </div>
-            <div id="heatmap"></div>
-            <div id="legend_heatmap" class="mb3"></div>
-            <div id="word_table" class="mx-auto">
-                <div class="chart-head chart-text" style="position:relative;">
-                    <p style="position:absolute; left:0px">WORD</p>
-                    <p style="position:absolute; left:360px">
-                        RANKING IN YEAR 20
-                        <select id="wordtable_options" onchange="updateWordChart()"
-                            style="border: 0px;background: transparent;">
-                            <option value="all">00 - 21</option>
-                            <option value="00">00</option>
-                            <option value="01">01</option>
-                            <option value="02">02</option>
-                            <option value="03">03</option>
-                            <option value="04">04</option>
-                            <option value="05">05</option>
-                            <option value="06">06</option>
-                            <option value="07">07</option>
-                            <option value="08">08</option>
-                            <option value="09">09</option>
-                            <option value="10">10</option>
-                            <option value="11">11</option>
-                            <option value="12">12</option>
-                            <option value="13">13</option>
-                            <option value="14">14</option>
-                            <option value="15">15</option>
-                            <option value="16">16</option>
-                            <option value="17">17</option>
-                            <option value="18">18</option>
-                            <option value="19">19</option>
-                            <option value="20">20</option>
-                            <option value="21">21</option>
-                        </select>
-                    </p>
-                </div>
-            </div>
+
             <div class="block mx-auto">
-                <p>Select your fighter</p>
+                <p> Okay enough! Choose your 🥋!</p>
                 <div class="radarChart"></div>
                 <div class="clearfix">
                     <div class="imgcon">
@@ -484,15 +406,145 @@
                         </div>
                     </div>
                 </div>
+                <p>As you can see Drake is the most danceable artist. But at least Kanye won over Taylor! <i>Fun Fact:
+                        Kanye and Taylor had some difficulties. The song we included her was directly against Kanye. If
+                        you have some time, search on YouTube, really entertaining.</i></p>
             </div>
             <div>
+                <h2>Lyrics</h2>
+                <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
+                    along under the 🚿. Before we jump into the analysis do you can generate your own lyrics to create
+                    your
+                    own Billboard hit, which will be analyzed by future EPFL students! To create the lyrics we are using
+                    a
+                    markov chain and deep learning model.
+                </p>
+                <div class="clearfix" style="height: 67vh;">
+                    <div class="col col-6">
+                        <p>To generate the song please select an artist first. The lyrics will be
+                            generted
+                            in a style like the artist would write it.
+                        </p>
+                        <select id="song_artist">
+                            <option value="Backstreet Boys">Backstreet Boys</option>
+                            <option value="Bob Dylan">Bob Dylan</option>
+                            <option value="Bon Jovi">Bon Jovi</option>
+                            <option value="Britney Spears">Britney Spears</option>
+                            <option value="Bruce Springsteen">Bruce Springsteen</option>
+                            <option value="Chris Brown">Chris Brown</option>
+                            <option value="Christina Aguilera">Christina Aguilera</option>
+                            <option value="Donna Summer">Donna Summer</option>
+                            <option value="Drake">Drake</option>
+                            <option value="Fabolous">Fabolous</option>
+                            <option value="Glee">Glee</option>
+                            <option value="Gordon Lightfoot">Gordon Lightfoot</option>
+                            <option value="Gucci Mane">Gucci Mane</option>
+                            <option value="Ice Cube">Ice Cube</option>
+                            <option value="Indigo Girls">Indigo Girls</option>
+                            <option value="Insane Clown Posse">Insane Clown Posse</option>
+                            <option value="Kanye West">Kanye West</option>
+                            <option value="Lady Gaga">Lady Gaga</option>
+                            <option value="Lil Wayne">Lil Wayne</option>
+                            <option value="LL Cool J">LL Cool J</option>
+                            <option value="Mariah Carey">Mariah Carey</option>
+                            <option value="Michael Jackson">Michael Jackson</option>
+                            <option value="Miley Cyrus">Miley Cyrus</option>
+                            <option value="Ne-Yo">Ne-Yo</option>
+                            <option value="R. Kelly">R. Kelly</option>
+                            <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
+                            <option value="Rihanna">Rihanna</option>
+                            <option value="Rod Stewart">Rod Stewart</option>
+                            <option value="Usher">Usher</option>
+                        </select>
+                        <br>
+                        <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate
+                            ⚡️</button>
+                    </div>
+                    <div class="col col-6" id="song_text"></div>
+                </div>
+                <h3>Let's Count</h3>
+                <p>It's interesting how language changes. The change is also visible in the lyrics. For example words
+                    some word find there way into the mainstream from 2016. What does it say about us and our society?
+                    The frequency of is correlated with the raise of rap / hiphop. (<i>Just-in Case (pun intended), you
+                        can change the years</i> 🤓)</p>
+                <div id="word_table" class="mx-auto">
+                    <div class="chart-head chart-text" style="position:relative;">
+                        <p style="position:absolute; left:0px">WORD</p>
+                        <p style="position:absolute; left:360px">
+                            RANKING IN YEAR 20
+                            <select id="wordtable_options" onchange="updateWordChart()"
+                                style="border: 0px;background: transparent;">
+                                <option value="all">00 - 21</option>
+                                <option value="00">00</option>
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                            </select>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <div id="sent_subj"></div> -->
+                <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
+                    distributed over the time and the top 10 songs. More details you can find under the heatmap at
+                    <i>"Details" (its interactive, hover it!)</i>.</p>
+
+                <div id="option">
+                    Get more insights for
+                    <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
+                        <option value="yeah">yeah</option>
+                        <option value="love">love</option>
+                        <option value="baby">baby</option>
+                        <option value="time">time</option>
+                        <option value="wanna">wanna</option>
+                        <option value="girl">girl</option>
+                        <option value="'cause">'cause</option>
+                        <option value="man">man</option>
+                        <option value="nigga">nigga</option>
+                        <option value="feel">feel</option>
+                    </select>
+                </div>
+                <div id="heatmap"></div>
+                <div id="legend_heatmap" class="mb3"></div>
+                <h2>Music</h2>
+                <p>Now let's get to last juicy detail. How has the music changed? Let find out which was the most
+                    danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
                 <div id="yearly"></div>
-                <p class="center">Please try out the play button :) <button class="button-lyrics"
-                        id="play-button">Play</button></p>
+                <button class="button-lyrics block mx-auto" id="play-button">Play</button>
                 <div id="slider-time"></div>
+                <h2>fin.</h2>
+                <p>Thank you for making it until here. We hope you enjoyed the journey.</p>
+                <p class="center"><i>Vizards (Aamir, Fatih, Yiren)</i></p>
             </div>
         </div>
     </div>
+
+    <script src="src/js/audio.js"></script>
+    <script src="src/js/radarchart.js"></script>
+    <script src="src/js/sentsubj.js"></script>
+    <script src="src/js/heatmap.js"></script>
+    <script src="src/js/word_table.js"></script>
+    <script src="src/js/artistvsartist.js"></script>
+    <script src="src/js/yearly.js"></script>
+    <script src="src/js/collabs.js"></script>
     <script>
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
@@ -508,13 +560,6 @@
             }
         };
     </script>
-    <script src="src/js/radarchart.js"></script>
-    <script src="src/js/sentsubj.js"></script>
-    <script src="src/js/heatmap.js"></script>
-    <script src="src/js/word_table.js"></script>
-    <script src="src/js/artistvsartist.js"></script>
-    <script src="src/js/yearly.js"></script>
-    <script src="src/js/collabs.js"></script>
     <script>
         colordir = {
             kanye: "#001219",
@@ -568,7 +613,6 @@
         }
         getLyrics()
     </script>
-    <script src="src/js/audio.js"></script>
 </body>
 
 </html>

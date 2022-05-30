@@ -59,7 +59,7 @@ d3.csv(file).then(function (data) {
     }
     const mousemove = function (event, d) {
         tooltip
-            .html("<b>Details</b><br>" + d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d.mean)
+            .html("<b>Details</b><br>" + d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d3.format(",.2~f")(d.mean));
         // .style("left", (event.x) + "px")
         // .style("top", 5000 + (event.y) + "px")
     }
@@ -129,7 +129,7 @@ d3.csv(file).then(function (data) {
         .attr("x", 280)
         .attr("y", -5)
         .attr("id", "last_legend")
-        .text((Math.round(max_leg * 100) / 100).toFixed(2));
+        .text(d3.format(",.2~f")(max_leg));
 
 
 })
@@ -189,7 +189,7 @@ function updateData() {
 
         svg.select("rect#sinep").style("fill", "url(#linear-gradient)");
 
-        svg.select("#last_legend").text((Math.round(max_leg * 100) / 100).toFixed(2))
+        svg.select("#last_legend").text(d3.format(",.2~f")(max_leg))
     });
 }
 
