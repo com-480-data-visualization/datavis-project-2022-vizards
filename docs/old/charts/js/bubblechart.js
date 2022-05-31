@@ -1,8 +1,13 @@
 Highcharts.chart('container2', {
     chart: {
         type: 'packedbubble',
-        height: '60%'
+        height: '60%',
     },
+    boost: {
+      useGPUTranslations: true,
+      // Chart-level boost when there are more than 5 series in the chart
+      seriesThreshold: 5
+    } ,
     title: {
         margin: 0,
         text: 'Music genres by popularity, 2000-2022',
@@ -23,7 +28,8 @@ Highcharts.chart('container2', {
             layoutAlgorithm: {
                 splitSeries: true,
                 gravitationalConstant: 0.02,
-                enableSimulation: false,
+                enableSimulation: true,
+                seriesInteraction: false,
             },
             dataLabels: {
                 enabled: true,
@@ -43,9 +49,10 @@ Highcharts.chart('container2', {
     },
     series: [	{
       name : 'rock',
+      color: '#cdb4db',      
       data: [{
         name: 'symphonic rock',
-        value: 7.062284421678121
+        value: 7.062284421678121,
       },{
         name: 'jazz-rock',
         value: 5.471290673535117
@@ -170,6 +177,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'alternative/indie',
+      color: '#e9c46a',
       data: [{
         name: 'adult alternative pop rock',
         value: 0
@@ -207,6 +215,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'electronic/dance',
+      color: '#41ead4',
       data: [{
         name: 'dance and electronica',
         value: 37.63308302400007
@@ -247,6 +256,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'soul',
+      color : '#aacc00',
       data: [{
         name: 'psychedelic soul',
         value: 5.778130531329428
@@ -281,6 +291,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'classical/soundtrack',
+      color: '#d6d6d6',
       data: [{
         name: 'classical',
         value: 1.2251872162164263
@@ -297,6 +308,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'pop',
+      color: '#e9ff70',
       data: [{
         name: 'country-pop',
         value: 83.40651151960762
@@ -394,6 +406,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'hip-hop/rnb',
+      color: '#e29578',
       data: [{
         name: 'conscious hip hop',
         value: 121.40295225881218
@@ -464,6 +477,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'disco',
+      color: '#ff206e',
       data: [{
         name: 'disco',
         value: 176.50075289953688
@@ -471,6 +485,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'swing',
+      color: '#e9d985',
       data: [{
         name: 'swing',
         value: 4.0171865497817265
@@ -478,6 +493,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'folk',
+      color: '#ffa5ab',
       data: [{
         name: 'contemporary folk',
         value: 2.5871378424707654
@@ -497,6 +513,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'country',
+      color: '#d62828',
       data: [{
         name: 'country rock',
         value: 88.31436367261833
@@ -516,6 +533,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'jazz',
+      color : '#a3cef1',
       data: [{
         name: 'vocal jazz',
         value: 4.2456408112526995
@@ -529,6 +547,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'religious',
+      color: '#aeb8fe',
       data: [{
         name: 'christian',
         value: 2.905901469592755
@@ -542,6 +561,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'blues',
+      color: '#3a6ea5',
       data: [{
         name: 'delta blues',
         value: 0
@@ -600,6 +620,7 @@ Highcharts.chart('container2', {
       },
       {
       name : 'reggae',
+      color: '#f34213',
       data: [{
         name: 'reggae fusion',
         value: 0.3968683935716572

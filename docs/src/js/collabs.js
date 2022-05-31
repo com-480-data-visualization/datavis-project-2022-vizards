@@ -438,15 +438,22 @@ var nodes = new vis.DataSet([{"id": 957, "label": "Lil Wayne", "group": "hip-hop
             face:"canela web", 
             color:"white"}
         },
+        edges: {
+          smooth : false
+        },
         physics: {
           enabled: true,
           barnesHut: {
-            gravitationalConstant: -50000 
+            gravitationalConstant: -65000 
           },
           stabilization: {
-            enabled: false 
+            enabled: true 
           }
         }
       };
       
     var network = new vis.Network(container, data, options);
+    network.moveTo({
+      scale: 1.5          
+    });
+    

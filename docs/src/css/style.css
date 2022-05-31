@@ -1528,3 +1528,25 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
+
+  .label {
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .hiphop {background-color: #001219;} 
+  .pop {background-color: #005f73;} 
+  .reggae {background-color: #ee9b00;} 
+  .electro {background-color: #bb3e03} 
+  .rock {background-color: #ab84e1} 
+  .rnb {background-color: #e9d8a6;color:black} 
+
+  .myDiv{
+    display: grid;
+    justify-content: center;
+
+  }
