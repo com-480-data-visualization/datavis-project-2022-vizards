@@ -57,7 +57,7 @@ function updateRadarArtist() {
         'speechiness': 0.08417000000000001,
         'acousticness': 0.17757125,
         'loudness': 0.6542517899084412,
-        'color': "#e9d8a6"
+        'color': "#AAFF00"
     }, {
         'artist': 'oned',
         'danceability': 0.627470588235294,
@@ -65,7 +65,7 @@ function updateRadarArtist() {
         'speechiness': 0.04851764705882353,
         'acousticness': 0.15703,
         'loudness': 1.0,
-        'color': "#9b2226"
+        'color': "#FF00FF"
     }
 
     ]
