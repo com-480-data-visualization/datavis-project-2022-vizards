@@ -6,7 +6,7 @@ function sentsubj() {
     var parseTime = d3.timeParse("%Y-%m-%d");
     //Read the data
 
-    var sent_x = d3.scaleTime().domain( new Date(data[0]), new Date(data[data.length - 1]) ) .range([0, sent_width]);
+    var sent_x = d3.scaleTime();
     var sent_y = d3.scaleLinear().range([sent_height, 0]);
 
     var sentiment = d3.line()
@@ -31,7 +31,7 @@ function sentsubj() {
             d.subjectivity = +d.subjectivity;
         });
 
-        sent_x.domain(d3.extent(data, function (d) { return d.date; }));
+        sent_x.domain(d3.extent(data, function (d) { return d.date; })).range([0, sent_width]);
         sent_y.domain([0, d3.max(data, function (d) {
             return Math.max(d.sentiment, d.subjectivity);
         })]);
@@ -100,15 +100,17 @@ function sentsubj() {
 
 
         var bisect = d3.bisector(function (d) { return d.date; }).left;
+        
 
         function mousemove(e) {
             // recover coordinate we need
-            var x0 = sent_x.invert(e.x - 242);
+            var offset = document.getElementById("sent_subj").offsetLeft
+            var x0 = sent_x.invert(e.x - offset - sent_margin.left);
             var i = bisect(data, x0, 1);
             if (i == 0) {
                 i++;
             }
-            selectedData = data[i - 1]
+            selectedData = data[i]
             var format = d3.format(",.2~f");
             var timeFormat = d3.timeFormat("Week %W %Y");
             focus
