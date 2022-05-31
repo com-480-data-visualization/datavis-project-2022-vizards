@@ -6,7 +6,7 @@ function sentsubj() {
     var parseTime = d3.timeParse("%Y-%m-%d");
     //Read the data
 
-    var sent_x = d3.scaleTime().range([0, sent_width]);
+    var sent_x = d3.scaleTime().domain( new Date(data[0]), new Date(data[data.length - 1]) ) .range([0, sent_width]);
     var sent_y = d3.scaleLinear().range([sent_height, 0]);
 
     var sentiment = d3.line()

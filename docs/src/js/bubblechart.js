@@ -9,8 +9,7 @@ Highcharts.chart('container2', {
     seriesThreshold: 5
   } ,
   title: {
-      margin: 0,
-      text: 'Music genres by popularity, 2000-2022',
+      text: "",
   },
   credits: {
     enabled: false
