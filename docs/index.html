@@ -230,10 +230,21 @@
             </p>
             <h3>Artist vs Artist</h3>
             <div class="clearfix">
-                <div class="col col-6"> We promised you that our work will find out to which artist you can dance better
+                <div class="col col-6"> 
+                    <p>We promised you that our work will find out to which artist you can dance better
                     regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
-                    right side.</div>
-                <div class="col col-6">ADD EXPLAIN IMG</div>
+                    right side.</p></div>
+                <div class="col col-6">
+                    <p>
+                        danceability: strength and regularity of the beat
+                        <br>
+                        energy: how fast and noisy the song sounds
+                        <br>
+                        speechiness: presence of spoken words in a song
+                        <br>
+                        acousticness: likelihood that the song uses acoustic instruments
+                    </p>
+                </div>
             </div>
 
             <div class="block mx-auto">
@@ -495,8 +506,6 @@
                         </p>
                     </div>
                 </div>
-
-                <!-- <div id="sent_subj"></div> -->
                 <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
                     distributed over the time and the top 10 songs. More details you can find under the heatmap at
                     <i>"Details" (its interactive, hover it!)</i>.
@@ -519,6 +528,12 @@
                 </div>
                 <div id="heatmap"></div>
                 <div id="legend_heatmap" class="mb3"></div>
+                <h3>Sentiment and Subjectivity</h3>
+                <p>We know you noticed. There is a missing line chart. Here we have it. It shows you how the sentiment
+                    and subjectivity of the songs has evolved over the years. The lower the sentiment the more negative
+                    the songs and the higher the subjectivity the higher the subjectivity of the songs. We have taken
+                    the average of the Top 100 of the week. Can you explain the outliers?</p>
+                <div id="sent_subj"></div>
                 <h2>Music</h2>
                 <p>Now let's get to last juicy detail. How has the music changed? Let find out which was the most
                     danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
@@ -548,15 +563,16 @@
         };
     </script>
     <script src="src/js/audio.js"></script>
+    <script src="src/js/top_artist_line.js"></script>
+    <script src="src/js/bubblechart.js"></script>
+    <script src="src/js/collabs.js"></script>
     <script src="src/js/radarchart.js"></script>
+    <script src="src/js/artistvsartist.js"></script>
+    <script src="src/js/word_table.js"></script>
     <script src="src/js/sentsubj.js"></script>
     <script src="src/js/heatmap.js"></script>
-    <script src="src/js/word_table.js"></script>
-    <script src="src/js/artistvsartist.js"></script>
     <script src="src/js/yearly.js"></script>
-    <script src="src/js/collabs.js"></script>
-    <script src="src/js/bubblechart.js"></script>
-    <script src="src/js/top_artist_line.js"></script>
+
     <script>
         colordir = {
             kanye: "#001219",
