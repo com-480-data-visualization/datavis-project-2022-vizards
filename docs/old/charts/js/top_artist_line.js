@@ -1,4 +1,4 @@
-Highcharts.chart('container', {
+Highcharts.chart('line', {
 
     title: {
         text: 'The Number of Songs on Billboard for Top Artist, 2000-2022'

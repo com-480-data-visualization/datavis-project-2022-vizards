@@ -12,9 +12,6 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.9.0/vis.min.css">
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/highcharts-more.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 </head>
 
 <body>
@@ -197,39 +194,22 @@
                 eligendi impedit quia a, accusamus dolorem perspiciatis debitis itaque dolor perferendis quis ab
                 doloremque saepe iste quasi!</p>
             <figure class="highcharts-figure">
-                <div class="max-width-4 mx-auto">
-                    <div id="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div id="container" style="width: 1100px; height: 500px;"></div>
-                                <script type="text/javascript" src="old/charts/js/highcharts.js"></script>
-                                <script src="old/charts/js/top_artist_line.js"></script>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="highcharts-description">
-                        The line chart shows the trend of top 10 artists with most songs on Billboard over 23 years.
-                        <br>
-                    </p>
-                </div>
+                <div id="container"></div>
             </figure>
             <h2>Genres</h2>
-            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a bubble to each genre sized according to its popularity. 
+            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
+                bubble to each genre sized according to its popularity.
             </p>
             <figure class="highcharts-figure2">
-            <div class="max-width-4 mx-auto">
-            <div id="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div id="container2" style="width: 1000px; height: 800px;"></div>
-                        <script src="old/charts/js/bubblechart.js"></script> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </figure>   
+
+                <div id="container2"></div>
+
+
+            </figure>
             <h2>Top 50 Most Collaborative Artists Network</h2>
-            <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the different connections between artists in a simple and intuitive way. Each edge represents a collaboration. </p>
+            <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the
+                different connections between artists in a simple and intuitive way. Each edge represents a
+                collaboration. </p>
             <div id="mynetwork" style="height:80vh"></div>
             <div class="myDiv mt2">
                 <table style="width: 100%; margin: auto;">
@@ -519,7 +499,8 @@
                 <!-- <div id="sent_subj"></div> -->
                 <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
                     distributed over the time and the top 10 songs. More details you can find under the heatmap at
-                    <i>"Details" (its interactive, hover it!)</i>.</p>
+                    <i>"Details" (its interactive, hover it!)</i>.
+                </p>
 
                 <div id="option">
                     Get more insights for
@@ -551,15 +532,6 @@
             </div>
         </div>
     </div>
-
-    <script src="src/js/audio.js"></script>
-    <script src="src/js/radarchart.js"></script>
-    <script src="src/js/sentsubj.js"></script>
-    <script src="src/js/heatmap.js"></script>
-    <script src="src/js/word_table.js"></script>
-    <script src="src/js/artistvsartist.js"></script>
-    <script src="src/js/yearly.js"></script>
-    <script src="src/js/collabs.js"></script>
     <script>
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
@@ -575,6 +547,16 @@
             }
         };
     </script>
+    <script src="src/js/audio.js"></script>
+    <script src="src/js/radarchart.js"></script>
+    <script src="src/js/sentsubj.js"></script>
+    <script src="src/js/heatmap.js"></script>
+    <script src="src/js/word_table.js"></script>
+    <script src="src/js/artistvsartist.js"></script>
+    <script src="src/js/yearly.js"></script>
+    <script src="src/js/collabs.js"></script>
+    <script src="src/js/bubblechart.js"></script>
+    <script src="src/js/top_artist_line.js"></script>
     <script>
         colordir = {
             kanye: "#001219",
