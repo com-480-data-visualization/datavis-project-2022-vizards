@@ -36,7 +36,7 @@ Highcharts.chart('container', {
     chart: {
         renderTo: 'container'
       },
-      colors: ['#bb3e03', '#001219', '#005f73', '#206829', '#4b560c',  '#3a498c', '#d1c167', '#ee9b00', '#c2498c',"#5534ad"],
+      colors: ['#bb3e03', '#001219', '#005f73', '#4b560c',  '#3a498c', '#a3a127','#206829',  '#a3702c', '#c2498c',"#5534ad"],
 
     series: [{
         name: 'Taylor Swift',
