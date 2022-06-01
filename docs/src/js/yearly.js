@@ -157,7 +157,7 @@ yearly_data = [{
 
 // Time
 var dataTime = d3.range(0, 22).map(function (d) {
-    return new Date(2000 + d, 01, 01);
+    return new Date(2000 + d, 1, 1);
 });
 
 playButton = d3.select("#play-button")
@@ -170,7 +170,7 @@ var sliderTime = d3
     .width(800)
     .tickFormat(d3.timeFormat('%Y'))
     .tickValues(dataTime)
-    .default(new Date(2000, 01, 01))
+    .default(new Date(2000, 1, 1))
     .on('onchange', val => {
         d3.select('p#value-time').text(d3.timeFormat('%Y')(val));
         update(d3.timeFormat('%Y')(val));

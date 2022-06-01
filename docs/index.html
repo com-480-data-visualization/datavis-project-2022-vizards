@@ -189,43 +189,29 @@
                 <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
                     style="border: none;"></iframe>
             </div>
+            <h3>Timeless Billboard Music across 22 years</h3>
+            <p>Some songs are popular once and then forgotten, some others become timeless classic and will be
+                well-remembered
+                by the history. The animation shows 10 songs with staying on Billboard for the longest time. With the
+                ranking changed
+                slowly over year, you will get to enjoy the most recognised music. There's even one song with highest
+                record that
+                stays on Billboard for 90 weeks, wanna see which one it is? Staying until the end of the animation and
+                you will know ♫
+            </p>
+            <!-- <link rel="import" href="racing_chart.html"> -->
+            <div class="racing-chart-div"> </div>
+            <button id="js-toggle" class="btn" type="button">Click & Enjoy The Most Popular Songs Over Time</button>
             <h2>Artists with the most number of songs on Billboard</h2>
-            <p>The line chart shows the trend of top 10 artists with most songs on Billboard over 22 years. You wanna know
-                how popular Taylor Swift is compared to Drake over time? Click on their names to select or cancel the line!
+            <p>The line chart shows the trend of top 10 artists with most songs on Billboard over 22 years. You wanna
+                know
+                how popular Taylor Swift is compared to Drake over time? Click on their names to select or cancel the
+                line!
             </p>
             <figure class="highcharts-figure">
                 <div id="container"></div>
             </figure>
 
-        <h2>Timeless Billboard Music across 22 years</h2>
-        <p>Some songs are popular once and then forgotten, some others become timeless classic and will be well-remembered
-            by the history. The animation shows 10 songs with staying on Billboard for the longest time. With the ranking changed
-            slowly over year, you will get to enjoy the most recognised music. There's even one song with highest record that 
-            stays on Billboard for 90 weeks, wanna see which one it is? Staying until the end of the animation and you will know ♫
-            </p>
-                <!-- <link rel="import" href="racing_chart.html"> -->
-        <div class="racing-chart-div"> </div>
-        <button id="js-toggle" class="btn" type="button">Click & Enjoy The Most Popular Songs Over Time</button>
-        <!-- <button type="button" onclick="playAnimation('PlayIt')" id="green" class="green box">Let's start enjoying the most popular songs over time</button> -->
-        <!-- <button type="button" onclick="stopAnimation('Stop')" id="red" class="red box">Stop Animation</button> -->
-       
-        <!-- Please do not move this script elsewhere, o.w. things will be broken. -->
-        <script src="src/js/racing_bar.js"></script>
-       
-            
-              
-
-
-            <h2>Genres</h2>
-            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
-                bubble to each genre sized according to its popularity.
-            </p>
-            <figure class="highcharts-figure2">
-
-                <div id="container2"></div>
-
-
-            </figure>
             <h2>Top 50 Most Collaborative Artists Network</h2>
             <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the
                 different connections between artists in a simple and intuitive way. Each edge represents a
@@ -250,10 +236,11 @@
             </p>
             <h3>Artist vs Artist</h3>
             <div class="clearfix">
-                <div class="col col-6"> 
+                <div class="col col-6">
                     <p>We promised you that our work will find out to which artist you can dance better
-                    regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
-                    right side.</p></div>
+                        regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
+                        right side.</p>
+                </div>
                 <div class="col col-6">
                     <p>
                         danceability: strength and regularity of the beat
@@ -436,6 +423,17 @@
                         you have some time, search on YouTube, really entertaining.</i></p>
             </div>
             <div>
+
+            <h2>Genres</h2>
+            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
+                bubble to each genre sized according to its popularity.
+            </p>
+            <figure class="highcharts-figure2">
+
+                <div id="container2"></div>
+
+
+            </figure>
                 <h2>Lyrics</h2>
                 <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
                     along under the 🚿. Before we jump into the analysis do you can generate your own lyrics to create
@@ -582,6 +580,7 @@
             }
         };
     </script>
+    <script src="src/js/racing_bar.js"></script>
     <script src="src/js/audio.js"></script>
     <script src="src/js/top_artist_line.js"></script>
     <script src="src/js/bubblechart.js"></script>

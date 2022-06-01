@@ -79,28 +79,15 @@ canvas {
     transform-origin: left bottom;
 }
 
-.sideLoader {//
-   box-shadow: 0 0px 56px rgba(0, 0, 0, 0.66), 0 0px 6px rgba(0, 0, 0, 0.23);
-   opacity: 1;
-   color: #C1C1C1;
-   z-index: 900;
-   position: absolute;
-   right: 0;
-   top: 0;
-   font-weight: bold;
-   height: 100%;
-   width: 30px;
-  pointer-events: none;
-   /* background: rgb(55, 55, 55); */
-}
+
 .sideLoader .indicator{
   background: rgba(0, 0, 0, 0.24);
-  // background: #C1C1C1;
   width: 100%;
   position: relative;
   transition: height 1s;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.16); */
 }
+
 .sideLoader .label {
     width: 220px;
     color: #191843;
@@ -227,7 +214,7 @@ canvas {
 }
 
 .language-container div {
-    text-transform: uppercase;*/;
+    text-transform: uppercase;
     padding-left: 7px;
     float: left;
     padding-right: 6px;
@@ -594,7 +581,7 @@ svg {
   content: ' ';
   height: 100%;
   width: 3px;
-  // background-color: #000;
+  background-color: #000;
 }
 .close:before {
   transform: rotate(45deg);
