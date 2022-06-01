@@ -58,7 +58,7 @@ let year = 2000.01;
 // document.body.appendChild(audio);
 // audio.src = "./assets/data/music.mp3";
 
-let currentName = "Where My Girls At?";
+let currentName = "WHERE MY GIRLS AT? - 702";
 
 
 smooth = document.createElement("audio");
@@ -67,11 +67,25 @@ smooth = document.createElement("audio");
 
 
 animPlaying = false;
+reachEnd = false;
 
 const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
-  if (animPlaying == false) {playAnimation("test");animPlaying = true;console.log("play anim");}
-  else {animPlaying = false; stopAnimation("test");console.log("stop anim");}
+  if (reachEnd == true) {
+    // do nothing.
+    console.log("Reach the end");
+  }
+  else if (animPlaying == false) {
+    playAnimation("test");
+    animPlaying = true;
+    console.log("play anim");
+    
+  }
+  else {
+    animPlaying = false; 
+    stopAnimation("test");
+    console.log("stop anim");
+  }
 });
 
 
@@ -162,14 +176,15 @@ d3.csv('./src/data/init_nice_df.csv').then(function(data) {
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .html(~~year)
-  .call(halo, 10);
+  .style("font", "30px times")
+  .style("fill", "#8f3204")
+  .html("Year: "+ ~~year);
 });
 
 function playAnimation(button_pressed){
   racing_svg.selectAll('*').remove();
   
-  d3.csv('./src/data/nice_df.csv').then(function(data) {
+  d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
 
   data.forEach(d => {
     // console.log("been here how many times");
@@ -256,9 +271,10 @@ function playAnimation(button_pressed){
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .html(~~year)
-  .call(halo, 10);
-  
+  .style("font", "30px times")
+  .style("fill", "#8f3204")
+  .html("Year: "+ ~~year);
+
   ticker = d3.interval(e => {
 
   yearSlice = data.filter(d => d.year == year && !isNaN(d.value))
@@ -281,11 +297,12 @@ function playAnimation(button_pressed){
   
   if (myname == currentName && playing == false) {
     // console.log("Found!!!"); 
-    if (myname == "Where My Girls At?") {
+    if (myname == "WHERE MY GIRLS AT? - 702") {
       smooth.src = "./src/data/music/Where.mp3";
     } else{
     smooth.src = "./src/data/music/"+ myname +".mp3";
   }
+  console.log("smooth: ", smooth.src);
   smooth.play();
   playing = true;
   console.log("line 230", myname, currentName, playing);
@@ -416,9 +433,14 @@ document.querySelectorAll('audio').forEach(el => el.pause());
       .attr('y', d => y(top_n+1)+5)
       .remove();
 
-  yearText.html(~~year);
+  yearText
+  .style("font", "30px times")
+  .style("fill", "#8f3204")
+  .html("Year: "+ ~~year);
 
-  if(year == 2021.12) {ticker.stop(); smooth.pause();}
+  
+
+  if(year == 2021.12) {ticker.stop(); smooth.pause(); reachEnd = true;}
 
   year = d3.format('')((+year) + 0.01);
   if ((year % 1).toFixed(2) == "0.13") {year = parseFloat((~~year + 1 + 0.01).toFixed(2))};
@@ -433,16 +455,7 @@ document.querySelectorAll('audio').forEach(el => el.pause());
 
   });
 }
-
-const halo = function(text, strokeWidth) {
-text.select(function() { return this.parentNode.insertBefore(this.cloneNode(true), this); })
-.style('fill', '#ffffff')
-.style( 'stroke','#ffffff')
-.style('stroke-width', strokeWidth)
-.style('stroke-linejoin', 'round')
-.style('opacity', 1);
-
-}   
+ 
 }
 
 racing_chart();
