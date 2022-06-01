@@ -72,7 +72,6 @@ const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
   if (animPlaying == false) {playAnimation("test");animPlaying = true;console.log("play anim");}
   else {animPlaying = false; stopAnimation("test");console.log("stop anim");}
-  
 });
 
 
