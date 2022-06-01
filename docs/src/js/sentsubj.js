@@ -62,18 +62,9 @@ function sentsubj() {
             .attr("x2", sent_x(data[500]))
             .attr("y2", sent_height)
             .style("stroke-width", 2)
-            .style("stroke", "red")
+            .style("stroke", "#191843")
             .style("fill", "none");
-        // // Create the circle that travels along the curve of chart
-        // var focus = sent_svg
-        //     .append('g')
-        //     .append('circle')
-        //     .style("fill", "none")
-        //     .attr("stroke", "black")
-        //     .attr('r', 8.5)
-        //     .style("opacity", 0)
 
-        // Create the text that travels along the curve of chart
         var focusText = sent_svg
             .append('g')
             .append('text')
@@ -118,7 +109,7 @@ function sentsubj() {
                 .attr("x2", sent_x(selectedData.date))
             // .attr("y", sent_y(selectedData.sentiment))
             focusText
-                .html(timeFormat(selectedData.date) + "  -  " + "🟦 senitment: " + format(selectedData.sentiment) + "🟥subjectivity: " +  format(selectedData.subjectivity))
+                .html(timeFormat(selectedData.date) + "  -  " + "🟦 senitment: " + format(selectedData.sentiment) + " 🟥 subjectivity: " +  format(selectedData.subjectivity))
                 .attr("x", x => {
                     if (sent_x(selectedData.date) + 15 > sent_width - 100) {
                         x = sent_width - 100

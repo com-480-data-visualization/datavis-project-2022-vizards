@@ -120,16 +120,16 @@ d3.csv(file).then(function (data) {
 
 
 
-    svg.append("text")
-        .attr("x", 0)
-        .attr("y", -5)
-        .text(0);
+    // svg.append("text")
+    //     .attr("x", 0)
+    //     .attr("y", -5)
+    //     .text(0);
 
-    svg.append("text")
-        .attr("x", 280)
-        .attr("y", -5)
-        .attr("id", "last_legend")
-        .text(d3.format(",.2~f")(max_leg));
+    // svg.append("text")
+    //     .attr("x", 280)
+    //     .attr("y", -5)
+    //     .attr("id", "last_legend")
+    //     .text(d3.format(",.2~f")(max_leg));
 
 
 })

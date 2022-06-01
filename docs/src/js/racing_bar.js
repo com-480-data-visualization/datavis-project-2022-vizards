@@ -176,9 +176,9 @@ d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .style("font", "30px times")
-  .style("fill", "#8f3204")
-  .html("Year: "+ ~~year);
+  .style("font", "12px")
+  .style("fill", "#191843")
+  .html( ~~year);
 });
 
 function playAnimation(button_pressed){
@@ -271,9 +271,9 @@ function playAnimation(button_pressed){
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .style("font", "30px times")
-  .style("fill", "#8f3204")
-  .html("Year: "+ ~~year);
+  .style("font", "12px")
+  .style("fill", "#191843")
+  .html(~~year);
 
   ticker = d3.interval(e => {
 
@@ -434,9 +434,9 @@ document.querySelectorAll('audio').forEach(el => el.pause());
       .remove();
 
   yearText
-  .style("font", "30px times")
-  .style("fill", "#8f3204")
-  .html("Year: "+ ~~year);
+  .style("font", "12px")
+  .style("fill", "#191843")
+  .html(~~year);
 
   
 

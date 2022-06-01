@@ -112,7 +112,7 @@
                 </svg>
             </a>
         </div>
-        <div class="muzieknootjes">
+        <!-- <div class="muzieknootjes">
             <div class="noot-1">
             &#9835; &#9833;
           </div>
@@ -125,7 +125,7 @@
           <div class="noot-4">
             &#9834;
           </div>
-          </div>
+          </div> -->
         <p>
             Whenever you see this button, click it! <i>(Down by Jay Sean)</i>
             <span style="cursor: pointer;cursor: hand;">
@@ -177,8 +177,8 @@
         <p class="title">How have songs changed in the past 22 years?</p>
         <p>by Vizards</p>
     </header>
+    <div class="max-width-4 mx-auto">
         <div class="clearfix">
-        <div class="max-width-4 mx-auto">
             <p>We ❤️ music and we bet you too! If we take a look at our party planner we can see that there are several
                 types of themes. 60's, 80's, 2010's and so on. Time changes and so does music but how exactly? In the
                 following we will take a deeper look into the change of music in the past 22 years, since we want to
@@ -200,12 +200,12 @@
                 information and listen to the song!
             </p> -->
         </div>
-            <div style="height: 66vh;" class="max-width-5 mx-auto">
-                <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
-                    style="border: none;"></iframe>
-            </div>
+        <div style="height: 66vh;" class="max-width-5 mx-auto">
+            <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
+                style="border: none;"></iframe>
+        </div>
         <div class="max-width-4 mx-auto">
-            <h2>Timeless Billboard Music across 22 years</h2>
+            <h3>Timeless Billboard Music across 22 years</h3>
             <p>Some songs are popular once and then forgotten, some others become timeless classic and will be
                 well-remembered
                 by the history. The animation shows 10 songs staying on Billboard for the longest time. With the
@@ -215,16 +215,19 @@
                 you will know!
             </p>
             <!-- <link rel="import" href="racing_chart.html"> -->
-            
-            
-            <div class="racing-chart-div"> 
-                
+
+
+            <div class="racing-chart-div">
+
             </div>
-        
+
+
+            <button id="js-toggle" class="mt2 not-rounded button-lyrics" type="button">Click Here to Play or Stop
+                ♫</button>
             
-            <button id="js-toggle" class="mt2 not-rounded button-lyrics" type="button">Click Here to Play or Stop ♫</button>
-            
-            <h2>Artists with the most number of songs on Billboard</h2>
+            <h2>Artists</h2>
+            <p>After we got the big picture, lets jump into the creator of the songs - the artists. You will find out, which one are the most successful ones, who collaborate together and you can compare them.</p>
+            <h3>Artists with the most number of songs on Billboard</h3>
             <p>The line chart shows the trend of top 10 artists with most songs on Billboard over 22 years. You wanna
                 know
                 how popular Taylor Swift is compared to Drake over time? Click on their names to select or cancel the
@@ -234,7 +237,7 @@
                 <div id="container"></div>
             </figure>
 
-            <h2>Top 50 Most Collaborative Artists Network</h2>
+            <h3>Top 50 Most Collaborative Artists Network</h3>
             <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the
                 different connections between artists in a simple and intuitive way. Each edge represents a
                 collaboration. </p>
@@ -264,15 +267,12 @@
                         right side.</p>
                 </div>
                 <div class="col col-6">
-                    <p>
-                        danceability: strength and regularity of the beat
-                        <br>
-                        energy: how fast and noisy the song sounds
-                        <br>
-                        speechiness: presence of spoken words in a song
-                        <br>
-                        acousticness: likelihood that the song uses acoustic instruments
-                    </p>
+                    <ul>
+                        <li> <i>danceability:</i> strength and regularity of the beat</li>
+                        <li> <i>energy:</i> how fast and noisy the song sounds</li>
+                        <li><i> speechiness:</i> presence of spoken words in a song</li>
+                        <li><i>acousticness:</i> likelihood that the song uses acoustic instruments</li>
+                    </ul>
                 </div>
             </div>
 
@@ -446,16 +446,16 @@
             </div>
             <div>
 
-            <h2>Genres</h2>
-            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
-                bubble to each genre sized according to its popularity.
-            </p>
-            <figure class="highcharts-figure2">
+                <h2>Genres</h2>
+                <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
+                    bubble to each genre sized according to its popularity.
+                </p>
+                <figure class="highcharts-figure2">
 
-                <div id="container2"></div>
+                    <div id="container2"></div>
 
 
-            </figure>
+                </figure>
                 <h2>Lyrics</h2>
                 <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
                     along under the 🚿. Before we jump into the analysis do you can generate your own lyrics to create
@@ -546,6 +546,7 @@
                         </p>
                     </div>
                 </div>
+                <h3>🔍 ... More Details</h3>
                 <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
                     distributed over the time and the top 10 songs. More details you can find under the heatmap at
                     <i>"Details" (its interactive, hover it!)</i>.
@@ -574,22 +575,22 @@
                     the songs and the higher the subjectivity the higher the subjectivity of the songs. We have taken
                     the average of the Top 100 of the week. Can you explain the outliers?</p>
                 <div id="sent_subj"></div>
-                <h2>Music</h2>
+                <h2>Song Change Over Time</h2>
                 <p>Now let's get to last juicy detail. How has the music changed? Let find out which was the most
                     danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
                 <div id="yearly"></div>
                 <button class="button-lyrics block mx-auto" id="play-button">Play</button>
                 <div id="slider-time"></div>
-                <h2>fin.</h2>
+                <h2>the fin.</h2>
                 <p>Thank you for making it until here. We hope you enjoyed the journey.</p>
                 <hr>
                 <p class="center"><i>Vizards (Aamir, Fatih, Yiren)</i></p>
             </div>
         </div>
-        </div>
-    
+    </div>
 
-    
+
+
     <script>
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
