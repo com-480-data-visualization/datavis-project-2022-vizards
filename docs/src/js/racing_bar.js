@@ -89,7 +89,7 @@ jstoggle.addEventListener('click', () => {
 });
 
 
-d3.csv('./src/data/init_nice_df.csv').then(function(data) {
+d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   
   data.forEach(d => {
     // console.log("been here how many times");
