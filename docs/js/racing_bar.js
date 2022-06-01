@@ -1,14 +1,21 @@
 // var buttonColors = ["green", "red", "yellow", "blue"];
 // var gamePattern = [];
+let ticker;
+let smooth;
 
+function stopAnimation(button_pressed){
+  ticker.stop(); smooth.pause(); 
+}
+
+
+function racing_chart() {
 
 let racing_svg = d3.select(".racing-chart-div").append("svg")
 .attr("width", 960)
 .attr("height", 600);
-// console.log("been to line 8");
 
 
-let tickDuration = 500;
+let tickDuration = 5;
 
 let top_n = 10;
 let height = 600;
@@ -16,9 +23,9 @@ let width = 960;
 
 const margin = {
 top: 15,
-right: 0,
+right: 10,
 bottom: 5,
-left: 0
+left: 5
 };
 
 let barPadding = (height-(margin.bottom+margin.top))/(top_n*5);
@@ -33,12 +40,12 @@ let barPadding = (height-(margin.bottom+margin.top))/(top_n*5);
 // .attr("y", 55)
 // .html("Ranking on the Number of Weeks Staying on Billboard");
 
-let caption = racing_svg.append('text')
-.attr('class', 'caption')
-.attr('x', width)
-.attr('y', height-5)
-.style('text-anchor', 'end')
-.html('Source: Billboard');
+// let caption = racing_svg.append('text')
+// .attr('class', 'caption')
+// .attr('x', width)
+// .attr('y', height-5)
+// .style('text-anchor', 'end')
+// .html('Source: Billboard');
 
 let year = 2000.01;
 
@@ -56,12 +63,15 @@ let playing = false;
 smooth = document.createElement("audio");
 // let allColors = ['#bb3e03', '#001219', '#005f73', '#4b560c',  '#3a498c', '#a3a127','#206829',  '#a3702c', '#c2498c',"#5534ad"];
 
-// function stopAnimation(button_pressed){
-  
-// }
+
+
+animPlaying = false;
+
 const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
-  playAnimation("test");
+  if (animPlaying == false) {playAnimation("test");animPlaying = true;}
+  else {animPlaying = false; stopAnimation("test");}
+  
 });
 
 
@@ -253,7 +263,7 @@ function playAnimation(button_pressed){
   .html(~~year)
   .call(halo, 10);
   
-  let ticker = d3.interval(e => {
+  ticker = d3.interval(e => {
 
   yearSlice = data.filter(d => d.year == year && !isNaN(d.value))
     .sort((a,b) => b.value - a.value)
@@ -437,3 +447,6 @@ text.select(function() { return this.parentNode.insertBefore(this.cloneNode(true
 .style('opacity', 1);
 
 }   
+}
+
+racing_chart();
