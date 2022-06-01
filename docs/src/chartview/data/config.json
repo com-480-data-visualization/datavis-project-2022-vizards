@@ -68,13 +68,7 @@
         "type": "text"
       },   
       
-      
-      {
-        "name": "Genre",
-        "source": "_keywords",
-        "display": "column",
-        "type": "text"
-      },  
+       
       {
         "name": "Peak Rank on Billboard",
         "source": "_peak-rank",
