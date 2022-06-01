@@ -15,7 +15,7 @@ let racing_svg = d3.select(".racing-chart-div").append("svg")
 .attr("height", 600);
 
 
-let tickDuration = 5;
+let tickDuration = 500;
 
 let top_n = 10;
 let height = 600;
@@ -75,7 +75,7 @@ jstoggle.addEventListener('click', () => {
 });
 
 
-d3.csv('./assets/data/init_nice_df.csv').then(function(data) {
+d3.csv('./src/data/init_nice_df.csv').then(function(data) {
   
   data.forEach(d => {
     // console.log("been here how many times");
@@ -173,7 +173,7 @@ function playAnimation(button_pressed){
 
 
   
-  d3.csv('./assets/data/nice_df.csv').then(function(data) {
+  d3.csv('./src/data/nice_df.csv').then(function(data) {
 
   data.forEach(d => {
     // console.log("been here how many times");
@@ -286,9 +286,9 @@ function playAnimation(button_pressed){
   if (myname == currentName && playing == false) {
     // console.log("Found!!!"); 
     if (myname == "Where My Girls At?") {
-      smooth.src = "./assets/data/music/Where.mp3";
+      smooth.src = "./src/data/music/Where.mp3";
     } else{
-    smooth.src = "./assets/data/music/"+ myname +".mp3";
+    smooth.src = "./src/data/music/"+ myname +".mp3";
   }
   smooth.play();
   playing = true;
@@ -299,7 +299,7 @@ function playAnimation(button_pressed){
 //     console.log("Executed after 1 second");
 // }, 1000);
 document.querySelectorAll('audio').forEach(el => el.pause());
-  smooth.src = "./assets/data/music/"+ myname +".mp3";
+  smooth.src = "./src/data/music/"+ myname +".mp3";
   smooth.play();
   currentName = myname;
 }
