@@ -182,6 +182,12 @@
     max-width: 64rem
 }
 
+.max-width-5 {
+    max-width: 88rem
+}
+
+
+
 .border-box {
     box-sizing: border-box
 }
