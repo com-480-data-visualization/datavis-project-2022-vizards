@@ -2,9 +2,10 @@
 // var gamePattern = [];
 let ticker;
 let smooth;
+let playing = false;
 
 function stopAnimation(button_pressed){
-  ticker.stop(); smooth.pause(); 
+  ticker.stop(); smooth.pause(); playing = false;
 }
 
 
@@ -58,7 +59,7 @@ let year = 2000.01;
 // audio.src = "./assets/data/music.mp3";
 
 let currentName = "Where My Girls At?";
-let playing = false;
+
 
 smooth = document.createElement("audio");
 // let allColors = ['#bb3e03', '#001219', '#005f73', '#4b560c',  '#3a498c', '#a3a127','#206829',  '#a3702c', '#c2498c',"#5534ad"];
@@ -69,8 +70,8 @@ animPlaying = false;
 
 const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
-  if (animPlaying == false) {playAnimation("test");animPlaying = true;}
-  else {animPlaying = false; stopAnimation("test");}
+  if (animPlaying == false) {playAnimation("test");animPlaying = true;console.log("play anim");}
+  else {animPlaying = false; stopAnimation("test");console.log("stop anim");}
   
 });
 
@@ -168,10 +169,6 @@ d3.csv('./src/data/init_nice_df.csv').then(function(data) {
 
 function playAnimation(button_pressed){
   racing_svg.selectAll('*').remove();
- 
-
-
-
   
   d3.csv('./src/data/nice_df.csv').then(function(data) {
 
