@@ -118,7 +118,7 @@ function sentsubj() {
                 .attr("x2", sent_x(selectedData.date))
             // .attr("y", sent_y(selectedData.sentiment))
             focusText
-                .html(timeFormat(selectedData.date) + "  -  " + "🟥 senitment: " + format(selectedData.sentiment) + " 🟦 subjectivity: " +  format(selectedData.subjectivity))
+                .html(timeFormat(selectedData.date) + "  -  " + "🟦 senitment: " + format(selectedData.sentiment) + "🟥subjectivity: " +  format(selectedData.subjectivity))
                 .attr("x", x => {
                     if (sent_x(selectedData.date) + 15 > sent_width - 100) {
                         x = sent_width - 100
