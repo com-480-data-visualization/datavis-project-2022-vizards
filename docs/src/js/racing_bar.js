@@ -176,9 +176,9 @@ d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .style("font", "12px")
-  .style("fill", "#191843")
-  .html( ~~year);
+  .style("font", "25px times")
+  .style("fill", "#8f3204")
+  .html(~~year);
 });
 
 function playAnimation(button_pressed){
@@ -271,8 +271,8 @@ function playAnimation(button_pressed){
   .attr('x', width-margin.right)
   .attr('y', height-25)
   .style('text-anchor', 'end')
-  .style("font", "12px")
-  .style("fill", "#191843")
+  .style("font", "25px times")
+  .style("fill", "#8f3204")
   .html(~~year);
 
   ticker = d3.interval(e => {
@@ -434,13 +434,31 @@ document.querySelectorAll('audio').forEach(el => el.pause());
       .remove();
 
   yearText
-  .style("font", "12px")
-  .style("fill", "#191843")
+  .style("font", "25px times")
+  .style("fill", "#8f3204")
   .html(~~year);
 
   
 
-  if(year == 2021.12) {ticker.stop(); smooth.pause(); reachEnd = true;}
+  if(year >= 2021.12) {
+    ticker.stop(); 
+    console.log("Before calling timer");
+
+    // let func=function(e) {
+    //   console.log(e);
+    //   if (e>300){
+    //     console.log("Timer stopped")
+    //     timer.stop();
+    //   }
+    // }
+    // // Delay of 2000ms
+    // d3.timer(func, 10000);
+
+    // smooth.pause(); 
+    reachEnd = true;
+    
+    
+  }
 
   year = d3.format('')((+year) + 0.01);
   if ((year % 1).toFixed(2) == "0.13") {year = parseFloat((~~year + 1 + 0.01).toFixed(2))};
