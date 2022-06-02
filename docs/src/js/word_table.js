@@ -7,7 +7,7 @@ function updateWordChart() {
     var xScaleL = d3.scaleLinear()
         .domain([0, 32000])
         .range([10, 550]);
-    // Parse the Data
+
     d3.csv("src/data/word_count.csv").then(function (data) {
         var year = document.getElementById("wordtable_options").value;
         data = data.filter(function (d) {
@@ -15,8 +15,6 @@ function updateWordChart() {
             return d.year == "20" + year
         })
    
-
-        // Add X axis
         data = data.sort((a, b) => d3.descending(+a.Value, +b.Value))
         var x = d3.scaleLinear()
             .domain([0, d3.max(data, function (d) { return +d.Value })])

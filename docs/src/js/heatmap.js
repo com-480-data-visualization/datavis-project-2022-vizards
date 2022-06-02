@@ -13,12 +13,12 @@ file = get_heatpath()
 let max_leg = 0
 d3.csv(file).then(function (data) {
     var max = d3.max(data, function (d) { return +d.rank })
-    // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
+    
     max_leg = d3.max(data, function (d) { return +d.mean })
 
     const myGroups = Array.from(new Set(data.map(d => d.year)))
     const myVars = Array.from(new Set(data.map(d => d.rank))).reverse()
-    // Build X scales and axis:
+   
     const x = d3.scaleBand()
         .range([0, width])
         .domain(myGroups)
@@ -29,7 +29,7 @@ d3.csv(file).then(function (data) {
         .call(d3.axisBottom(x).tickSize(0))
         .select(".domain").remove()
 
-    // Build Y scales and axis:
+   
     const y = d3.scaleBand()
         .range([height, 0])
         .domain(myVars)
@@ -39,16 +39,13 @@ d3.csv(file).then(function (data) {
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
 
-    // Build color scale
     const myColor = d3.scaleSequential()
         .interpolator(d3.interpolateInferno)
         .domain([0, max])
 
-    // create a tooltip
     const tooltip = d3.select("#legend_heatmap")
         .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.")
 
-    // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function (event, d) {
         tooltip
             // .style("display", "block")
@@ -60,14 +57,10 @@ d3.csv(file).then(function (data) {
     const mousemove = function (event, d) {
         tooltip
             .html("<b>Details</b><br>" + d.song + " by " + d.artist + " (" + d.occ + " occurrences) <br> Mean: " + d3.format(",.2~f")(d.mean));
-        // .style("left", (event.x) + "px")
-        // .style("top", 5000 + (event.y) + "px")
     }
     const mouseleave = function (event, d) {
         tooltip
-            .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.")
-        // .style("display", "none")
-        // .style("opacity", 0)
+            .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.");
 
         d3.select(this)
             .style("stroke", "none")
@@ -99,8 +92,6 @@ d3.csv(file).then(function (data) {
         .attr("class", "legendTitle")
         .text("Average Global Surface Temperature");
 
-
-    // add the squares
     svg.selectAll()
         .data(data, function (d) { return d.year + ':' + d.rank; })
         .join("rect")
@@ -118,23 +109,9 @@ d3.csv(file).then(function (data) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
 
-
-
-    // svg.append("text")
-    //     .attr("x", 0)
-    //     .attr("y", -5)
-    //     .text(0);
-
-    // svg.append("text")
-    //     .attr("x", 280)
-    //     .attr("y", -5)
-    //     .attr("id", "last_legend")
-    //     .text(d3.format(",.2~f")(max_leg));
-
-
 })
 
-// Add subtitle to graph
+
 
 svg.append("rect")
     .attr("id", "sinep")
@@ -148,11 +125,11 @@ function updateData() {
     file = get_heatpath()
 
     d3.csv(file).then(function (data) {
-        // Select the section we want to apply our changes to
+     
         var max = d3.max(data, function (d) { return +d.rank })
         max_leg = d3.max(data, function (d) { return +d.mean })
-        
-       
+
+
         var svgg = d3.select("#heatmap").transition();
         const myGroups = Array.from(new Set(data.map(d => d.year)))
         const myVars = Array.from(new Set(data.map(d => d.rank))).reverse()
@@ -166,7 +143,7 @@ function updateData() {
             .range([height, 0])
             .domain(myVars)
             .padding(0.05);
-        // Make the changes
+       
 
         const myColor = d3.scaleSequential()
             .interpolator(d3.interpolateInferno)
@@ -176,7 +153,7 @@ function updateData() {
             .filter((n, i, g) => { return i != 0 })
             .data(data, function (d) { return d.year + ':' + d.rank; })
         u
-            .join("rect") // Add a new rect for each new elements
+            .join("rect")
             .transition()
             .duration(1000)
             .attr("x", function (d) { return x(d.year) })

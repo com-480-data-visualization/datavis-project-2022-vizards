@@ -190,9 +190,7 @@ gTime.call(sliderTime);
 
 
 function update(h) {
-    // update position and text of label according to slider scale
     var newData = yearly_data[h - 2000];
-    // console.log(newData)
     pdata = transformdata(newData)
     drawChart(pdata);
 }
@@ -214,7 +212,6 @@ playButton
         if (button.text() == "Pause") {
             moving = false;
             clearInterval(timer);
-            // timer = 0;
             button.text("Play");
         } else {
             moving = true;
@@ -237,10 +234,6 @@ function drawChart(data) {
     var margin = { top: 100, right: 100, bottom: 100, left: 100 },
         width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
         height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
-
-
-    // console.log(data)
-
 
     var radarChartOptions = {
         w: width,

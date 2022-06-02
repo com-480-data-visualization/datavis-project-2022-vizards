@@ -69,7 +69,7 @@ function updateRadarArtist() {
     }
 
     ]
-    // var color = ["#001219", "#005f73", "#e9d8a6", "#ee9b00", "#bb3e03", "#9b2226"]
+
     var input = [];
     var color = []
     data.forEach(elem => {
@@ -87,9 +87,7 @@ function updateRadarArtist() {
         d3.select(".radarWrapper").remove()
         return
     }
-    ////////////////////////////////////////////////////////////// 
-    //////////////////// Draw the Chart ////////////////////////// 
-    ////////////////////////////////////////////////////////////// 
+
     var radarChartOptions = {
         w: width,
         h: height,
@@ -99,7 +97,7 @@ function updateRadarArtist() {
         roundStrokes: true,
         color: color
     };
-    //Call function to draw the Radar chart
+  
     RadarChart(".radarChart", input, radarChartOptions)
 }
 updateRadarArtist()

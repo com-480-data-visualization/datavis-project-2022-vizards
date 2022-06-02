@@ -94,7 +94,6 @@ function sentsubj() {
         
 
         function mousemove(e) {
-            // recover coordinate we need
             var offset = document.getElementById("sent_subj").offsetLeft
             var x0 = sent_x.invert(e.x - offset - sent_margin.left);
             var i = bisect(data, x0, 1);
@@ -107,7 +106,6 @@ function sentsubj() {
             focus
                 .attr("x1", sent_x(selectedData.date))
                 .attr("x2", sent_x(selectedData.date))
-            // .attr("y", sent_y(selectedData.sentiment))
             focusText
                 .html(timeFormat(selectedData.date) + "  -  " + "🟦 senitment: " + format(selectedData.sentiment) + " 🟥 subjectivity: " +  format(selectedData.subjectivity))
                 .attr("x", x => {
