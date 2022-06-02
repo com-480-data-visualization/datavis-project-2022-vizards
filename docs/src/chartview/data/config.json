@@ -62,6 +62,12 @@
         "type": "text"
       },
       {
+        "name": "Genre",
+        "source": "_cleanGenre",
+        "display": "column",
+        "type": "text"
+      },
+      {
         "name": "Year",
         "source": "_year",
         "display": "column",

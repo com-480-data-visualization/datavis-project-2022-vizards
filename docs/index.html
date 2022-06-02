@@ -43,6 +43,7 @@
     </div>
     <header>
         <div class="fit logo-container">
+            <br> <br> <br>
             <a class="logo" href="#" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="417.27 544.2 443.38 487.62">
                     <defs>
@@ -204,395 +205,400 @@
                 information and listen to the song!
             </p> -->
         </div>
-        <div style="height: 66vh;" class="max-width-5 mx-auto">
-            <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
-                style="border: none;"></iframe>
+    </div>
+    <div style="height: 66vh;" class="max-width-5 mx-auto">
+        <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
+            style="border: none;"></iframe>
+    </div>
+
+    <div class="max-width-4 mx-auto">
+        <h3>Timeless Billboard Music across 22 years</h3>
+        <p>Some songs are popular once and then forgotten; some others become timeless classics and will be
+            well-remembered
+            by the history. The animation shows 10 songs staying on Billboard for the longest time. With the
+            ranking changing
+            slowly over the year, you will get to enjoy the most recognised music. There's even one song with the
+            highest
+            record of 90-week on Billboard; wanna see which one it is? Staying until the end of the animation, and
+            you will know!
+        </p>
+        <!-- <link rel="import" href="racing_chart.html"> -->
+
+
+        <div class="racing-chart-div">
+
         </div>
-        <div class="max-width-4 mx-auto">
-            <h3>Timeless Billboard Music across 22 years</h3>
-            <p>Some songs are popular once and then forgotten; some others become timeless classics and will be
-                well-remembered
-                by the history. The animation shows 10 songs staying on Billboard for the longest time. With the
-                ranking changing
-                slowly over the year, you will get to enjoy the most recognised music. There's even one song with the
-                highest
-                record of 90-week on Billboard; wanna see which one it is? Staying until the end of the animation, and
-                you will know!
-            </p>
-            <!-- <link rel="import" href="racing_chart.html"> -->
 
 
-            <div class="racing-chart-div">
+        <button id="js-toggle" class="mt2 not-rounded button-lyrics" type="button">Click Here to Play or Stop
+            ♫</button>
 
+        <h2>Artists</h2>
+        <p>After we got the big picture, let's jump into the creator of the songs - the artists. You will find out
+            which one is the most successful one, who collaborates and you can compare them.</p>
+        <h3>Artists with the most number of songs on Billboard</h3>
+        <p>The line chart shows the trend of top 10 artists with most songs on Billboard over 22 years. You want to
+            know
+            how popular is Taylor Swift compared to Drake over time? Click on their names to select or cancel the
+            line!
+        </p>
+        <figure class="highcharts-figure">
+            <div id="container"></div>
+        </figure>
+
+        <h3>Top 50 Most Collaborative Artists Network</h3>
+        <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the
+            different connections between artists in a simple and intuitive way. Each edge represents a
+            collaboration. </p>
+        <div id="mynetwork" style="height:80vh"></div>
+        <div class="myDiv mt2">
+            <table style="width: 100%; margin: auto;">
+                <td style="width:100%; margin:auto;">
+                    <span class="label hiphop">Hip-Hop/Rap</span>
+                    <span class="label pop">Pop</span>
+                    <!--- <span class="label rock">Rock</span> -->
+                    <span class="label rnb">R&B</span>
+                    <span class="label reggae">Reggae</span>
+                    <span class="label electro">Electronic/Dance</span>
+                </td>
+            </table>
+        </div>
+        <p class="mt2"> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number
+            of collaborations.
+            On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki
+            Minaj.
+        </p>
+        <h3>Artist vs Artist</h3>
+        <div class="clearfix">
+            <div class="col col-6">
+                <p>We promised you that our work will find out to which artist you can dance better
+                    regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
+                    right side.</p>
             </div>
-
-
-            <button id="js-toggle" class="mt2 not-rounded button-lyrics" type="button">Click Here to Play or Stop
-                ♫</button>
-
-            <h2>Artists</h2>
-            <p>After we got the big picture, let's jump into the creator of the songs - the artists. You will find out
-                which one is the most successful one, who collaborates and you can compare them.</p>
-            <h3>Artists with the most number of songs on Billboard</h3>
-            <p>The line chart shows the trend of top 10 artists with most songs on Billboard over 22 years. You want to
-                know
-                how popular is Taylor Swift compared to Drake over time? Click on their names to select or cancel the
-                line!
-            </p>
-            <figure class="highcharts-figure">
-                <div id="container"></div>
-            </figure>
-
-            <h3>Top 50 Most Collaborative Artists Network</h3>
-            <p> How does Snoop Dogg relate to Beyonce ? On the following interactive graph, you'll be able to see the
-                different connections between artists in a simple and intuitive way. Each edge represents a
-                collaboration. </p>
-            <div id="mynetwork" style="height:80vh"></div>
-            <div class="myDiv mt2">
-                <table style="width: 100%; margin: auto;">
-                    <td style="width:100%; margin:auto;">
-                        <span class="label hiphop">Hip-Hop/Rap</span>
-                        <span class="label pop">Pop</span>
-                        <!--- <span class="label rock">Rock</span> -->
-                        <span class="label rnb">R&B</span>
-                        <span class="label reggae">Reggae</span>
-                        <span class="label electro">Electronic/Dance</span>
-                    </td>
-                </table>
+            <div class="col col-6">
+                <ul>
+                    <li> <i>danceability:</i> strength and regularity of the beat</li>
+                    <li> <i>energy:</i> how fast and noisy the song sounds</li>
+                    <li><i> speechiness:</i> presence of spoken words in a song</li>
+                    <li><i>acousticness:</i> likelihood that the song uses acoustic instruments</li>
+                </ul>
             </div>
-            <p class="mt2"> Unsurprisingly, the hip-hop/rap world dominates the music scene by its number
-                of collaborations.
-                On top 3 of the most collaborative artists, we find in decreasing order Lil Wayne, Drake and Nicki
-                Minaj.
-            </p>
-            <h3>Artist vs Artist</h3>
+        </div>
+
+        <div class="block mx-auto">
+            <p> Okay enough! Choose your 🥋!</p>
+            <div class="radarChart"></div>
             <div class="clearfix">
-                <div class="col col-6">
-                    <p>We promised you that our work will find out to which artist you can dance better
-                        regarding to spotify API. Before you can compare them, find the meaning of the attributes on the
-                        right side.</p>
-                </div>
-                <div class="col col-6">
-                    <ul>
-                        <li> <i>danceability:</i> strength and regularity of the beat</li>
-                        <li> <i>energy:</i> how fast and noisy the song sounds</li>
-                        <li><i> speechiness:</i> presence of spoken words in a song</li>
-                        <li><i>acousticness:</i> likelihood that the song uses acoustic instruments</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="block mx-auto">
-                <p> Okay enough! Choose your 🥋!</p>
-                <div class="radarChart"></div>
-                <div class="clearfix">
-                    <div class="imgcon">
-                        <div class="col col-2">
-                            <img class="radarimg active circle block mx-auto" style="border: 3px solid #001219;"
-                                id="kanye" width="128" height="128" onclick="mark(this, 'kanye')"
-                                src="src/imgs/kanye.jpg" />
-                            <p class="center">
-                                Kanye West
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="skanye_power" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col col-2">
-                            <img class="radarimg circle block mx-auto" id="taylor" width="128" height="128"
-                                onclick="mark(this, 'taylor')" src="src/imgs/taylor.jpg" />
-                            <p class="center">
-                                Taylor Swift
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="staylor" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col col-2">
-                            <img class="radarimg circle block mx-auto" id="justin" width="128" height="128"
-                                onclick="mark(this, 'justin')" src="src/imgs/justin.jpg" />
-                            <p class="center">
-                                Justin Bieber
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="s2U" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col col-2">
-                            <img class="radarimg circle block mx-auto" id="pink" width="128" height="128"
-                                onclick="mark(this, 'pink')" src="src/imgs/pink.jpg" />
-                            <p class="center">
-                                P!nk
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="sp!nk" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col col-2">
-                            <img class="radarimg circle block mx-auto" id="drake" width="128" height="128"
-                                onclick="mark(this, 'drake')" src="src/imgs/drake.webp" />
-                            <p class="center">
-                                Drake
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="sdrake" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                        <div class="col col-2">
-                            <img class="radarimg circle block mx-auto" id="oned" width="128" height="128"
-                                onclick="mark(this, 'oned')" src="src/imgs/oned.png" />
-                            <p class="center">
-                                One Direction
-                                <span style="cursor: pointer;cursor: hand;">
-                                    <svg class="song-sample" id="soned" xmlns="http://www.w3.org/2000/svg"
-                                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
-                                        enable-background="new 0 0 100 100" xml:space="preserve"
-                                        style="fill: #666;height: 20px;width: 21px;">
-                                        <g
-                                            style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
-                                            <polygon
-                                                points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
-                                            </polygon>
-                                            <path
-                                                d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
-                                            </path>
-                                            <path
-                                                d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p>As you can see Drake is the most danceable artist. But at least Kanye won over Taylor! <i>Fun Fact:
-                        Kanye and Taylor had some difficulties. The song we included her was directly against Kanye. If
-                        you have some time, search on YouTube, really entertaining.</i></p>
-            </div>
-            <div>
-
-                <h2>Genres</h2>
-                <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
-                    bubble to each genre sized according to its popularity.
-                </p>
-                <figure class="highcharts-figure2">
-
-                    <div id="container2"></div>
-
-
-                </figure>
-                <h2>Lyrics</h2>
-                <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
-                    along under the 🚿. Before we jump into the analysis do you can generate your own lyrics to create
-                    your
-                    own Billboard hit, which will be analyzed by future EPFL students! To create the lyrics we are using
-                    a
-                    markov chain and deep learning model.
-                </p>
-                <div class="clearfix" style="height: 67vh;">
-                    <div class="col col-6">
-                        <p>To generate the song please select an artist first. The lyrics will be
-                            generted
-                            in a style like the artist would write it.
+                <div class="imgcon">
+                    <div class="col col-2">
+                        <img class="radarimg active circle block mx-auto" style="border: 3px solid #001219;" id="kanye"
+                            width="128" height="128" onclick="mark(this, 'kanye')" src="src/imgs/kanye.jpg" />
+                        <p class="center">
+                            Kanye West
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="skanye_power" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
                         </p>
-                        <select id="song_artist">
-                            <option value="Backstreet Boys">Backstreet Boys</option>
-                            <option value="Bob Dylan">Bob Dylan</option>
-                            <option value="Bon Jovi">Bon Jovi</option>
-                            <option value="Britney Spears">Britney Spears</option>
-                            <option value="Bruce Springsteen">Bruce Springsteen</option>
-                            <option value="Chris Brown">Chris Brown</option>
-                            <option value="Christina Aguilera">Christina Aguilera</option>
-                            <option value="Donna Summer">Donna Summer</option>
-                            <option value="Drake">Drake</option>
-                            <option value="Fabolous">Fabolous</option>
-                            <option value="Glee">Glee</option>
-                            <option value="Gordon Lightfoot">Gordon Lightfoot</option>
-                            <option value="Gucci Mane">Gucci Mane</option>
-                            <option value="Ice Cube">Ice Cube</option>
-                            <option value="Indigo Girls">Indigo Girls</option>
-                            <option value="Insane Clown Posse">Insane Clown Posse</option>
-                            <option value="Kanye West">Kanye West</option>
-                            <option value="Lady Gaga">Lady Gaga</option>
-                            <option value="Lil Wayne">Lil Wayne</option>
-                            <option value="LL Cool J">LL Cool J</option>
-                            <option value="Mariah Carey">Mariah Carey</option>
-                            <option value="Michael Jackson">Michael Jackson</option>
-                            <option value="Miley Cyrus">Miley Cyrus</option>
-                            <option value="Ne-Yo">Ne-Yo</option>
-                            <option value="R. Kelly">R. Kelly</option>
-                            <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
-                            <option value="Rihanna">Rihanna</option>
-                            <option value="Rod Stewart">Rod Stewart</option>
-                            <option value="Usher">Usher</option>
-                        </select>
-                        <br>
-                        <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate
-                            ⚡️</button>
                     </div>
-                    <div class="col col-6" id="song_text"></div>
-                </div>
-                <h3>Let's Count</h3>
-                <p>It's interesting how language changes. The change is also visible in the lyrics. For example words
-                    some word find there way into the mainstream from 2016. What does it say about us and our society?
-                    The frequency of is correlated with the raise of rap / hiphop. (<i>Just-in Case (pun intended), you
-                        can change the years</i> 🤓)</p>
-                <div id="word_table" class="mx-auto">
-                    <div class="chart-head chart-text" style="position:relative;">
-                        <p style="position:absolute; left:0px">WORD</p>
-                        <p style="position:absolute; left:360px">
-                            RANKING IN YEAR 20
-                            <select id="wordtable_options" onchange="updateWordChart()"
-                                style="border: 0px;background: transparent;">
-                                <option value="all">00 - 21</option>
-                                <option value="00">00</option>
-                                <option value="01">01</option>
-                                <option value="02">02</option>
-                                <option value="03">03</option>
-                                <option value="04">04</option>
-                                <option value="05">05</option>
-                                <option value="06">06</option>
-                                <option value="07">07</option>
-                                <option value="08">08</option>
-                                <option value="09">09</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                            </select>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="taylor" width="128" height="128"
+                            onclick="mark(this, 'taylor')" src="src/imgs/taylor.jpg" />
+                        <p class="center">
+                            Taylor Swift
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="staylor" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="justin" width="128" height="128"
+                            onclick="mark(this, 'justin')" src="src/imgs/justin.jpg" />
+                        <p class="center">
+                            Justin Bieber
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="s2U" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="pink" width="128" height="128"
+                            onclick="mark(this, 'pink')" src="src/imgs/pink.jpg" />
+                        <p class="center">
+                            P!nk
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="sp!nk" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="drake" width="128" height="128"
+                            onclick="mark(this, 'drake')" src="src/imgs/drake.webp" />
+                        <p class="center">
+                            Drake
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="sdrake" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </p>
+                    </div>
+                    <div class="col col-2">
+                        <img class="radarimg circle block mx-auto" id="oned" width="128" height="128"
+                            onclick="mark(this, 'oned')" src="src/imgs/oned.png" />
+                        <p class="center">
+                            One Direction
+                            <span style="cursor: pointer;cursor: hand;">
+                                <svg class="song-sample" id="soned" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 40 60"
+                                    enable-background="new 0 0 100 100" xml:space="preserve"
+                                    style="fill: #666;height: 20px;width: 21px;">
+                                    <g
+                                        style="-ms-transform: translate(-30px,-7px); -webkit-transform: translate(-30px,-7px); transform: translate(-30px,-7px);width: 10px;">
+                                        <polygon
+                                            points="51.964,33.94 38.759,43.759 30.945,43.759 30.945,56.247 38.762,56.247 51.964,66.06  ">
+                                        </polygon>
+                                        <path
+                                            d="M66.906,34.21l-3.661,2.719c2.517,3.828,3.889,8.34,3.889,13.071s-1.372,9.242-3.889,13.072l3.661,2.718   c3.098-4.604,4.786-10.069,4.786-15.79S70.004,38.821,66.906,34.21">
+                                        </path>
+                                        <path
+                                            d="M56.376,42.037h-0.317c1.378,2.441,2.126,5.18,2.126,7.963c0,2.79-0.748,5.528-2.126,7.97h0.321l2.516,1.864   c1.738-2.996,2.676-6.383,2.676-9.834s-0.939-6.839-2.676-9.841L56.376,42.037z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
                         </p>
                     </div>
                 </div>
-                <h3>🔍 ... More Details</h3>
-                <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
-                    distributed over the time and the top 10 songs. More details you can find under the heatmap at
-                    <i>"Details" (its interactive, hover it!)</i>.
-                </p>
-
-                <div id="option">
-                    Get more insights for
-                    <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
-                        <option value="yeah">yeah</option>
-                        <option value="love">love</option>
-                        <option value="baby">baby</option>
-                        <option value="time">time</option>
-                        <option value="wanna">wanna</option>
-                        <option value="girl">girl</option>
-                        <option value="'cause">'cause</option>
-                        <option value="man">man</option>
-                        <option value="nigga">nigga</option>
-                        <option value="feel">feel</option>
-                    </select>
-                </div>
-                <div id="heatmap"></div>
-                <div id="legend_heatmap" class="mb3"></div>
-                <h3>Sentiment and Subjectivity</h3>
-                <p>We know you noticed. There is a missing line chart. Here we have it. It shows you how the sentiment
-                    and subjectivity of the songs has evolved over the years. The lower the sentiment the more negative
-                    the songs and the higher the subjectivity the higher the subjectivity of the songs. We have taken
-                    the average of the Top 100 of the week. Can you explain the outliers?</p>
-                <div id="sent_subj"></div>
-                <h2>Song Change Over Time</h2>
-                <p>Now let's get to last juicy detail. How has the music changed? Let find out which was the most
-                    danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
-                <div id="yearly"></div>
-                <button class="button-lyrics block mx-auto" id="play-button">Play</button>
-                <div id="slider-time"></div>
-                <h2>the fin.</h2>
-                <p>Thank you for making it until here. We hope you enjoyed the journey.</p>
-                <hr>
-                <p class="center"><i>Vizards (Aamir, Fatih, Yiren)</i></p>
             </div>
+            <p>As you can see Drake is the most danceable artist. But at least Kanye won over Taylor! <i>Fun Fact:
+                    Kanye and Taylor had some difficulties. The song we included her was directly against Kanye. If
+                    you have some time, search on YouTube, really entertaining.</i></p>
         </div>
+        <div>
+
+            <!-- <h2>Genres</h2> -->
+            <h1 class="center">Genres</h1>
+            <p> Beware of the following, you may be disappointed depending on your music taste. We have assigned a
+                bubble to each genre sized according to its popularity.
+            </p>
+            <figure class="highcharts-figure2">
+
+                <div id="container2"></div>
+
+
+            </figure>
+            <!-- <h2>Lyrics</h2> -->
+            <h1 class="center">Lyrics</h1>
+            <p>What is a song without it's lyrics? It creates emotion in us and allows us to sing
+                along under the 🚿. Before we jump into the analysis do you can generate your own lyrics to create
+                your
+                own Billboard hit, which will be analyzed by future EPFL students! To create the lyrics we are using
+                a
+                markov chain and deep learning model.
+            </p>
+            <div class="clearfix" style="height: 67vh;">
+                <div class="col col-6">
+                    <p>To generate the song please select an artist first. The lyrics will be
+                        generted
+                        in a style like the artist would write it.
+                    </p>
+                    <select id="song_artist">
+                        <option value="Backstreet Boys">Backstreet Boys</option>
+                        <option value="Bob Dylan">Bob Dylan</option>
+                        <option value="Bon Jovi">Bon Jovi</option>
+                        <option value="Britney Spears">Britney Spears</option>
+                        <option value="Bruce Springsteen">Bruce Springsteen</option>
+                        <option value="Chris Brown">Chris Brown</option>
+                        <option value="Christina Aguilera">Christina Aguilera</option>
+                        <option value="Donna Summer">Donna Summer</option>
+                        <option value="Drake">Drake</option>
+                        <option value="Fabolous">Fabolous</option>
+                        <option value="Glee">Glee</option>
+                        <option value="Gordon Lightfoot">Gordon Lightfoot</option>
+                        <option value="Gucci Mane">Gucci Mane</option>
+                        <option value="Ice Cube">Ice Cube</option>
+                        <option value="Indigo Girls">Indigo Girls</option>
+                        <option value="Insane Clown Posse">Insane Clown Posse</option>
+                        <option value="Kanye West">Kanye West</option>
+                        <option value="Lady Gaga">Lady Gaga</option>
+                        <option value="Lil Wayne">Lil Wayne</option>
+                        <option value="LL Cool J">LL Cool J</option>
+                        <option value="Mariah Carey">Mariah Carey</option>
+                        <option value="Michael Jackson">Michael Jackson</option>
+                        <option value="Miley Cyrus">Miley Cyrus</option>
+                        <option value="Ne-Yo">Ne-Yo</option>
+                        <option value="R. Kelly">R. Kelly</option>
+                        <option value="Red Hot Chili Peppers">Red Hot Chili Peppers</option>
+                        <option value="Rihanna">Rihanna</option>
+                        <option value="Rod Stewart">Rod Stewart</option>
+                        <option value="Usher">Usher</option>
+                    </select>
+                    <br>
+                    <button class="mt2 not-rounded button-lyrics" onclick="getLyrics()">Generate
+                        ⚡️</button>
+                </div>
+                <div class="col col-6" id="song_text"></div>
+            </div>
+            <h3>Let's Count</h3>
+            <p>It's interesting how language changes. The change is also visible in the lyrics. For example words
+                some word find there way into the mainstream from 2016. What does it say about us and our society?
+                The frequency of is correlated with the raise of rap / hiphop. (<i>Just-in Case (pun intended), you
+                    can change the years</i> 🤓)</p>
+            <div id="word_table" class="mx-auto">
+                <div class="chart-head chart-text" style="position:relative;">
+                    <p style="position:absolute; left:0px">WORD</p>
+                    <p style="position:absolute; left:360px">
+                        RANKING IN YEAR 20
+                        <select id="wordtable_options" onchange="updateWordChart()"
+                            style="border: 0px;background: transparent;">
+                            <option value="all">00 - 21</option>
+                            <option value="00">00</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                        </select>
+                    </p>
+                </div>
+            </div>
+            <h3>🔍 ... More Details</h3>
+            <p>Okay, lets get some more details for the most frequent words of the past 22 years and how they were
+                distributed over the time and the top 10 songs. More details you can find under the heatmap at
+                <i>"Details" (its interactive, hover it!)</i>.
+            </p>
+
+            <div id="option">
+                Get more insights for
+                <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
+                    <option value="yeah">yeah</option>
+                    <option value="love">love</option>
+                    <option value="baby">baby</option>
+                    <option value="time">time</option>
+                    <option value="wanna">wanna</option>
+                    <option value="girl">girl</option>
+                    <option value="'cause">'cause</option>
+                    <option value="man">man</option>
+                    <option value="nigga">nigga</option>
+                    <option value="feel">feel</option>
+                </select>
+            </div>
+            <div id="heatmap"></div>
+            <div id="legend_heatmap" class="mb3"></div>
+            <h3>Sentiment and Subjectivity</h3>
+            <p>We know you noticed. There is a missing line chart. Here we have it. It shows you how the sentiment
+                and subjectivity of the songs has evolved over the years. The lower the sentiment the more negative
+                the songs and the higher the subjectivity the higher the subjectivity of the songs. We have taken
+                the average of the Top 100 of the week. Can you explain the outliers?</p>
+            <div id="sent_subj"></div>
+            <!-- <h2>Song Change Over Time</h2> -->
+            <h1 class="center">Song Change Over Time</h1>
+            <p>Now let's get to last juicy detail. How has the music changed? Let find out which was the most
+                danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
+            <div id="yearly"></div>
+            <button class="button-lyrics block mx-auto" id="play-button">Play</button>
+            <div id="slider-time"></div>
+            <h2>the fin.</h2>
+            <p>Thank you for making it until here. We hope you enjoyed the journey.</p>
+            <hr>
+            <p class="center"><i>Vizards (Aamir, Fatih, Yiren)</i></p>
+        </div>
+
+
     </div>
 
 
