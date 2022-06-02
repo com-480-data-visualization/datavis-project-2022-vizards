@@ -74,6 +74,7 @@ jstoggle.addEventListener('click', () => {
   if (reachEnd == true) {
     // do nothing.
     console.log("Reach the end");
+    smooth.pause();
   }
   else if (animPlaying == false) {
     playAnimation("test");
