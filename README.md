@@ -12,7 +12,7 @@
 
 [Final Website](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/)
 
-[Milestone 1](/milestones/milestone1.md) | [Milestone 2](/milestones/milestone2.md) | [Milestone 3](/milestones/processbook.pdf)
+[Milestone 1](/milestones/milestone1.md) | [Milestone 2](/milestones/milestone2.md) | [Milestone 3](#milestone-3-3rd-june-5pm)
 
 ---
 

@@ -10,7 +10,7 @@ We are using simple HTML, CSS and JS, so everything should work out of the box w
 
 ## Structure of the project
 
-Since we are using plain HTML, JS and CSS, you don't need a compiler or packer. In the following or file structure for a better understanding.
+Since we are using plain HTML, JS and CSS, you don't need a compiler or packer. In the following or file structure for a better understanding. Please find link in comments, when a work is based on something.
 
 
 ```
