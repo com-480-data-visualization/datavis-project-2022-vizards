@@ -1,6 +1,7 @@
 function updateWordChart() {
 
     w = 1024;
+    // Two scales, first for one year alone. Second for the plot of all years
     var xScale = d3.scaleLinear()
         .domain([0, 5000])
         .range([10, 550]);
@@ -8,6 +9,7 @@ function updateWordChart() {
         .domain([0, 32000])
         .range([10, 550]);
 
+    // read data
     d3.csv("src/data/word_count.csv").then(function (data) {
         var year = document.getElementById("wordtable_options").value;
         data = data.filter(function (d) {
@@ -20,6 +22,7 @@ function updateWordChart() {
             .domain([0, d3.max(data, function (d) { return +d.Value })])
             .range(["0%", "100%"]);
 
+        // plit
         var chart = d3.select("#word_table")
             .append("div")
             .attr("class", "chart-data")
@@ -76,4 +79,5 @@ function updateWordChart() {
     })
 }
 
+// call function on load of website
 updateWordChart()

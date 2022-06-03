@@ -1,3 +1,6 @@
+////////////////////////////////////////////////////////////// 
+////////////////////////// Data ////////////////////////////// 
+////////////////////////////////////////////////////////////// 
 yearly_data = [{
     'year': 2000.0,
     'danceability': 0.6655772058823529,
@@ -153,13 +156,13 @@ yearly_data = [{
     'acousticness': 0.11993535353535353
 
 }]
-// yearlyslider()
 
 // Time
 var dataTime = d3.range(0, 22).map(function (d) {
     return new Date(2000 + d, 1, 1);
 });
 
+// Stepper based on https://bl.ocks.org/johnwalley/e1d256b81e51da68f7feb632a53c3518 (old d3 version, had to modify)
 playButton = d3.select("#play-button")
 
 var sliderTime = d3
@@ -188,13 +191,14 @@ var gTime = d3
 
 gTime.call(sliderTime);
 
-
+// update plot
 function update(h) {
     var newData = yearly_data[h - 2000];
     pdata = transformdata(newData)
     drawChart(pdata);
 }
 
+// update slider and call update
 function step() {
     sliderTime.value(sliderTime.value().valueOf() + 1000 * 60 * 60 * 24 * 365)
     var year = d3.timeFormat('%Y')(sliderTime.value())
@@ -206,6 +210,8 @@ function step() {
     }
     
 }
+
+// when button is clicked, call step function
 playButton
     .on("click", function () {
         var button = d3.select(this);
@@ -220,7 +226,9 @@ playButton
         }
     })
 
+
 function transformdata(data) {
+    // Helper function to transform data into the right format
     var input = [[
         { axis: "danceability", value: data.danceability },
         { axis: "energy", value: data.energy },
@@ -230,6 +238,7 @@ function transformdata(data) {
 }
 
 function drawChart(data) {
+    // Plot
 
     var margin = { top: 100, right: 100, bottom: 100, left: 100 },
         width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
@@ -250,11 +259,12 @@ function drawChart(data) {
 }
 
 function resetTimer() {
+    // Resets timer, when it is at year 2021
     moving = false;
     clearInterval(timer);
     playButton.text("Play");
     sliderTime.value(sliderTime.default());
     update(d3.timeFormat('%Y')(sliderTime.default()));
 }
-
+// call function on load of website
 drawChart(transformdata(yearly_data[0]))

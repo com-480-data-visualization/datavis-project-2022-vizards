@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <!-- Page loader; Better user experience, because everything is preloaded. See preload function. -->
     <div id="pageloader" class="mx-auto center mt4">
         <div class="loader">
             <svg id="waveload" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 38.05">
@@ -41,6 +42,7 @@
         </div>
         Loading...
     </div>
+    <!-- Hero Header -->
     <header>
         <div class="fit logo-container">
             <br> <br> <br>
@@ -113,20 +115,6 @@
                 </svg>
             </a>
         </div>
-        <!-- <div class="muzieknootjes">
-            <div class="noot-1">
-            &#9835; &#9833;
-          </div>
-          <div class="noot-2">
-            &#9833;
-          </div>
-          <div class="noot-3">
-            &#9839; &#9834;
-          </div>
-          <div class="noot-4">
-            &#9834;
-          </div>
-          </div> -->
         <p>
             Whenever you see this button, click it! <i>(Down by Jay Sean)</i>
             <span style="cursor: pointer;cursor: hand;">
@@ -178,8 +166,10 @@
         <p class="title">How have songs changed in the past 22 years?</p>
         <p>by Vizards</p>
     </header>
+    <!-- Main Container -->
     <div class="max-width-4 mx-auto">
         <div class="clearfix">
+            <!-- Intro Text -->
             <p>We ❤️ music, and we bet you too! If we look at our party planner, we can see several
                 types of themes. 60's, 80's, 2010's and so on. Time changes, and so makes music, but how exactly? In the
                 following, we will take a deeper look into the change in music in the past 22 years since we want to
@@ -187,7 +177,7 @@
                 which is connected to it: artist, lyrics, genre, album cover and so on. It seems like the
                 covers changed because they have the lesser text and more simple covers now.</p>
 
-            <!-- <h2>Big Picture</h2> -->
+            <!-- Big Picture -->
             <h1 class="center">Big Picture</h1>
             <p>Before we dive deeper into the details, let us get the big picture. The picture is meant by word here. It
                 is
@@ -200,14 +190,9 @@
                 on the songs, and of course, you can listen to them. <i>PS: The similarity is based on the album
                     covers.</i>
             </p>
-            <!-- <p>As the title is stating we want to time travel through music data for the past 22 years. Before we go
-                into the details of over 9000 songs, let us get a overview of the top songs for the past years. By
-                scrolling through the album covers you will get a feeling how they changed also over time. We shouldn't
-                forget that they are also really important. By clicking on one of the covers you can get detailed
-                information and listen to the song!
-            </p> -->
         </div>
     </div>
+    <!-- Chartview: We had to use the Iframe, since the Vikus viewer is badly developed. -->
     <div style="height: 66vh;" class="max-width-5 mx-auto">
         <iframe src="src/chartview/index.html" height="100%" width="100%" title="Chartviewer"
             style="border: none;"></iframe>
@@ -224,18 +209,13 @@
             record of 90-week on Billboard; wanna see which one it is? Staying until the end of the animation, and
             you will know!
         </p>
-        <!-- <link rel="import" href="racing_chart.html"> -->
-
-
-        <div class="racing-chart-div">
-
-        </div>
-
+        <!-- Racing Chart, using d3.js -->
+        <div class="racing-chart-div"></div>
 
         <button id="js-toggle" class="mt2 not-rounded button-lyrics" type="button">Click Here to Play or Stop
             ♫</button>
 
-        <!-- <h2>Artists</h2> -->
+        <!-- Artists -->
         <h1 class="center">Artists</h1>
         <p>After we got the big picture, let's jump into the creator of the songs - the artists. You will find out
             which one is the most successful one, who collaborates and you can compare them.</p>
@@ -245,6 +225,7 @@
             how popular is Taylor Swift compared to Drake over time? Click on their names to select or cancel the
             line!
         </p>
+        <!-- Line Chart for top artist using highchart.js -->
         <figure class="highcharts-figure">
             <div id="container"></div>
         </figure>
@@ -253,13 +234,13 @@
         <p> How does Snoop Dogg relate to Beyonce? On the following interactive graph, you'll intuitively see the
             different connections between artists. Each edge represents a
             collaboration. </p>
+        <!-- Colab Network using vis.js -->
         <div id="mynetwork" style="height:80vh"></div>
         <div class="myDiv mt2">
             <table style="width: 100%; margin: auto;">
                 <td style="width:100%; margin:auto;">
                     <span class="label hiphop">Hip-Hop/Rap</span>
                     <span class="label pop">Pop</span>
-                    <!--- <span class="label rock">Rock</span> -->
                     <span class="label rnb">R&B</span>
                     <span class="label reggae">Reggae</span>
                     <span class="label electro">Electronic/Dance</span>
@@ -286,11 +267,12 @@
                 </ul>
             </div>
         </div>
-
         <div class="block mx-auto">
             <p> Okay enough! Choose your 🥋!</p>
+            <!-- Artist vs. Artist using d3.js -->
             <div class="radarChart"></div>
             <div class="clearfix">
+                 <!-- Selector for artist -->
                 <div class="imgcon">
                     <div class="col col-2">
                         <img class="radarimg active circle block mx-auto" style="border: 3px solid #001219;" id="kanye"
@@ -457,24 +439,25 @@
         </div>
         <div>
 
-            <!-- <h2>Genres</h2> -->
+            <!-- Genres -->
             <h1 class="center">Genres</h1>
             <p> Beware of the following; you may be disappointed depending on your music taste. We have assigned a
                 bubble to each genre sized according to its popularity.
             </p>
             <figure class="highcharts-figure2">
-
+                <!-- Bubble Chart for Genre using highchart.js -->
                 <div id="container2"></div>
 
 
             </figure>
-            <!-- <h2>Lyrics</h2> -->
+            <!-- Lyrics -->
             <h1 class="center">Lyrics</h1>
             <p>What is a song without its lyrics? It creates emotion and allows us to sing
                 along under the 🚿. Before we jump into the analysis, do you can generate your lyrics to create
                 your Billboard hit, which future EPFL students will analyze! We are using a
                 Markov chain and deep learning model to create the lyrics.
             </p>
+            <!-- Song Generator based on https://github.com/mrkarezina/song-generator  -->
             <div class="clearfix" style="height: 67vh;">
                 <div class="col col-6">
                     <p> To generate the song, please select an artist first. The lyrics will be
@@ -522,6 +505,7 @@
                 some words have found their way into the mainstream in 2016. What does it say about us and our society?
                 The frequency is correlated with the risers of rap/hip-hop. (<i>Just-in Case (pun intended), you
                     can change the years</i> 🤓)</p>
+            <!-- Let's Count table using d3.js -->
             <div id="word_table" class="mx-auto">
                 <div class="chart-head chart-text" style="position:relative;">
                     <p style="position:absolute; left:0px">WORD</p>
@@ -561,7 +545,7 @@
                 distributed over time and the top 10 songs. More details you can find under the heatmap at
                 <i>"Details" (its interactive, hover it!)</i>.
             </p>
-
+            <!-- Heatmap using d3.js -->
             <div id="option">
                 Get more insights for
                 <select id="heatmap_options" onchange="updateData()" style="border: 0px;background: transparent;">
@@ -585,14 +569,14 @@
                 the songs, and the higher the subjectivity, the higher the subjectivity of the songs. We have taken
                 the average of the Top 100 of the week. Can you explain the outliers?</p>
             <div id="sent_subj"></div>
-            <!-- <h2>Song Change Over Time</h2> -->
+            <!-- Song Change Over Time using d3.js -->
             <h1 class="center">Song Change Over Time</h1>
             <p>Now, let's get to the last juicy detail. How has the music changed? Let's find out which was the most
                 danceable year and which year had the most to say. <i>Pro-tip: Make use of the play button.</i></p>
             <div id="yearly"></div>
             <button class="button-lyrics block mx-auto" id="play-button">Play</button>
             <div id="slider-time"></div>
-            <!-- <h2>the fin.</h2> -->
+       
             <h1 class="center">the fin.</h1>
             <p>Thank you for making it until here. We hope you enjoyed the journey.</p>
             <hr>
@@ -605,6 +589,7 @@
 
 
     <script>
+        // Preload function
         document.onreadystatechange = function () {
             if (document.readyState !== "complete") {
                 document.querySelector(
@@ -619,6 +604,7 @@
             }
         };
     </script>
+    <!-- Including all js for visualizations. -->
     <script src="src/js/racing_bar.js"></script>
     <script src="src/js/audio.js"></script>
     <script src="src/js/top_artist_line.js"></script>
@@ -632,6 +618,7 @@
     <script src="src/js/yearly.js"></script>
 
     <script>
+        // colordir: to consistent color in chart and image
         colordir = {
             kanye: "#001219",
             taylor: "#005f73",
@@ -641,6 +628,10 @@
             oned: "#FF00FF"
         }
         function mark(el, name) {
+            /* Function to mark the selected artist and update the chart
+            el: Selected Element
+            name: Name of artist
+            */
             if (el.classList.contains("active")) {
                 el.classList.remove("active")
                 el.style.border = ""
@@ -652,6 +643,7 @@
         }
 
         function getLyrics() {
+            // Get Lyrics from webservice
             var artist = document.getElementById("song_artist").value;
             var lyricbody = document.getElementById("song_text");
             lyricbody.innerHTML = "";

@@ -1,3 +1,5 @@
+// Based on https://www.visualcinnamon.com/2015/10/different-look-d3-radar-chart/
+
 function RadarChart(id, data, options) {
     var cfg = {
         w: 600,				//Width of the circle

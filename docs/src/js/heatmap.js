@@ -1,3 +1,4 @@
+// Prepare
 const margin = { top: 80, right: 0, bottom: 30, left: 20 },
     width = 1024 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
@@ -11,6 +12,8 @@ const svg = d3.select("#heatmap")
 
 file = get_heatpath()
 let max_leg = 0
+
+// load data
 d3.csv(file).then(function (data) {
     var max = d3.max(data, function (d) { return +d.rank })
     
@@ -43,6 +46,7 @@ d3.csv(file).then(function (data) {
         .interpolator(d3.interpolateInferno)
         .domain([0, max])
 
+    // Tooltip
     const tooltip = d3.select("#legend_heatmap")
         .html("<b>Details</b><br>The first line is the song with the most occurrences which ever ranked the place in the year. <br> Mean: is for all songs which ranked on this place in this year.")
 
@@ -67,6 +71,7 @@ d3.csv(file).then(function (data) {
             .style("opacity", 0.8)
     }
 
+    // Legend
     var defs = svg.append("defs");
     var linearGradient = defs.append("linearGradient")
         .attr("id", "linear-gradient");
@@ -112,9 +117,9 @@ d3.csv(file).then(function (data) {
 })
 
 
-
+// Add legend
 svg.append("rect")
-    .attr("id", "sinep")
+    .attr("id", "heat_legend")
     .attr("x", 0)
     .attr("y", -40)
     .attr("width", 300)
@@ -122,6 +127,7 @@ svg.append("rect")
     .style("fill", "url(#linear-gradient)");
 
 function updateData() {
+    // Updates plot, when new data is selected
     file = get_heatpath()
 
     d3.csv(file).then(function (data) {
@@ -164,17 +170,15 @@ function updateData() {
         var linearGradient = defs.append("linearGradient")
             .attr("id", "linear-gradient");
 
-        svg.select("rect#sinep").style("fill", "url(#linear-gradient)");
+        svg.select("rect#heat_legend").style("fill", "url(#linear-gradient)");
 
         svg.select("#last_legend").text(d3.format(",.2~f")(max_leg))
     });
 }
 
 function get_heatpath() {
+    // helper function, to get path of of data based on selected word
     var x = document.getElementById("heatmap_options").value;
-    let file = ""
-    var poss = ["yeah", "love", "baby", "time", "wanna", "girl", "'cause", "man", "nigga", "feel"]
-
     return "src/data/heatmap_data/" + x + "_top10.csv"
 }
 
