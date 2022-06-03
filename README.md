@@ -38,4 +38,4 @@ Jump to:
 
 - [Website](https://com-480-data-visualization.github.io/datavis-project-2022-vizards/) | [Techincal Instructions](docs/)
 - [Process Book](/milestones/processbook.pdf)
-- [Screen Cast](https://www.youtube.com/watch?v=43oC3CgijI8)
+- [Screen Cast](https://youtu.be/6y66vRh6rEI) 
