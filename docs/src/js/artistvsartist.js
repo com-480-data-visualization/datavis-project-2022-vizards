@@ -1,4 +1,5 @@
 function updateRadarArtist() {
+    // get selected artists
     artists = document.getElementsByClassName("radarimg")
     active_artists = []
     for (let elem of artists) {
@@ -7,6 +8,7 @@ function updateRadarArtist() {
         }
     }
   
+    // prepare
     var margin = { top: 100, right: 100, bottom: 100, left: 100 },
         width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
         height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
@@ -70,8 +72,9 @@ function updateRadarArtist() {
 
     ]
 
+    // bring data for selected artists into the right format
     var input = [];
-    var color = []
+    var color = [];
     data.forEach(elem => {
         if (active_artists.includes(elem.artist)) {
             input.push([
@@ -83,6 +86,7 @@ function updateRadarArtist() {
             color.push(elem.color)
         }
     })
+    // fallback, if no artist is selected
     if (input.length == 0) {
         d3.select(".radarWrapper").remove()
         return
@@ -97,7 +101,8 @@ function updateRadarArtist() {
         roundStrokes: true,
         color: color
     };
-  
+    // Plot
     RadarChart(".radarChart", input, radarChartOptions)
 }
+// call function on load of website
 updateRadarArtist()

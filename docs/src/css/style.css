@@ -1162,7 +1162,7 @@
 
 /* 
 
-    !!!!!OURS!!!!
+    !!!OURS!!!
 
 */
 
@@ -1533,9 +1533,9 @@ section {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+}
 
-  .label {
+.label {
     color: white;
     padding: 8px;
     display: inline-block;
@@ -1543,24 +1543,38 @@ section {
     margin-right: auto;
     text-align: center;
     vertical-align: middle;
-  }
-  .hiphop {background-color: #001219;} 
-  .pop {background-color: #005f73;} 
-  .reggae {background-color: #ee9b00;} 
-  .electro {background-color: #bb3e03} 
-  .rock {background-color: #ab84e1} 
-  .rnb {background-color: #e9d8a6;color:black} 
+}
 
-  .myDiv{
+.hiphop {
+    background-color: #001219;
+}
+
+.pop {
+    background-color: #005f73;
+}
+
+.reggae {
+    background-color: #ee9b00;
+}
+
+.electro {
+    background-color: #bb3e03
+}
+
+.rock {
+    background-color: #ab84e1
+}
+
+.rnb {
+    background-color: #e9d8a6;
+    color: black
+}
+
+.myDiv {
     display: grid;
     justify-content: center;
 
-  }
-/* 
-  .container {
-
-  } */
-
+}
 
 .muzieknootjes {
     display: block;
@@ -1570,59 +1584,60 @@ section {
     min-width: 300px;
     height: 200px;
     border: 0px solid #000;
-  }
-  
-  .noot-1,
-  .noot-2,
-  .noot-3,
-  .noot-4 {
+}
+
+.noot-1,
+.noot-2,
+.noot-3,
+.noot-4 {
     position: absolute;
     animation: notes 2s infinite linear;
     font-size: 35px;
     opacity: 0;
-  }
-  
-  .noot-1 {
+}
+
+.noot-1 {
     top: 60px;
     left: 0;
     animation-delay: 0.5s;
-  }
-  
-  .noot-2 {
+}
+
+.noot-2 {
     top: 30px;
     left: 30%;
     animation-delay: 1s;
-  }
-  
-  .noot-3 {
+}
+
+.noot-3 {
     top: 90px;
     left: 60%;
     animation-delay: 1.5s;
-  }
-  
-  .noot-4 {
+}
+
+.noot-4 {
     top: 40px;
     left: 90%;
     animation-delay: 2s;
-  }
-  
-  @keyframes notes {
-    0% {
-      transform: scale(1) translate(0, 0);
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.5) translate(50%, -50%);
-    }
-    80% {
-      opacity: 0;
-      transform: scale(1.5) translate(100%, -100%);
-    }
-    100% {
-      transform: scale(1.5) translate(100%, -100%);
-      opacity: 0;
-    }
-  }
+}
 
-  /* #theImage { visibility: hidden; } */
+@keyframes notes {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.5) translate(50%, -50%);
+    }
+
+    80% {
+        opacity: 0;
+        transform: scale(1.5) translate(100%, -100%);
+    }
+
+    100% {
+        transform: scale(1.5) translate(100%, -100%);
+        opacity: 0;
+    }
+}

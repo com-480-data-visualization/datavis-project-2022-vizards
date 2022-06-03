@@ -1,10 +1,10 @@
 function sentsubj() {
+    // Prepare 
     var sent_margin = { top: 20, right: 20, bottom: 30, left: 50 },
         sent_width = 960 - sent_margin.left - sent_margin.right,
         sent_height = 500 - sent_margin.top - sent_margin.bottom;
 
     var parseTime = d3.timeParse("%Y-%m-%d");
-    //Read the data
 
     var sent_x = d3.scaleTime();
     var sent_y = d3.scaleLinear().range([sent_height, 0]);
@@ -24,6 +24,7 @@ function sentsubj() {
         .attr("transform",
             "translate(" + sent_margin.left + "," + sent_margin.top + ")");
 
+    // Read the data
     d3.csv("src/data/lyrics_sent_subj.csv").then(function (data) {
         data.forEach(function (d) {
             d.date = parseTime(d.date);
@@ -36,6 +37,7 @@ function sentsubj() {
             return Math.max(d.sentiment, d.subjectivity);
         })]);
 
+        // Add plot
         sent_svg.append("path")
             .data([data])
             .attr("class", "line")
@@ -54,7 +56,7 @@ function sentsubj() {
         sent_svg.append("g")
             .call(d3.axisLeft(sent_y))
 
-
+        // tooltip line
         var focus = sent_svg.append("line")
             .attr("class", "today")
             .attr("x1", sent_x(data[500]))
@@ -82,6 +84,8 @@ function sentsubj() {
                 mousemove(event)
             })
             .on('mouseout', mouseout);
+        
+        // Functions for tooltip 
 
         function mouseover() {
             focus.style("opacity", 1)
@@ -127,4 +131,6 @@ function sentsubj() {
     })
 
 }
+
+// call function on load of website
 sentsubj()
