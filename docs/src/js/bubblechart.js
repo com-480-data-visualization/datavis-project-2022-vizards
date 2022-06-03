@@ -1,16 +1,18 @@
 Highcharts.chart('container2', {
   chart: {
+      // Graph type
       type: 'packedbubble',
       height: '60%',
   },
+  // Chart-level boost when there are more than 5 series in the chart
   boost: {
     useGPUTranslations: true,
-    // Chart-level boost when there are more than 5 series in the chart
     seriesThreshold: 5
   } ,
   title: {
       text: "",
   },
+  // Highcharts credits
   credits: {
     enabled: false
   },
@@ -25,14 +27,19 @@ Highcharts.chart('container2', {
           zMin: 0,
           zMax: 1000,
           layoutAlgorithm: {
+              // Whether to split series into individual groups or to mix all series together
               splitSeries: true,
+              // Gravitational const used in the barycenter force of the algorithm
               gravitationalConstant: 0.02,
               enableSimulation: true,
+              // Whether series should interact with each other or not
               seriesInteraction: false,
           },
+          // labels appearing next to each data point
           dataLabels: {
               enabled: true,
               format: '{point.name}',
+              // to control which data to display
               filter: {
                   property: 'y',
                   operator: '>',

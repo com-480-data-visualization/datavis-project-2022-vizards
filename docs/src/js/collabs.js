@@ -421,7 +421,7 @@ var nodes = new vis.DataSet([{"id": 957, "label": "Lil Wayne", "group": "hip-hop
     {"from": 543, "to": 410}]      
     );
 
-    // create a network
+    
     var container = document.getElementById('mynetwork');
 
     // provide the data in the vis format
@@ -435,12 +435,15 @@ var nodes = new vis.DataSet([{"id": 957, "label": "Lil Wayne", "group": "hip-hop
     const options = {
         nodes: {
           font: {
+            // font parameters
             face:"canela web", 
             color:"white"}
         },
+        // whether computation should be done on edges so that they act smoothly. False -> Faster
         edges: {
           smooth : false
         },
+        // Parameters about the physics of the nodes 
         physics: {
           enabled: true,
           barnesHut: {
@@ -451,8 +454,11 @@ var nodes = new vis.DataSet([{"id": 957, "label": "Lil Wayne", "group": "hip-hop
           }
         }
       };
-      
+     
+    // create a network
     var network = new vis.Network(container, data, options);
+
+    // Zoom out by a scale at the first draw of the graph 
     network.moveTo({
       scale: 1.5          
     });
