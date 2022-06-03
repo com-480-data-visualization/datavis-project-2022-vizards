@@ -1,20 +1,18 @@
-// var buttonColors = ["green", "red", "yellow", "blue"];
-// var gamePattern = [];
 let ticker;
 let smooth;
 let playing = false;
 
+// function for stop the animation
 function stopAnimation(button_pressed){
   ticker.stop(); smooth.pause(); playing = false;
 }
 
-
+// function for start the racing chart
 function racing_chart() {
 
 let racing_svg = d3.select(".racing-chart-div").append("svg")
 .attr("width", 960)
 .attr("height", 600);
-
 
 let tickDuration = 500;
 
@@ -31,49 +29,25 @@ left: 5
 
 let barPadding = (height-(margin.bottom+margin.top))/(top_n*5);
 
-// let title = racing_svg.append('text')
-// .attr('class', 'title')
-// .attr('y', 24)
-// .html('Timeless Billboard Music across 22 years');
-
-// let subTitle = racing_svg.append("text")
-// .attr("class", "subTitle")
-// .attr("y", 55)
-// .html("Ranking on the Number of Weeks Staying on Billboard");
-
-// let caption = racing_svg.append('text')
-// .attr('class', 'caption')
-// .attr('x', width)
-// .attr('y', height-5)
-// .style('text-anchor', 'end')
-// .html('Source: Billboard');
-
+// set starting year.month
 let year = 2000.01;
 
-// const music = new Audio('./assets/data/music.mp3');
-// music.play();
-// music.loop =true;
-// music.playbackRate = 2;
-// var audio = document.createElement("AUDIO")
-// document.body.appendChild(audio);
-// audio.src = "./assets/data/music.mp3";
 
 let currentName = "WHERE MY GIRLS AT? - 702";
 
-
+// create audio element
 smooth = document.createElement("audio");
-// let allColors = ['#bb3e03', '#001219', '#005f73', '#4b560c',  '#3a498c', '#a3a127','#206829',  '#a3702c', '#c2498c',"#5534ad"];
-
 
 
 animPlaying = false;
 reachEnd = false;
 
+// listen to toggle
 const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
   if (reachEnd == true && animPlaying == true) {
     // do nothing.
-    console.log("Reach the end");
+    // console.log("Reach the end");
     smooth.pause();
     animPlaying = false;
   }
@@ -84,26 +58,22 @@ jstoggle.addEventListener('click', () => {
   else if (animPlaying == false) {
     playAnimation("test");
     animPlaying = true;
-    console.log("play anim");
+    // console.log("play anim");
     
   }
   else {
     animPlaying = false; 
     stopAnimation("test");
-    console.log("stop anim");
+    // console.log("stop anim");
   }
 });
 
-
+// read our main dataset
 d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   
   data.forEach(d => {
-    // console.log("been here how many times");
-    // d.value = isNaN(d.value) ? 0 : d.value,
     d.colour = d3.hsl(Math.random()*360,0.4,0.55)
   });
-
-  // console.log(data);
 
   let yearSlice = data.filter(d => d.year == year )
   .sort((a,b) => b.value - a.value)
@@ -114,11 +84,7 @@ d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   .slice(0, 1);
   // console.log("top1",top1);
 
-
-
   yearSlice.forEach((d,i) => d.rank = i);
-
-  // console.log('yearSlice line 85: ', yearSlice);
 
   let x = d3.scaleLinear()
     .domain([0, d3.max(yearSlice, d => d.value)])
@@ -154,7 +120,6 @@ d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
     .attr('height', y(1)-y(0)-barPadding)
     .style('fill', d => d.colour);
 
-
   // show name of artist from beginning
   racing_svg.selectAll('text.label')
     .data(yearSlice, d => d.name)
@@ -187,18 +152,17 @@ d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
   .html(~~year);
 });
 
+// start playing animation
 function playAnimation(button_pressed){
   racing_svg.selectAll('*').remove();
   
   d3.csv('./src/data/nice_df_with_artist.csv').then(function(data) {
 
   data.forEach(d => {
-    // console.log("been here how many times");
-    // d.value = isNaN(d.value) ? 0 : d.value,
+
     d.colour = d3.hsl(Math.random()*360,0.4,0.55)
   });
 
-  // console.log(data);
 
   let yearSlice = data.filter(d => d.year == year )
   .sort((a,b) => b.value - a.value)
@@ -207,13 +171,8 @@ function playAnimation(button_pressed){
   let top1 = data.filter(d => d.year == year )
   .sort((a,b) => b.value - a.value)
   .slice(0, 1);
-  // console.log("top1",top1);
-
-
 
   yearSlice.forEach((d,i) => d.rank = i);
-
-  // console.log('yearSlice line 85: ', yearSlice);
 
   let x = d3.scaleLinear()
     .domain([0, d3.max(yearSlice, d => d.value)])
@@ -289,20 +248,14 @@ function playAnimation(button_pressed){
 
   yearSlice.forEach((d,i) => d.rank = i);
 
-  // console.log('yearSlice line 160: ', yearSlice);
 
   let top1 = data.filter(d => d.year == year )
   .sort((a,b) => b.value - a.value)
   .slice(0, 1);
-  // console.log("top1",top1);
 
   top1.forEach((d,i) => myname = d.name);
-  // if (myname != currentName) {
-  //   audio = 
-  // }
   
   if (myname == currentName && playing == false) {
-    // console.log("Found!!!"); 
     if (myname == "WHERE MY GIRLS AT? - 702") {
       smooth.src = "./src/data/music/Where.mp3";
     } else{
@@ -314,18 +267,12 @@ function playAnimation(button_pressed){
   console.log("line 230", myname, currentName, playing);
 }else if (myname != currentName && playing == true) {
   smooth.pause();
-//   setTimeout(function(){
-//     console.log("Executed after 1 second");
-// }, 1000);
+
 document.querySelectorAll('audio').forEach(el => el.pause());
   smooth.src = "./src/data/music/"+ myname +".mp3";
   smooth.play();
   currentName = myname;
-}
-
-;
-
-
+};
 
   x.domain([0, d3.max(yearSlice, d => d.value)]); 
 
@@ -400,8 +347,6 @@ document.querySelectorAll('audio').forEach(el => el.pause());
         .attr('y', d => y(top_n+1)+5)
         .remove();
     
-
-
   let valueLabels = racing_svg.selectAll('.valueLabel').data(yearSlice, d => d.name);
 
   valueLabels
@@ -450,17 +395,6 @@ document.querySelectorAll('audio').forEach(el => el.pause());
     ticker.stop(); 
     console.log("Before calling timer");
 
-    // let func=function(e) {
-    //   console.log(e);
-    //   if (e>300){
-    //     console.log("Timer stopped")
-    //     timer.stop();
-    //   }
-    // }
-    // // Delay of 2000ms
-    // d3.timer(func, 10000);
-
-    // smooth.pause(); 
     reachEnd = true;
     
     
@@ -468,11 +402,6 @@ document.querySelectorAll('audio').forEach(el => el.pause());
 
   year = d3.format('')((+year) + 0.01);
   if ((year % 1).toFixed(2) == "0.13") {year = parseFloat((~~year + 1 + 0.01).toFixed(2))};
-
-
-  // music.pause();
-
-  // if (year == 2000.4 || year == 2000.7 || year == 2014.8 || year == 2018.6) {year = d3.format('')((+year) + 0.2)};
 
 
   },tickDuration);

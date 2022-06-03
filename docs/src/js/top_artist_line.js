@@ -1,3 +1,5 @@
+// use hightchart and feed into data for top artists
+
 Highcharts.chart('container', {
 
     title: {
