@@ -71,9 +71,15 @@ reachEnd = false;
 
 const jstoggle = document.getElementById('js-toggle');
 jstoggle.addEventListener('click', () => {
-  if (reachEnd == true) {
+  if (reachEnd == true && animPlaying == true) {
     // do nothing.
     console.log("Reach the end");
+    smooth.pause();
+    animPlaying = false;
+  }
+  else if (reachEnd == true && animPlaying == false) {
+    smooth.play();
+    animPlaying = true;
   }
   else if (animPlaying == false) {
     playAnimation("test");
